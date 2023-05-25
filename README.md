@@ -10,8 +10,11 @@ In this project, I will try to solve leetcode challenges in rust.
 - [ ] [Easy](src/easy)
   - [x] [13. Roman to interger](src/easy/roman_to_integer.rs)
   - [x] [14. Longest common prefix](src/easy/longest_common_prefix.rs)
-  - [x] [15. Three sum](src/easy/three_sum.rs)
+ 
   
 - [ ] [Medium](src/medium)
+  - [x] [15. Three sum](src/medium/three_sum.rs)
   - [ ] [16. Three sum closest](src/medium/three_sum_closest.rs)
+
+  
 - [ ] [Hard](src/hard)
