@@ -19,5 +19,18 @@ pub fn roman_to_int(s: String) -> i32 {
     result
 }
 
-// Reference: https://leetcode.com/problems/roman-to-integer/
+#[cfg(test)]
+mod tests {
+    use super::*;
 
+    #[test]
+    fn test_13() {
+        assert_eq!(roman_to_int(String::from("III")), 3);
+        assert_eq!(roman_to_int(String::from("IV")), 4);
+        assert_eq!(roman_to_int(String::from("IX")), 9);
+        assert_eq!(roman_to_int(String::from("LVIII")), 58);
+        assert_eq!(roman_to_int(String::from("MCMXCIV")), 1994);
+    }
+}
+
+// Reference: https://leetcode.com/problems/roman-to-integer/
