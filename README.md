@@ -14,7 +14,7 @@ In this project, I will try to solve leetcode challenges in rust.
   
 - [ ] [Medium](src/medium)
   - [x] [15. Three sum](src/medium/three_sum.rs)
-  - [ ] [16. Three sum closest](src/medium/three_sum_closest.rs)
+  - [x] [16. Three sum closest](src/medium/three_sum_closest.rs)
 
   
 - [ ] [Hard](src/hard)
