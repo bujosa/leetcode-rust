@@ -45,4 +45,15 @@ Input: "IX"
 Output: 9
 ```
 
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("III");
+  let result = easy::roman_to_integer::roman_to_int(s);
+  println!("result: {}", result);
+```
+
+
 # 14. Longest common prefix
