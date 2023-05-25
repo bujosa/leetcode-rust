@@ -16,4 +16,29 @@ pub fn longest_common_prefix(strs: Vec<String>) -> String {
     prefix
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_14() {
+        assert_eq!(
+            longest_common_prefix(vec![
+                String::from("flower"),
+                String::from("flow"),
+                String::from("flight")
+            ]),
+            String::from("fl")
+        );
+        assert_eq!(
+            longest_common_prefix(vec![
+                String::from("dog"),
+                String::from("racecar"),
+                String::from("car")
+            ]),
+            String::from("")
+        );
+    }
+}
+
 // Reference: https://leetcode.com/problems/longest-common-prefix/
