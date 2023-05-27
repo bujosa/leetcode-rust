@@ -8,6 +8,7 @@ In this project, I will try to solve leetcode challenges in rust.
 ## Directory Structure
 
 - [ ] [Easy](src/easy)
+  - [x] [9. Palindrome number](src/easy/palindrome_number.rs)
   - [x] [13. Roman to interger](src/easy/roman_to_integer.rs)
   - [x] [14. Longest common prefix](src/easy/longest_common_prefix.rs)
  

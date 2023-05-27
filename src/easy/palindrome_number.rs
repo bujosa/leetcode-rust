@@ -1,4 +1,4 @@
-pub fn palindrome_number(x: i32) -> bool {
+pub fn is_palindrome(x: i32) -> bool {
     let mut reversed = 0;
     let mut a = x;
     while a > 0 {
@@ -10,8 +10,8 @@ pub fn palindrome_number(x: i32) -> bool {
 
 #[test]
 fn test_palindrome_number() {
-    assert_eq!(palindrome_number(121), true);
-    assert_eq!(palindrome_number(-121), false);
-    assert_eq!(palindrome_number(10), false);
-    assert_eq!(palindrome_number(-101), false);
+    assert_eq!(is_palindrome(121), true);
+    assert_eq!(is_palindrome(-121), false);
+    assert_eq!(is_palindrome(10), false);
+    assert_eq!(is_palindrome(-101), false);
 }

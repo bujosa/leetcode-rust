@@ -1,3 +1,31 @@
+# 9. Palindrome number
+
+## Description
+Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+
+## Examples
+```text
+Input: 121
+Output: true
+
+Input: -121
+Output: false
+
+Input: 10
+Output: false
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let x = 121;
+  let result = easy::palindrome_number::is_palindrome(x);
+  println!("result: {}", result);
+```
+
+
 # 13. Roman to integer
 
 ## Description
