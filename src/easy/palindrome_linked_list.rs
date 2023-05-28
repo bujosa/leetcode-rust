@@ -4,6 +4,13 @@ pub struct ListNode {
     pub next: Option<Box<ListNode>>
 }
 
+impl ListNode {
+    #[inline]
+    pub fn new(val: i32) -> Self {
+        ListNode { val, next: None }
+    }
+}
+
 pub fn is_palindrome(head: Option<Box<ListNode>>) -> bool {
     let mut v = Vec::new();
     let mut current = head;

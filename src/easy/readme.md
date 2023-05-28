@@ -110,3 +110,33 @@ Put the code below in main.rs and run `cargo run`
   let result = easy::longest_common_prefix::longest_common_prefix(strs);
   println!("result: {}", result);
 ```
+
+# 234. Palindrome linked list
+
+## Description
+Given a singly linked list, determine if it is a palindrome.
+
+## Examples
+```text
+Input: 1->2
+Output: false
+
+Input: 1->2->2->1
+Output: true
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut head = Some(Box::new(ListNode::new(1)));
+  let mut node2 = Some(Box::new(ListNode::new(2)));
+  let mut node3 = Some(Box::new(ListNode::new(2)));
+  let node4 = Some(Box::new(ListNode::new(1)));
+  node3.as_mut().unwrap().next = node4;
+  node2.as_mut().unwrap().next = node3;
+  head.as_mut().unwrap().next = node2;
+  let result = easy::palindrome_linked_list::is_palindrome(head);
+  println!("result: {}", result);
+```
