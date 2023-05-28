@@ -11,4 +11,5 @@ fn main() {
     let strs = vec![String::from("flower"), String::from("flow"), String::from("flight")];
     let result = easy::longest_common_prefix::longest_common_prefix(strs);
     println!("result: {}", result);
+    
 }
