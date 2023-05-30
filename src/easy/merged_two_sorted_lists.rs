@@ -14,38 +14,34 @@ impl ListNode {
   }
 }
 
+// Consider the two list arrays can be different length
 pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-    let mut list1 = list1;
-    let mut list2 = list2;
+    let mut l1 = list1;
+    let mut l2 = list2;
     let mut head = Some(Box::new(ListNode::new(0)));
     let mut tail = &mut head;
-    while list1.is_some() || list2.is_some() {
-        let mut val1 = 0;
-        let mut val2 = 0;
 
-        if let Some(node) = list1 {
-            val1 = node.val;
-            list1 = node.next;
-        }
-
-        if let Some(node) = list2 {
-            val2 = node.val;
-            list2 = node.next;
-        }
-
-        if val1 < val2 {
-            tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(val1)));
-            tail = &mut tail.as_mut().unwrap().next;
-            tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(val2)));
-            tail = &mut tail.as_mut().unwrap().next;
+    while l1.is_some() && l2.is_some() {
+        let mut node = None;
+        if l1.as_ref().unwrap().val < l2.as_ref().unwrap().val {
+            node = l1;
+            l1 = node.as_mut().unwrap().next.take();
         } else {
-            tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(val2)));
-            tail = &mut tail.as_mut().unwrap().next;
-            tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(val1)));
-            tail = &mut tail.as_mut().unwrap().next;
+            node = l2;
+            l2 = node.as_mut().unwrap().next.take();
         }
+        tail.as_mut().unwrap().next = node;
+        tail = &mut tail.as_mut().unwrap().next;
     }
+
+    if l1.is_some() {
+        tail.as_mut().unwrap().next = l1;
+    } else {
+        tail.as_mut().unwrap().next = l2;
+    }
+
     head.unwrap().next
+
         
 }
 
@@ -65,5 +61,10 @@ fn test_merge_two_lists() {
     let l1 = to_list(vec![1, 2, 4]);
     let l2 = to_list(vec![1, 3, 4]);
     let l3 = to_list(vec![1, 1, 2, 3, 4, 4]);
+    assert_eq!(merge_two_lists(l1, l2), l3);
+
+    let l1 = to_list(vec![1, 2, 4]);
+    let l2 = to_list(vec![1, 3, 4, 5, 6]);
+    let l3 = to_list(vec![1, 1, 2, 3, 4, 4, 5, 6]);
     assert_eq!(merge_two_lists(l1, l2), l3);
 }
