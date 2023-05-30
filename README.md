@@ -12,6 +12,7 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [9. Palindrome number](src/easy/palindrome_number.rs)
   - [x] [13. Roman to interger](src/easy/roman_to_integer.rs)
   - [x] [14. Longest common prefix](src/easy/longest_common_prefix.rs)
+  - [x] [21. Merge two sorted lists](src/easy/merge_two_sorted_lists.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
  
   
