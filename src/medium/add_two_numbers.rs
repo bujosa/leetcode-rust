@@ -57,4 +57,9 @@ fn test_add_two_numbers() {
     let l2 = to_list(vec![5, 6, 4]);
     let l3 = to_list(vec![7, 0, 8]);
     assert_eq!(add_two_numbers(l1, l2), l3);
+
+    let l1 = to_list(vec![2, 4, 3, 7]);
+    let l2 = to_list(vec![5, 6, 4]);
+    let l3 = to_list(vec![7, 0, 8, 7]);
+    assert_eq!(add_two_numbers(l1, l2), l3);
 }
