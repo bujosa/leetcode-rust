@@ -139,6 +139,39 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 21. Merge two sorted lists
+
+## Description
+
+Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+## Examples
+```text
+Input: 1->2->4, 1->3->4
+Output: 1->1->2->3->4->4
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut l1 = Some(Box::new(ListNode::new(1)));
+  let mut node2 = Some(Box::new(ListNode::new(2)));
+  let node3 = Some(Box::new(ListNode::new(4)));
+  node2.as_mut().unwrap().next = node3;
+  l1.as_mut().unwrap().next = node2;
+
+  let mut l2 = Some(Box::new(ListNode::new(1)));
+  let mut node2 = Some(Box::new(ListNode::new(3)));
+  let node3 = Some(Box::new(ListNode::new(4)));
+  node2.as_mut().unwrap().next = node3;
+  l2.as_mut().unwrap().next = node2;
+
+  let result = easy::merge_two_sorted_lists::merge_two_lists(l1, l2);
+  println!("result: {:?}", result);
+```
+
 # 234. Palindrome linked list
 
 ## Description
