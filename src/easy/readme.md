@@ -203,6 +203,33 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 28. Implement strStr()
+
+## Description
+
+Given a haystack string and a needle string, find the first occurrence of needle in haystack. If no needle is found, return -1.
+
+## Examples
+```text
+Input: haystack = "hello", needle = "ll"
+Output: 2
+
+Input: haystack = "aaaaa", needle = "bba"
+Output: -1
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let haystack = String::from("hello");
+  let needle = String::from("ll");
+  let result = easy::implement_strstr::str_str(haystack, needle);
+  println!("result: {:?}", result);
+```
+
+
 
 # 234. Palindrome linked list
 
