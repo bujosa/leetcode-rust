@@ -172,7 +172,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 27. Remove element
 
 ## Description
@@ -229,6 +228,33 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 35. Search insert position
+
+## Description
+
+Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+You may assume no duplicates in the array.
+
+## Examples
+```text
+Input: [1,3,5,6], 5
+Output: 2
+
+Input: [1,3,5,6], 2
+Output: 1
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![1, 3, 5, 6];
+  let target = 5;
+  let result = easy::search_insert_position::search_insert(nums, target);
+  println!("result: {:?}", result);
+```
 
 
 # 234. Palindrome linked list
