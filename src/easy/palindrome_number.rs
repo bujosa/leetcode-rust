@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn is_palindrome(x: i32) -> bool {
     let mut reversed = 0;
     let mut a = x;

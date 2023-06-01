@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
   pub val: i32,
@@ -22,7 +23,7 @@ pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>
     let mut tail = &mut head;
 
     while l1.is_some() && l2.is_some() {
-        let mut node = None;
+        let mut node: Option<Box<ListNode>>;
         if l1.as_ref().unwrap().val < l2.as_ref().unwrap().val {
             node = l1;
             l1 = node.as_mut().unwrap().next.take();
