@@ -25,6 +25,21 @@ pub fn str_str(haystack: String, needle: String) -> i32 {
     -1
 }
 
+/*
+ Algorithm: KMP (Knuth-Morris-Pratt) Algorithm
+
+    1. Build a next array for needle string
+    2. Compare haystack and needle string
+
+    Time: O(m + n)
+
+    Space: O(n)
+
+    m: haystack length
+    n: needle length
+
+    Reference: https://www.youtube.com/watch?v=GTJr8OvyEVQ
+ */
 
 #[test]
 fn test_str_str() {
