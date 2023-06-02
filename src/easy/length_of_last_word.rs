@@ -15,6 +15,25 @@ pub fn length_of_last_word(s: String) -> i32 {
     count
 }
 
+/*
+    Algorithm:
+        - Initialize a variable count to 0
+        - Initialize a variable last_word to false
+        - Iterate through the characters of the string in reverse
+            - If the character is a space
+                - If last_word is true
+                    - Break out of the loop
+            - Else
+                - Set last_word to true
+                - Increment count by 1
+        - Return count
+
+    Runtime: O(n)
+    Space: O(1)
+    best case: O(1)
+    worst case: O(n)
+ */
+
 #[cfg(test)]
 mod tests {
     use super::*;
