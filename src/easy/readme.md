@@ -139,6 +139,40 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 20. Valid parentheses
+
+## Description
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+- Open brackets must be closed by the same type of brackets.
+- Open brackets must be closed in the correct order.
+- Note that an empty string is also considered valid.
+
+## Examples
+```text
+Input: "()"
+Output: true
+
+Input: "()[]{}"
+Output: true
+
+Input: "(]"
+Output: false
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("()[]{}");
+  let result = easy::valid_parentheses::is_valid(s);
+  println!("result: {}", result);
+```
+
+
 # 21. Merge two sorted lists
 
 ## Description
