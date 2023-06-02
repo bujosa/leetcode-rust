@@ -173,6 +173,33 @@ Put the code below in main.rs and run `cargo run`
 ```
 
 
+# 26. Remove duplicates from sorted array
+
+## Description
+Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
+
+Do not allocate extra space for another array, you must do this by **modifying the input array in-place** with O(1) extra memory.
+
+## Examples
+```text
+Given nums = [1,1,2],
+Output: 2
+
+Given nums = [0,0,1,1,1,2,2,3,3,4],
+Output: 5
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut nums = vec![0,0,1,1,1,2,2,3,3,4];
+  let result = easy::remove_duplicates_from_sorted_array::remove_duplicates(&mut nums);
+  println!("result: {}", result);
+```
+
+
 # 21. Merge two sorted lists
 
 ## Description
