@@ -18,6 +18,7 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [27. Remove element](src/easy/remove_element.rs)
   - [x] [28. Implement strStr()](src/easy/implement_strstr.rs)
   - [x] [35. Search insert position](src/easy/search_insert_position.rs)
+  - [x] [58. Length of last word](src/easy/length_of_last_word.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
  
   
