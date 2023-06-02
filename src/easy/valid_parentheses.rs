@@ -26,7 +26,18 @@ pub fn is_valid(s: String) -> bool {
 }
 
 /*
-    
+    Algorithm: Using a stack
+    - Create a stack
+    - Iterate through the string
+    - If the character is an opening bracket, push it onto the stack
+    - If the character is a closing bracket, pop the stack and compare the popped character with the current character
+    - If the popped character is not the corresponding opening bracket, return false
+    - If the stack is empty, return true
+    - Else, return false
+
+    Time: O(n)
+    Space: O(n)
+
  */
 
 #[test]
