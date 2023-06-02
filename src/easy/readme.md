@@ -317,6 +317,38 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 58. Length of last word
+
+## Description
+
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
+
+If the last word does not exist, return 0.
+
+## Examples
+```text
+Input: "Hello World"
+Output: 5
+
+Input: "a "
+Output: 1
+
+Input: "a"
+Output: 1
+
+Input: " "
+Output: 0
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("Hello World");
+  let result = easy::length_of_last_word::length_of_last_word(s);
+  println!("result: {:?}", result);
+```
 
 # 234. Palindrome linked list
 
