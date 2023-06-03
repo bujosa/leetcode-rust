@@ -6,8 +6,8 @@ pub fn my_sqrt(x: i32) -> i32 {
 
     while left <= right {
         let mid = left + (right - left) / 2;
-           
-        if mid > x / mid {
+
+        if mid > 0 && mid > x / mid {
             right = mid - 1;
         } else {
             ans = mid;
@@ -27,6 +27,8 @@ pub fn my_sqrt(x: i32) -> i32 {
 
 #[test]
 fn test_my_sqrt() {
+    assert_eq!(my_sqrt(0), 0);
+    assert_eq!(my_sqrt(1), 1);
     assert_eq!(my_sqrt(4), 2);
     assert_eq!(my_sqrt(8), 2);
     assert_eq!(my_sqrt(9), 3);
