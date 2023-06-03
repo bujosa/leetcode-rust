@@ -1,3 +1,4 @@
+pub mod add_binary;
 pub mod implement_strstr;
 pub mod length_of_last_word;
 pub mod longest_common_prefix;
