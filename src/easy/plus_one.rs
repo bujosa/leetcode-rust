@@ -18,6 +18,27 @@ pub fn plus_one(digits: Vec<i32>) -> Vec<i32> {
     digits
 }
 
+/*
+    Algorithm:
+        - Initialize a variable i to the length of the digits vector minus 1
+        - Loop
+            - If the digit at index i is 9
+                - Set the digit at index i to 0
+                - If i is 0
+                    - Insert 1 at index 0 of the digits vector
+                    - Break out of the loop
+                - Decrement i by 1
+            - Else
+                - Increment the digit at index i by 1
+                - Break out of the loop
+        - Return the digits vector
+
+    Runtime: O(n)
+    Space: O(1)
+    best case: O(1)
+    worst case: O(n)
+ */
+
 #[cfg(test)]
 mod tests {
     use super::*;
