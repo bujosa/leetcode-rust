@@ -9,6 +9,13 @@ pub fn climb_stairs(n: i32) -> i32 {
     dp[n as usize]
 }
 
+/*
+    Algorithm:
+        - Dynamic Programming
+    Time: O(n)
+    Space: O(n)
+ */
+
 #[cfg(test)]
 mod tests {
     use super::*;
