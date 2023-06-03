@@ -468,20 +468,6 @@ Explanation: There are three ways to climb to the top.
 1. 1 step + 1 step + 1 step
 2. 1 step + 2 steps
 3. 2 steps + 1 step
-
-Input: 4
-Output: 5
-
-Explanation: There are five ways to climb to the top.
-
-1. 1 step + 1 step + 1 step + 1 step
-2. 1 step + 1 step + 2 steps
-3. 1 step + 2 steps + 1 step
-4. 2 steps + 1 step + 1 step
-5. 2 steps + 2 steps
-
-Input: 5
-Output: 8
 ```
 
 ## How to Run in main.rs
@@ -493,6 +479,40 @@ Put the code below in main.rs and run `cargo run`
   let result = easy::climbing_stairs::climb_stairs(n);
   println!("result: {:?}", result);
 ```
+
+# 83. Remove duplicates from sorted list
+
+## Description
+
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+
+## Examples
+```text
+Input: 1->1->2
+Output: 1->2
+
+Input: 1->1->2->3->3
+Output: 1->2->3
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut head = Some(Box::new(ListNode::new(1)));
+  let mut node2 = Some(Box::new(ListNode::new(1)));
+  let node3 = Some(Box::new(ListNode::new(2)));
+  node2.as_mut().unwrap().next = node3;
+  head.as_mut().unwrap().next = node2;
+  let result = easy::remove_duplicates_from_sorted_list::delete_duplicates(head);
+  println!("result: {:?}", result);
+```
+
+
+
+
+
 
 # 234. Palindrome linked list
 
