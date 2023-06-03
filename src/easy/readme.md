@@ -381,6 +381,34 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 67. Add binary
+
+## Description
+
+Given two binary strings, return their sum (also a binary string).
+
+The input strings are both **non-empty** and contains only characters 1 or 0.
+
+## Examples
+```text
+Input: a = "11", b = "1"
+Output: "100"
+
+Input: a = "1010", b = "1011"
+Output: "10101"
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let a = String::from("11");
+  let b = String::from("1");
+  let result = easy::add_binary::add_binary(a, b);
+  println!("result: {:?}", result);
+```
+
 
 # 234. Palindrome linked list
 
