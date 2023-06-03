@@ -20,7 +20,7 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [35. Search insert position](src/easy/search_insert_position.rs)
   - [x] [58. Length of last word](src/easy/length_of_last_word.rs)
   - [x] [66. Plus one](src/easy/plus_one.rs)
-  - [ ] [67. Add binary](src/easy/add_binary.rs)
+  - [x] [67. Add binary](src/easy/add_binary.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
  
   
