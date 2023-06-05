@@ -586,6 +586,54 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 100. Same tree
+
+## Description
+
+Given two binary trees, write a function to check if they are the same or not.
+
+Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
+
+## Examples
+```text
+Input:     1         1
+          / \       / \
+         2   3     2   3
+
+        [1,2,3],   [1,2,3]
+
+Output: true
+
+Input:     1         1
+          /           \
+         2             2
+
+        [1,2],     [1,null,2]
+
+Output: false
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut root1 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let node3 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  node2.as_mut().unwrap().borrow_mut().left = node3;
+  root1.as_mut().unwrap().borrow_mut().right = node2;
+
+  let mut root2 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let node3 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  node2.as_mut().unwrap().borrow_mut().left = node3;
+  root2.as_mut().unwrap().borrow_mut().right = node2;
+
+  let result = easy::same_tree::is_same_tree(root1, root2);
+  println!("result: {:?}", result);
+```
+
 
 # 234. Palindrome linked list
 
