@@ -544,6 +544,48 @@ Put the code below in main.rs and run `cargo run`
 ```
 
 
+# 94. Binary tree inorder traversal
+
+## Description
+
+Given a binary tree, return the inorder traversal of its nodes' values.
+
+## Examples
+```text
+Input: [1,null,2,3]
+   1
+    \
+     2
+    /
+   3
+
+Output: [1,3,2]
+
+Input: [1,2,3,4,5,6,7]
+       1
+      / \
+     2   3
+    / \ / \
+   4  5 6  7
+
+Output: [4,2,5,1,6,3,7]
+
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut root = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let node3 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  node2.as_mut().unwrap().borrow_mut().left = node3;
+  root.as_mut().unwrap().borrow_mut().right = node2;
+  let result = easy::binary_tree_inorder_traversal::inorder_traversal(root);
+  println!("result: {:?}", result);
+```
+
 
 # 234. Palindrome linked list
 
