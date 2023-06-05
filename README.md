@@ -26,6 +26,7 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [83. Remove duplicates from sorted list](src/easy/remove_duplicates_from_sorted_list.rs)
   - [x] [88. Merge sorted array](src/easy/merge_sorted_array.rs)
   - [x] [94. Binary tree inorder traversal](src/easy/binary_tree_inorder_traversal.rs)
+  - [x] [100. Same tree](src/easy/same_tree.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
  
   
