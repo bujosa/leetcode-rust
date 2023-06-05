@@ -1,4 +1,5 @@
 pub mod add_binary;
+pub mod binary_tree_inorder_traversal;
 pub mod climbing_stairs;
 pub mod implement_strstr;
 pub mod length_of_last_word;
