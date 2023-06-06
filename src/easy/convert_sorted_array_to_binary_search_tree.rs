@@ -32,6 +32,18 @@ pub fn sorted_array_to_bst(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
     Some(Rc::new(RefCell::new(root)))
 }
 
+/*
+    Algorithm:
+        - Find the middle element of the array
+        - Create a node with the middle element as the value
+        - Recursively call the function on the left and right subarrays
+        - Return the node
+    
+    Complexity:
+        - Time: O(n)
+        - Space: O(n)
+ */
+
 #[cfg(test)]
 mod tests {
     use super::*;
