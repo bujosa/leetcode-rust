@@ -635,6 +635,56 @@ Put the code below in main.rs and run `cargo run`
 ```
 
 
+# 101. Symmetric tree
+
+## Description
+
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+
+## Examples
+```text
+Input: [1,2,2,3,4,4,3]
+    1
+   / \
+  2   2
+ / \ / \
+3  4 4  3
+
+Output: true
+
+Input: [1,2,2,null,3,null,3]
+    1
+   / \
+  2   2
+   \   \
+   3    3
+
+Output: false
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut root = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let node4 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  let node5 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let node6 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let node7 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  node3.as_mut().unwrap().borrow_mut().left = node6;
+  node3.as_mut().unwrap().borrow_mut().right = node7;
+  node2.as_mut().unwrap().borrow_mut().left = node4;
+  node2.as_mut().unwrap().borrow_mut().right = node5;
+  root.as_mut().unwrap().borrow_mut().left = node2;
+  root.as_mut().unwrap().borrow_mut().right = node3;
+  let result = easy::symmetric_tree::is_symmetric(root);
+  println!("result: {:?}", result);
+```
+
+
 # 234. Palindrome linked list
 
 ## Description
