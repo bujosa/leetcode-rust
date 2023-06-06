@@ -28,6 +28,7 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [94. Binary tree inorder traversal](src/easy/binary_tree_inorder_traversal.rs)
   - [x] [100. Same tree](src/easy/same_tree.rs)
   - [x] [101. Symmetric tree](src/easy/symmetric_tree.rs)
+  - [x] [104. Maximum depth of binary tree](src/easy/maximum_depth_of_binary_tree.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
  
   
