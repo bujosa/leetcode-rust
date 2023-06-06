@@ -4,6 +4,7 @@ pub mod climbing_stairs;
 pub mod implement_strstr;
 pub mod length_of_last_word;
 pub mod longest_common_prefix;
+pub mod max_depth_of_binary_tree;
 pub mod merge_sorted_array;
 pub mod merged_two_sorted_lists;
 pub mod palindrome_linked_list;
