@@ -55,6 +55,22 @@ pub fn is_symmetric(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
         
 }
 
+/* 
+    Algorithm - BFS
+
+    1. Push root node twice into queue
+    2. Pop two nodes from queue
+    3. If both nodes are None, continue
+    4. If one of the nodes is None, return false
+    5. If both nodes are not None, check if their values are equal
+    6. Push left child of first node and right child of second node into queue
+    7. Push right child of first node and left child of second node into queue
+    8. Repeat steps 2-7 until queue is empty
+
+    Time: O(n)
+    Space: O(n)
+    
+ */
 
 #[cfg(test)]
 mod tests {
