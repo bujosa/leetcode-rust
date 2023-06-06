@@ -722,6 +722,39 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 108. Convert sorted array to binary search tree
+
+## Description
+
+Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+
+## Examples
+```text
+Given the sorted array: [-10,-3,0,5,9],
+
+One possible answer is: [0,-3,9,-10,null,5], which represents the following height balanced BST:
+
+      0
+     / \
+   -3   9
+   /   /
+ -10  5
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![-10, -3, 0, 5, 9];
+  let result = easy::convert_sorted_array_to_binary_search_tree::sorted_array_to_bst(nums);
+  println!("result: {:?}", result);
+```
+
+
+
 
 # 234. Palindrome linked list
 
