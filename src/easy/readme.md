@@ -860,6 +860,54 @@ Put this code below in main.rs and run `cargo run`
 ```
 
 
+# 112. Path sum
+
+## Description
+Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
+
+## Examples
+```text
+Given the below binary tree and sum = 22,
+
+      5
+     / \
+    4   8
+   /   / \
+  11  13  4
+ /  \      \
+7    2      1
+
+return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let mut root = Some(Rc::new(RefCell::new(TreeNode::new(5))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(8))));
+  let mut node4 = Some(Rc::new(RefCell::new(TreeNode::new(11))));
+  let node5 = Some(Rc::new(RefCell::new(TreeNode::new(13))));
+  let mut node6 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let node7 = Some(Rc::new(RefCell::new(TreeNode::new(7))));
+  let node8 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let node9 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  node6.as_mut().unwrap().borrow_mut().right = node9;
+  node4.as_mut().unwrap().borrow_mut().left = node7;
+  node4.as_mut().unwrap().borrow_mut().right = node8;
+  node3.as_mut().unwrap().borrow_mut().left = node5;
+  node3.as_mut().unwrap().borrow_mut().right = node6;
+  node2.as_mut().unwrap().borrow_mut().left = node4;
+  root.as_mut().unwrap().borrow_mut().left = node2;
+  root.as_mut().unwrap().borrow_mut().right = node3;
+  let result = easy::path_sum::has_path_sum(root, 22);
+  println!("result: {:?}", result);
+``` 
+
+
+
 # 234. Palindrome linked list
 
 ## Description
