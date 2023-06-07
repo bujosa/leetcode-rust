@@ -807,6 +807,59 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 111. Minimum depth of binary tree
+
+## Description
+
+Given a binary tree, find its minimum depth.
+
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+
+## Examples
+```text
+Given binary tree [3,9,20,null,null,15,7],
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+return its minimum depth = 2.
+
+Given binary tree [2,null,3,null,4,null,5,null,6],
+
+    2
+     \
+      3
+       \
+        4
+         \
+          5
+           \
+            6
+output: 5
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let mut root = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(9))));
+  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(20))));
+  let node4 = Some(Rc::new(RefCell::new(TreeNode::new(15))));
+  let node5 = Some(Rc::new(RefCell::new(TreeNode::new(7))));
+  node3.as_mut().unwrap().borrow_mut().left = node4;
+  node3.as_mut().unwrap().borrow_mut().right = node5;
+  root.as_mut().unwrap().borrow_mut().left = node2;
+  root.as_mut().unwrap().borrow_mut().right = node3;
+  let result = easy::minimum_depth_of_binary_tree::min_depth(root);
+  println!("result: {:?}", result);
+```
+
+
 # 234. Palindrome linked list
 
 ## Description
