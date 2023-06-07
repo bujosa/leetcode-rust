@@ -26,7 +26,7 @@ pub fn min_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     if root.is_none() {
         return 0;
     }
-    
+
     let mut min = std::i32::MAX;
     let mut stack = vec![(root, 1)];
     
@@ -46,6 +46,18 @@ pub fn min_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     }
     min
 }
+
+/*
+    Algorithm:
+        - If root is None, return 0
+        - If root.left is None and root.right is None, return 1
+        - If root.left is None, return 1 + min_depth(root.right)
+        - If root.right is None, return 1 + min_depth(root.left)
+        - Return 1 + min(min_depth(root.left), min_depth(root.right))
+    
+    Time: O(n)
+    Space: O(n)
+ */
 
 #[cfg(test)]
 mod test {
