@@ -26,44 +26,19 @@ pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         return 0;
     }
 
-    let mut queue = std::collections::VecDeque::new();
-    let mut depth = 0;
-    
-    queue.push_back(root.clone());
-    
-    while !queue.is_empty() {
-        let mut size = queue.len();
-        while size > 0 {
-            let node = queue.pop_front().unwrap();
-            if node.is_some() {
-                let node = node.unwrap();
-                let node = node.borrow();
-                queue.push_back(node.left.clone());
-                queue.push_back(node.right.clone());
-            }
-            size -= 1;
-        }
-        depth += 1;
-    }
-    depth - 1
-  
+    let left_depth = max_depth(root.as_ref().unwrap().borrow().left.clone());
+    let right_depth = max_depth(root.as_ref().unwrap().borrow().right.clone());
+
+    return 1 + std::cmp::max(left_depth, right_depth);
 }
 
 /*
-    Algorithm - BFS
-      - Check if root is None, if so return 0
-        - Create a queue and push root into it
-        - Create a depth variable and set it to 0
-        - While queue is not empty
-          - Create a size variable and set it to queue length
-          - While size is greater than 0
-            - Pop the front of the queue and store it in a variable node
-            - If node is not None
-              - Get the node's left and right child and push them into the queue
-            - Decrement size by 1
-          - Increment depth by 1
-        - Return depth - 1
-        
+    Algorithm - Recursive DFS (Depth First Search)
+     - If the root is None, return 0
+      - Get the max depth of the left subtree
+      - Get the max depth of the right subtree
+      - Return 1 + the max of the left and right subtree
+
     Complexity
         - Time: O(n)
         - Space: O(n)
