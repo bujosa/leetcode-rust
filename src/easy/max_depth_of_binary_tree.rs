@@ -44,8 +44,6 @@ pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         - Space: O(n)
  */
 
-
-
 #[cfg(test)]
 mod tests {
     use super::*;

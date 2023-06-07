@@ -31,6 +31,7 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [104. Maximum depth of binary tree](src/easy/maximum_depth_of_binary_tree.rs)
   - [x] [108. Convert sorted array to binary search tree](src/easy/convert_sorted_array_to_binary_search_tree.rs)
   - [x] [110. Balanced binary tree](src/easy/balanced_binary_tree.rs)
+  - [ ] [111. Minimum depth of binary tree](src/easy/minimum_depth_of_binary_tree.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
  
   
