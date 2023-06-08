@@ -33,6 +33,7 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [110. Balanced binary tree](src/easy/balanced_binary_tree.rs)
   - [x] [111. Minimum depth of binary tree](src/easy/minimum_depth_of_binary_tree.rs)
   - [x] [112. Path sum](src/easy/path_sum.rs)
+  - [x] [118. Pascal's triangle](src/easy/pascals_triangle.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
  
   
