@@ -957,6 +957,32 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 119. Pascal's triangle II
+
+## Description
+
+Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
+
+Note that the row index starts from 0.
+
+[![Pascal's triangle](../../theory/images/pascals_triangle.gif)](https://en.wikipedia.org/wiki/Pascal%27s_triangle)
+
+## Examples
+
+```text
+Input: 3
+Output: [1,3,3,1]
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let result = easy::pascals_triangle::get_row(3);
+  println!("result: {:?}", result);
+```
+
 # 234. Palindrome linked list
 
 ## Description

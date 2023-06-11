@@ -1,9 +1,10 @@
 # leetcode-challenges-in-rust
+
 This project is for leetcode challenges in rust
 
 ## Description
 
-In this project, I will try to solve leetcode challenges in rust. 
+In this project, I will try to solve leetcode challenges in rust.
 
 ## Directory Structure
 
@@ -34,13 +35,10 @@ In this project, I will try to solve leetcode challenges in rust.
   - [x] [111. Minimum depth of binary tree](src/easy/minimum_depth_of_binary_tree.rs)
   - [x] [112. Path sum](src/easy/path_sum.rs)
   - [x] [118. Pascal's triangle](src/easy/pascals_triangle.rs)
+  - [x] [119. Pascal's triangle II](src/easy/pascals_triangle.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
- 
-  
 - [ ] [Medium](src/medium)
   - [x] [2. Add two numbers](src/medium/add_two_numbers.rs)
   - [x] [15. Three sum](src/medium/three_sum.rs)
   - [x] [16. Three sum closest](src/medium/three_sum_closest.rs)
-
-  
 - [ ] [Hard](src/hard)

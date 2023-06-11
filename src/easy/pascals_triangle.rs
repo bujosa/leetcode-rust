@@ -19,7 +19,7 @@ pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
 }
 
 /*
- Algorithm - Dynamic Programming
+ Algorithm - Dynamic Programming - 118. Pascal's Triangle
    1. Create a vector of vector of i32
    2. Iterate from 0 to num_rows
    3. Create a vector of i32
@@ -33,6 +33,12 @@ pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
     Time - O(n^2)
     Space - O(n^2)
 */
+
+pub fn get_row(row_index: i32) -> Vec<i32> {
+    let mut result = generate(row_index + 1);
+
+    result.pop().unwrap()
+}
 
 #[cfg(test)]
 mod tests {
@@ -51,5 +57,11 @@ mod tests {
                 vec![1, 4, 6, 4, 1]
             ]
         );
+    }
+
+    #[test]
+    fn test_get_row() {
+        let result = get_row(3);
+        assert_eq!(result, vec![1, 3, 3, 1]);
     }
 }
