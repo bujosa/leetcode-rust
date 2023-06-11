@@ -10,12 +10,25 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         if map.contains_key(&complement) {
             return vec![*map.get(&complement).unwrap() as i32, i as i32];
         }
-        
+
         map.insert(num, i);
     }
 
     vec![]
 }
+
+/*
+   Topic: array, hash table
+
+   Algorithm - One-pass Hash Table
+       - Iterate through each element in nums
+       - Check if target - nums[i] exists in the hash table
+           - If it does, return the indices
+           - If it doesn't, insert nums[i] in the hash table
+
+   Time Complexity: O(n)
+   Space Complexity: O(n)
+*/
 
 #[cfg(test)]
 mod tests {
