@@ -89,3 +89,9 @@
 - [Separate Chaining](https://en.wikipedia.org/wiki/Hash_table#Separate_chaining)
 - [Open Addressing](https://en.wikipedia.org/wiki/Open_addressing)
 - [Hashing Techniques](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
+
+Category: Arrays & Hashing
+Created on: 2023-06-10 22:00:00
+Last modified on: 2023-06-10 22:00:00
+Status: To Do
+Author: [David Bujosa](https://github.com/bujosa)
