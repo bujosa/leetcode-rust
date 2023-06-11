@@ -983,6 +983,36 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 217. Contains duplicate
+
+## Description
+
+Given an array of integers, find if the array contains any duplicates.
+
+Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+
+## Examples
+
+```text
+Input: [1,2,3,1]
+Output: true
+
+Input: [1,2,3,4]
+Output: false
+
+Input: [1,1,1,3,3,4,3,2,4,2]
+Output: true
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let result = easy::contains_duplicate::contains_duplicate(vec![1, 2, 3, 1]);
+  println!("result: {:?}", result);
+```
+
 # 234. Palindrome linked list
 
 ## Description
