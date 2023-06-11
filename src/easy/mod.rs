@@ -25,4 +25,5 @@ pub mod search_insert_position;
 pub mod sqrt_x;
 pub mod symmetric_tree;
 pub mod two_sum;
+pub mod valid_anagram;
 pub mod valid_parentheses;
