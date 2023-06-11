@@ -932,6 +932,8 @@ Put this code below in main.rs and run `cargo run`
 
 Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
 
+[![Pascal's triangle](../../theory/images/pascals_triangle.gif)](https://en.wikipedia.org/wiki/Pascal%27s_triangle)
+
 ## Examples
 
 ```text

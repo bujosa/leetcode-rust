@@ -1,8 +1,10 @@
 #![allow(dead_code)]
 pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
     let mut result: Vec<Vec<i32>> = Vec::new();
+
     for i in 0..num_rows as usize {
         let mut row = Vec::new();
+
         for j in 0..=i {
             if j == 0 || j == i {
                 row.push(1);
@@ -10,6 +12,7 @@ pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
                 row.push(result[i - 1][j - 1] + result[i - 1][j]);
             }
         }
+
         result.push(row);
     }
     result
