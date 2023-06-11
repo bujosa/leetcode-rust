@@ -1044,3 +1044,30 @@ Put the code below in main.rs and run `cargo run`
   let result = easy::palindrome_linked_list::is_palindrome(head);
   println!("result: {}", result);
 ```
+
+# 242. Valid anagram
+
+## Description
+
+Given two strings s and t , write a function to determine if t is an anagram of s.
+
+## Examples
+
+```text
+Input: s = "anagram", t = "nagaram"
+
+Output: true
+
+Input: s = "rat", t = "car"
+
+Output: false
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let result = easy::valid_anagram::is_anagram(String::from("anagram"), String::from("nagaram"));
+  println!("result: {:?}", result);
+```

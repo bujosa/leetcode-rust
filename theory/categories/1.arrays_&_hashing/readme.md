@@ -66,7 +66,7 @@
 ## Problems
 
 - [x] [1. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy problem | [Solution](src/easy/contains_duplicate.rs)
-- [ ] [2. Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy problem
+- [x] [2. Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy problem | [Solution](src/easy/valid_anagram.rs)
 - [x] [3. Two Sum](https://leetcode.com/problems/two-sum/) | Easy problem | [Solution](src/easy/two_sum.rs)
 - [ ] [4. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium Problem
 - [ ] [5. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium Problem

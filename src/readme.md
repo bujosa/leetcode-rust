@@ -32,6 +32,7 @@
   - [x] [119. Pascal's triangle II](src/easy/pascals_triangle.rs)
   - [x] [217. Contains duplicate](src/easy/contains_duplicate.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
+  - [x] [242. Valid anagram](src/easy/valid_anagram.rs)
 - [ ] [Medium](src/medium)
   - [x] [2. Add two numbers](src/medium/add_two_numbers.rs)
   - [x] [15. Three sum](src/medium/three_sum.rs)
