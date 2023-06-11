@@ -1,11 +1,13 @@
 # 1. Two sum
 
 ## Description
+
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 ## Examples
+
 ```text
 Given nums = [2, 7, 11, 15], target = 9,
 
@@ -25,13 +27,14 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 9. Palindrome number
 
 ## Description
+
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
 ## Examples
+
 ```text
 Input: 121
 Output: true
@@ -53,21 +56,21 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
-
 # 13. Roman to integer
 
 ## Description
+
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
 | Symbol | Value |
 | :----: | :---: |
-| I      | 1     |
-| V      | 5     |  
-| X      | 10    |
-| L      | 50    |
-| C      | 100   |
-| D      | 500   |
-| M      | 1000  |
+|   I    |   1   |
+|   V    |   5   |
+|   X    |  10   |
+|   L    |  50   |
+|   C    |  100  |
+|   D    |  500  |
+|   M    | 1000  |
 
 For example, two is written as II in Roman numeral, just two one's added together.
 
@@ -90,6 +93,7 @@ There are six instances where subtraction is used:
 Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
 
 ## Examples
+
 ```text
 Input: "III"
 Output: 3
@@ -111,15 +115,16 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
-
 # 14. Longest common prefix
 
 ## Description
+
 Write a function to find the longest common prefix string amongst an array of strings.
 
 If there is no common prefix, return an empty string "".
 
 ## Examples
+
 ```text
 Input: ["flower","flow","flight"]
 Output: "fl"
@@ -142,6 +147,7 @@ Put the code below in main.rs and run `cargo run`
 # 20. Valid parentheses
 
 ## Description
+
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 An input string is valid if:
@@ -151,6 +157,7 @@ An input string is valid if:
 - Note that an empty string is also considered valid.
 
 ## Examples
+
 ```text
 Input: "()"
 Output: true
@@ -172,15 +179,16 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
-
 # 26. Remove duplicates from sorted array
 
 ## Description
+
 Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
 
 Do not allocate extra space for another array, you must do this by **modifying the input array in-place** with O(1) extra memory.
 
 ## Examples
+
 ```text
 Given nums = [1,1,2],
 Output: 2
@@ -199,7 +207,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
-
 # 21. Merge two sorted lists
 
 ## Description
@@ -207,6 +214,7 @@ Put the code below in main.rs and run `cargo run`
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
 ## Examples
+
 ```text
 Input: 1->2->4, 1->3->4
 Output: 1->1->2->3->4->4
@@ -244,6 +252,7 @@ Do not allocate extra space for another array, you must do this by **modifying t
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 
 ## Examples
+
 ```text
 Given nums = [3,2,2,3], val = 3,
 
@@ -270,6 +279,7 @@ Put the code below in main.rs and run `cargo run`
 Given a haystack string and a needle string, find the first occurrence of needle in haystack. If no needle is found, return -1.
 
 ## Examples
+
 ```text
 Input: haystack = "hello", needle = "ll"
 Output: 2
@@ -298,6 +308,7 @@ Given a sorted array and a target value, return the index if the target is found
 You may assume no duplicates in the array.
 
 ## Examples
+
 ```text
 Input: [1,3,5,6], 5
 Output: 2
@@ -326,6 +337,7 @@ Given a string s consists of upper/lower-case alphabets and empty space characte
 If the last word does not exist, return 0.
 
 ## Examples
+
 ```text
 Input: "Hello World"
 Output: 5
@@ -361,6 +373,7 @@ The digits are stored such that the most significant digit is at the head of the
 You may assume the integer does not contain any leading zero, except the number 0 itself.
 
 ## Examples
+
 ```text
 Input: [1,2,3]
 Output: [1,2,4]
@@ -390,6 +403,7 @@ Given two binary strings, return their sum (also a binary string).
 The input strings are both **non-empty** and contains only characters 1 or 0.
 
 ## Examples
+
 ```text
 Input: a = "11", b = "1"
 Output: "100"
@@ -420,6 +434,7 @@ Compute and return the square root of x, where x is guaranteed to be a non-negat
 Since the return type is an integer, the decimal digits are truncated and only the integer part of the result is returned.
 
 ## Examples
+
 ```text
 Input: 4
 Output: 2
@@ -441,7 +456,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 70. Climbing stairs
 
 ## Description
@@ -451,6 +465,7 @@ You are climbing a stair case. It takes n steps to reach to the top.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
 ## Examples
+
 ```text
 Input: 2
 Output: 2
@@ -487,6 +502,7 @@ Put the code below in main.rs and run `cargo run`
 Given a sorted linked list, delete all duplicates such that each element appear only once.
 
 ## Examples
+
 ```text
 Input: 1->1->2
 Output: 1->2
@@ -509,7 +525,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 88. Merge sorted array
 
 ## Description
@@ -520,8 +535,8 @@ Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
 The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
-
 ## Examples
+
 ```text
 Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6],       n = 3
 Output: [1,2,2,3,5,6]
@@ -543,7 +558,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", nums1);
 ```
 
-
 # 94. Binary tree inorder traversal
 
 ## Description
@@ -551,6 +565,7 @@ Put the code below in main.rs and run `cargo run`
 Given a binary tree, return the inorder traversal of its nodes' values.
 
 ## Examples
+
 ```text
 Input: [1,null,2,3]
    1
@@ -595,6 +610,7 @@ Given two binary trees, write a function to check if they are the same or not.
 Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
 
 ## Examples
+
 ```text
 Input:     1         1
           / \       / \
@@ -634,7 +650,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 101. Symmetric tree
 
 ## Description
@@ -642,6 +657,7 @@ Put the code below in main.rs and run `cargo run`
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
 ## Examples
+
 ```text
 Input: [1,2,2,3,4,4,3]
     1
@@ -684,15 +700,16 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 104. Maximum depth of binary tree
 
 ## Description
+
 Given a binary tree, find its maximum depth.
 
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
 ## Examples
+
 ```text
 Given binary tree [3,9,20,null,null,15,7],
 
@@ -731,6 +748,7 @@ Given an array where elements are sorted in ascending order, convert it to a hei
 For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
 
 ## Examples
+
 ```text
 Given the sorted array: [-10,-3,0,5,9],
 
@@ -753,7 +771,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 110. Balanced binary tree
 
 ## Description
@@ -765,6 +782,7 @@ For this problem, a height-balanced binary tree is defined as:
 a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
 
 ## Examples
+
 ```text
 Given the following tree [3,9,20,null,null,15,7]:
 
@@ -816,6 +834,7 @@ Given a binary tree, find its minimum depth.
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
 ## Examples
+
 ```text
 Given binary tree [3,9,20,null,null,15,7],
 
@@ -859,13 +878,14 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 112. Path sum
 
 ## Description
+
 Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
 
 ## Examples
+
 ```text
 Given the below binary tree and sum = 22,
 
@@ -904,16 +924,45 @@ Put this code below in main.rs and run `cargo run`
   root.as_mut().unwrap().borrow_mut().right = node3;
   let result = easy::path_sum::has_path_sum(root, 22);
   println!("result: {:?}", result);
-``` 
+```
 
+# 118. Pascal's triangle
 
+## Description
+
+Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
+
+## Examples
+
+```text
+Input: 5
+Output:
+[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let result = easy::pascals_triangle::generate(5);
+  println!("result: {:?}", result);
+```
 
 # 234. Palindrome linked list
 
 ## Description
+
 Given a singly linked list, determine if it is a palindrome.
 
 ## Examples
+
 ```text
 Input: 1->2
 Output: false
