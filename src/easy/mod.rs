@@ -2,6 +2,7 @@ pub mod add_binary;
 pub mod balanced_binary_tree;
 pub mod binary_tree_inorder_traversal;
 pub mod climbing_stairs;
+pub mod contains_duplicate;
 pub mod convert_sorted_array_to_binary_search_tree;
 pub mod implement_strstr;
 pub mod length_of_last_word;
