@@ -9,6 +9,7 @@ Add the two numbers and return it as a linked list.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
 ## Examples
+
 ```text
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
@@ -31,7 +32,6 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
-
 # 15. Three sum
 
 ## Description
@@ -44,6 +44,7 @@ Note:
 The solution set must not contain duplicate triplets.
 
 ## Examples
+
 ```text
 Given array nums = [-1, 0, 1, 2, -1, -4],
 Output:
@@ -74,6 +75,7 @@ Return the sum of the three integers.
 You may assume that each input would have exactly one solution.
 
 ## Examples
+
 ```text
 Given array nums = [-1, 2, 1, -4], and target = 1.
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
@@ -88,4 +90,32 @@ Put the code below in main.rs and run `cargo run`
   let target = 1;
   let result = medium::three_sum_closest::three_sum_closest(nums, target);
   println!("result: {}", result);
+```
+
+# 49. Group Anagrams
+
+## Description
+
+Given an array of strings, group anagrams together.
+
+## Examples
+
+```text
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+Output:
+[
+  ["ate","eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let strs = vec!["eat", "tea", "tan", "ate", "nat", "bat"];
+  let result = medium::group_anagrams::group_anagrams(strs);
+  println!("result: {:?}", result);
 ```
