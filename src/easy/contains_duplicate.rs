@@ -1,6 +1,7 @@
 #![allow(dead_code)]
+use std::collections::HashSet;
+
 pub fn contains_duplicate(nums: Vec<i32>) -> bool {
-    use std::collections::HashSet;
     let mut set = HashSet::new();
     for num in nums {
         if set.contains(&num) {
