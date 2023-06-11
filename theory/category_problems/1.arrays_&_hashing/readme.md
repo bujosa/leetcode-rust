@@ -1,0 +1,91 @@
+# Array & Hashing
+
+## Theory
+
+### Arrays
+
+- Arrays are contiguous blocks of memory.
+- Arrays are stored in the stack.
+- Arrays are accessed by index.
+- Arrays are fixed in size.
+- Arrays are faster than linked lists.
+
+### Hashing
+
+- Hashing is a technique to convert a range of key values into a range of indexes of an array.
+- Hashing is used to index and retrieve items in a database because it is faster to find the item using the shorter hashed key than to find it using the original value.
+- It is also used in many encryption algorithms.
+
+### Hash Table
+
+- A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values.
+
+### Hash Function
+
+- A hash function is any function that can be used to map data of arbitrary size to fixed-size values.
+
+### Hash Collisions
+
+- A hash collision is a situation where a hash function produces the same hash value for two different pieces of data.
+
+### Hashing Techniques
+
+- Direct Addressing
+- Modulo Hashing
+- Universal Hashing
+- Double Hashing
+- Separate Chaining
+- Open Addressing
+
+#### Direct Addressing
+
+- Direct addressing is a technique in which the key value is used as an index to access the table.
+- It is used when the keys are small integers.
+- It is not suitable for large keys.
+
+#### Modulo Hashing
+
+- Modulo hashing is a technique in which the key value is used as an index to access the table.
+
+#### Universal Hashing
+
+- Universal hashing is a technique in which the key value is used as an index to access the table.
+
+#### Double Hashing
+
+- Double hashing is a technique in which the key value is used as an index to access the table.
+
+#### Separate Chaining
+
+- Separate chaining is a technique in which the key value is used as an index to access the table.
+
+#### Open Addressing
+
+- Open addressing is a technique in which the key value is used as an index to access the table.
+
+## Problems
+
+- [ ] [1. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) [Solution](src/easy/contains_duplicate.rs) | Easy problem
+- [ ] [2. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+- [x] [3. Two Sum](https://leetcode.com/problems/two-sum/) [Solution](src/easy/two_sum.rs) | Easy problem
+- [ ] [4. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium Problem
+- [ ] [5. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium Problem
+- [ ] [6. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium Problem
+- [ ] [7. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium Problem
+- [ ] [8. Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium Problem
+- [ ] [9. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium Problem
+
+## References
+
+- [Array](https://en.wikipedia.org/wiki/Array_data_structure)
+- [Hashing](https://en.wikipedia.org/wiki/Hash_function)
+- [Hash Table](https://en.wikipedia.org/wiki/Hash_table)
+- [Hash Function](https://en.wikipedia.org/wiki/Hash_function)
+- [Hash Collision](https://en.wikipedia.org/wiki/Hash_collision)
+- [Direct Addressing](https://en.wikipedia.org/wiki/Direct_addressing)
+- [Modulo Hashing](https://en.wikipedia.org/wiki/Modulo_operation)
+- [Universal Hashing](https://en.wikipedia.org/wiki/Universal_hashing)
+- [Double Hashing](https://en.wikipedia.org/wiki/Double_hashing)
+- [Separate Chaining](https://en.wikipedia.org/wiki/Hash_table#Separate_chaining)
+- [Open Addressing](https://en.wikipedia.org/wiki/Open_addressing)
+- [Hashing Techniques](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
