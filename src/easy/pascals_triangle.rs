@@ -15,6 +15,22 @@ pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
     result
 }
 
+/*
+ Algorithm - Dynamic Programming
+   1. Create a vector of vector of i32
+   2. Iterate from 0 to num_rows
+   3. Create a vector of i32
+   4. Iterate from 0 to i
+   5. If j == 0 or j == i, push 1 to row
+   6. Else push result[i - 1][j - 1] + result[i - 1][j] to row
+   7. Push row to result
+   8. Return result
+
+  Complexity
+    Time - O(n^2)
+    Space - O(n^2)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
