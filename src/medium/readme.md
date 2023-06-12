@@ -120,6 +120,29 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 238. Product of Array Except Self
+
+## Description
+
+Given an array nums of n integers where n > 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+
+## Examples
+
+```text
+Input:  [1,2,3,4]
+Output: [24,12,8,6]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![1, 2, 3, 4];
+  let result = medium::product_except_self::product_except_self(nums);
+  println!("result: {:?}", result);
+```
+
 # 347. Top K Frequent Elements
 
 ## Description
