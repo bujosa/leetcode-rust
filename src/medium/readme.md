@@ -119,3 +119,27 @@ Put the code below in main.rs and run `cargo run`
   let result = medium::group_anagrams::group_anagrams(strs);
   println!("result: {:?}", result);
 ```
+
+# 347. Top K Frequent Elements
+
+## Description
+
+Given a non-empty array of integers, return the k most frequent elements.
+
+## Examples
+
+```text
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![1, 1, 1, 2, 2, 3];
+  let k = 2;
+  let result = medium::top_k_frequent::top_k_frequent(nums, k);
+  println!("result: {:?}", result);
+```
