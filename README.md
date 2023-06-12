@@ -17,3 +17,4 @@ In this project, I will try to solve leetcode challenges in rust.
 - [LeetCode Problems](https://leetcode.com/problemset/all/)
 - [NeetCode](https://neetcode.io/roadmap/)
 - [Rust](https://www.rust-lang.org/)
+- [My Brain After 569 LeetCode Problems](https://youtu.be/8wysIxzqgPI)
