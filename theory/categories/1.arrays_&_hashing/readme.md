@@ -71,7 +71,7 @@
 - [x] [4. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium Problem | [Solution](src/medium/group_anagrams.rs)
 - [x] [5. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium Problem | [Solution](src/medium/top_k_frequent_elements.rs)
 - [x] [6. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium Problem | [Solution](src/medium/product_of_array_except_self.rs)
-- [ ] [7. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium Problem
+- [ ] [7. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium Problem | [Solution](src/medium/valid_sudoku.rs)
 - [ ] [8. Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium Problem
 - [ ] [9. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium Problem
 
