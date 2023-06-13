@@ -191,6 +191,24 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 271. Encode and Decode Strings
+
+## Description
+
+Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let strs = vec!["Hello", "World"];
+  let result = medium::encode_and_decode_strings::encode(strs.clone());
+  println!("result: {}", result);
+  let result = medium::encode_and_decode_strings::decode(result);
+  println!("result: {:?}", result);
+```
+
 # 347. Top K Frequent Elements
 
 ## Description
