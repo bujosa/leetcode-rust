@@ -168,6 +168,33 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 128. Longest Consecutive Sequence
+
+## Description
+
+Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+
+Your algorithm should run in O(n) complexity.
+
+## Examples
+
+```text
+Input: [100, 4, 200, 1, 3, 2]
+Output: 4
+
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![100, 4, 200, 1, 3, 2];
+  let result = hard::longest_consecutive::longest_consecutive(nums);
+  println!("result: {}", result);
+```
+
 # 238. Product of Array Except Self
 
 ## Description
