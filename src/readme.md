@@ -37,7 +37,7 @@
   - [x] [2. Add two numbers](src/medium/add_two_numbers.rs)
   - [x] [15. Three sum](src/medium/three_sum.rs)
   - [x] [16. Three sum closest](src/medium/three_sum_closest.rs)
-  - [ ] [36. Valid sudoku](src/medium/valid_sudoku.rs)
+  - [x] [36. Valid sudoku](src/medium/valid_sudoku.rs)
   - [x] [49. Group anagrams](src/medium/group_anagrams.rs)
   - [x] [238. Product of array except self](src/medium/product_of_array_except_self.rs)
   - [x] [347. Top k frequent elements](src/medium/top_k_frequent_elements.rs)
