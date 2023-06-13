@@ -92,6 +92,54 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 36. Valid Sudoku
+
+## Description
+
+Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
+
+1. Each row must contain the digits 1-9 without repetition.
+2. Each column must contain the digits 1-9 without repetition.
+3. Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.
+
+## Examples
+
+```text
+Input:
+[
+  ["5","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+Output: true
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let board = vec![
+    vec!['5', '3', '.', '.', '7', '.', '.', '.', '.'],
+    vec!['6', '.', '.', '1', '9', '5', '.', '.', '.'],
+    vec!['.', '9', '8', '.', '.', '.', '.', '6', '.'],
+    vec!['8', '.', '.', '.', '6', '.', '.', '.', '3'],
+    vec!['4', '.', '.', '8', '.', '3', '.', '.', '1'],
+    vec!['7', '.', '.', '.', '2', '.', '.', '.', '6'],
+    vec!['.', '6', '.', '.', '.', '.', '2', '8', '.'],
+    vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
+    vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
+  ];
+  let result = medium::is_valid_sudoku::is_valid_sudoku(board);
+  println!("result: {}", result);
+```
+
 # 49. Group Anagrams
 
 ## Description
