@@ -39,6 +39,8 @@
   - [x] [16. Three sum closest](src/medium/three_sum_closest.rs)
   - [x] [36. Valid sudoku](src/medium/valid_sudoku.rs)
   - [x] [49. Group anagrams](src/medium/group_anagrams.rs)
+  - [ ] [128. Longest consecutive sequence](src/medium/longest_consecutive_sequence.rs)
   - [x] [238. Product of array except self](src/medium/product_of_array_except_self.rs)
+  - [x] [271. Encode and decode strings](src/medium/encode_and_decode_strings.rs)
   - [x] [347. Top k frequent elements](src/medium/top_k_frequent_elements.rs)
 - [ ] [Hard](src/hard)
