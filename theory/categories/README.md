@@ -6,7 +6,8 @@ When in the final say "depends on Backtracking", it means that the problem
 depends exclusive on Backtracking.
 
 - Arrays & Hashing [Read](1.arrays_&_hashing/readme.md)
-- Two Pointers & Stack, does problems depend by Array & Hashing
+- Stack & Queue depends on Array & Hashing [Read](2.stack/readme.md)
+- Two Pointers, does problems depend by Array & Hashing [Read](2.two_pointers/readme.md)
 - Linked List, Binary Search and Sliding Window
 - Trees
 - Tries, Backtracking are in the same level
