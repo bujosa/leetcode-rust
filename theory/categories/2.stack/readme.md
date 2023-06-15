@@ -47,3 +47,26 @@
 - DFS
 
 ## Problems
+
+- [x] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Solution](../../../src/easy/valid_parentheses.rs)
+- [ ] [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | [Solution](../../../src/easy/min_stack.rs)
+- [ ] [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Solution](../../../src/medium/evaluate_reverse_polish_notation.rs)
+- [ ] [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | [Solution](../../../src/medium/generate_parentheses.rs)
+- [ ] [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Solution](../../../src/medium/daily_temperatures.rs)
+- [ ] [Car Fleet](https://leetcode.com/problems/car-fleet/) | Medium | [Solution](../../../src/medium/car_fleet.rs)
+- [ ] [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | [Solution](../../../src/hard/largest_rectangle_in_histogram.rs)
+
+## References
+
+- [GeeksForGeeks](https://www.geeksforgeeks.org/stack-data-structure/)
+- [Wikipedia](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)
+- [HackerEarth](https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/tutorial/)
+- [HackerEarth](https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/tutorial/)
+- [LeetCode](https://leetcode.com/explore/learn/card/queue-stack/)
+- [NeetCode](https://neetcode.io)
+
+Category: `Stack`
+Created on: 2023-06-14 20:00:00
+Last modified on: 2023-06-15 18:00:00
+Status: To Do
+Author: [David Bujosa](https://github.com/bujosa)
