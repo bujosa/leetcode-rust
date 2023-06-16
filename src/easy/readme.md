@@ -983,6 +983,57 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 155. Min stack
+
+## Description
+
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+- push(x) -- Push element x onto stack.
+- pop() -- Removes the element on top of the stack.
+- top() -- Get the top element.
+- getMin() -- Retrieve the minimum element in the stack.
+
+## Examples
+
+```text
+Input:
+["MinStack","push","push","push","getMin","pop","top","getMin"]
+[[],[-2],[0],[-3],[],[],[],[]]
+
+Output:
+[null,null,null,null,-3,null,0,-2]
+
+Explanation:
+
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin(); // return -3
+minStack.pop();
+minStack.top();    // return 0
+minStack.getMin(); // return -2
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let mut min_stack = easy::min_stack::MinStack::new();
+  min_stack.push(-2);
+  min_stack.push(0);
+  min_stack.push(-3);
+  let result = min_stack.get_min();
+  println!("result: {:?}", result);
+  min_stack.pop();
+  let result = min_stack.top();
+  println!("result: {:?}", result);
+  let result = min_stack.get_min();
+  println!("result: {:?}", result);
+```
+
 # 217. Contains duplicate
 
 ## Description
