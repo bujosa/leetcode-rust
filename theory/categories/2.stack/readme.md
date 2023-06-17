@@ -49,7 +49,7 @@
 ## Problems
 
 - [x] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Solution](../../../src/easy/valid_parentheses.rs)
-- [ ] [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | [Solution](../../../src/easy/min_stack.rs)
+- [x] [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | [Solution](../../../src/easy/min_stack.rs)
 - [ ] [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Solution](../../../src/medium/evaluate_reverse_polish_notation.rs)
 - [ ] [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | [Solution](../../../src/medium/generate_parentheses.rs)
 - [ ] [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Solution](../../../src/medium/daily_temperatures.rs)
@@ -67,6 +67,6 @@
 
 Category: `Stack`
 Created on: 2023-06-14 20:00:00
-Last modified on: 2023-06-15 18:00:00
+Last modified on: 2023-06-16 20:13:00
 Status: To Do
 Author: [David Bujosa](https://github.com/bujosa)

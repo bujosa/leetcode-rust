@@ -30,7 +30,7 @@
   - [x] [112. Path sum](src/easy/path_sum.rs)
   - [x] [118. Pascal's triangle](src/easy/pascals_triangle.rs)
   - [x] [119. Pascal's triangle II](src/easy/pascals_triangle.rs)
-  - [ ] [155. Min stack](src/easy/min_stack.rs)
+  - [x] [155. Min stack](src/easy/min_stack.rs)
   - [x] [217. Contains duplicate](src/easy/contains_duplicate.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
   - [x] [242. Valid anagram](src/easy/valid_anagram.rs)
