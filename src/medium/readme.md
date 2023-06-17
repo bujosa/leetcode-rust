@@ -195,6 +195,38 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 150. Evaluate Reverse Polish Notation
+
+## Description
+
+Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+
+Note that:
+
+- Valid operators are +, -, \*, /. Each operand may be an integer or another expression.
+- Division between two integers should truncate toward zero.
+- The given RPN expression is always valid. That means the expression would always evaluate to a result and there won't be any divide by zero operation.
+- The input represents a valid arithmetic expression containing only integers and operators (+, -, \*, /).
+- Each operand may be an integer or another expression.
+
+## Examples
+
+```text
+Input: ["2", "1", "+", "3", "*"]
+Output: 9
+Explanation: ((2 + 1) * 3) = 9
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let tokens = vec!["2", "1", "+", "3", "*"];
+  let result = medium::eval_rpn::eval_rpn(tokens);
+  println!("result: {}", result);
+```
+
 # 238. Product of Array Except Self
 
 ## Description

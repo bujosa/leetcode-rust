@@ -30,6 +30,7 @@
   - [x] [112. Path sum](src/easy/path_sum.rs)
   - [x] [118. Pascal's triangle](src/easy/pascals_triangle.rs)
   - [x] [119. Pascal's triangle II](src/easy/pascals_triangle.rs)
+  - [ ] [150. Evaluate reverse polish notation](src/easy/evaluate_reverse_polish_notation.rs)
   - [x] [155. Min stack](src/easy/min_stack.rs)
   - [x] [217. Contains duplicate](src/easy/contains_duplicate.rs)
   - [x] [234. Palindrome linked list](src/easy/palindrome_linked_list.rs)
