@@ -39,6 +39,18 @@ impl MinStack {
     }
 }
 
+/*
+   Algorithm - O(1) time for all operations
+   1. Use two stacks, one for the actual stack and one for the min stack
+   2. When pushing, push to the actual stack and if the min stack is empty or the value is less than or equal to the top of the min stack, push to the min stack
+   3. When popping, pop from the actual stack and if the value is equal to the top of the min stack, pop from the min stack
+   4. When getting the top, return the top of the actual stack
+   5. When getting the min, return the top of the min stack
+
+   Time: O(1) for all operations
+   Space: O(n) where n is the number of elements in the stack
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
