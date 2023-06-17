@@ -1,5 +1,6 @@
 pub mod add_two_numbers;
 pub mod encode_and_decode_strings;
+pub mod evaluate_reverse_polish_notation;
 pub mod group_anagrams;
 pub mod longest_consecutive_sequence;
 pub mod product_of_array_except_self;
