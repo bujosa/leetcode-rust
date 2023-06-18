@@ -92,6 +92,38 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 22. Generate Parentheses
+
+## Description
+
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+## Examples
+
+```text
+Input: n = 3
+Output: [
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+
+Input: n = 1
+Output: ["()"]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let n = 3;
+  let result = medium::generate_parentheses::generate_parenthesis(n);
+  println!("result: {:?}", result);
+```
+
 # 36. Valid Sudoku
 
 ## Description
