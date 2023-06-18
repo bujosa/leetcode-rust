@@ -9,6 +9,7 @@
   - [x] [14. Longest common prefix](src/easy/longest_common_prefix.rs)
   - [x] [20. Valid parentheses](src/easy/valid_parentheses.rs)
   - [x] [21. Merge two sorted lists](src/easy/merge_two_sorted_lists.rs)
+  - [ ] [22. Generate parentheses](src/medium/generate_parentheses.rs)
   - [x] [26. Remove duplicates from sorted array](src/easy/remove_duplicates_from_sorted_array.rs)
   - [x] [27. Remove element](src/easy/remove_element.rs)
   - [x] [28. Implement strStr()](src/easy/implement_strstr.rs)
