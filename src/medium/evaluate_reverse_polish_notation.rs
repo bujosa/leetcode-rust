@@ -33,6 +33,22 @@ pub fn eval_rpn(tokens: Vec<String>) -> i32 {
     stack.pop().unwrap()
 }
 
+/*
+    Algorithm - Stack
+    - Create a stack
+    - Iterate through the tokens
+        - If the current token is an operator
+            - Pop the top two elements from the stack
+            - Perform the operation on the two elements
+            - Push the result back onto the stack
+        - Else
+            - Push the current token onto the stack
+    - Return the top element of the stack
+
+    Time: O(n)
+    Space: O(n)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
