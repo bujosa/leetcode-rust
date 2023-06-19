@@ -323,3 +323,26 @@ Put the code below in main.rs and run `cargo run`
   let result = medium::top_k_frequent::top_k_frequent(nums, k);
   println!("result: {:?}", result);
 ```
+
+# 739. Daily Temperatures
+
+## Description
+
+Given a list of daily temperatures T, return a list such that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
+
+## Examples
+
+```text
+Input: T = [73, 74, 75, 71, 69, 72, 76, 73]
+Output: [1, 1, 4, 2, 1, 1, 0, 0]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let t = vec![73, 74, 75, 71, 69, 72, 76, 73];
+  let result = medium::daily_temperatures::daily_temperatures(t);
+  println!("result: {:?}", result);
+```

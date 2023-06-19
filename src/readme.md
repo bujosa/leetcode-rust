@@ -46,4 +46,5 @@
   - [x] [238. Product of array except self](src/medium/product_of_array_except_self.rs)
   - [x] [271. Encode and decode strings](src/medium/encode_and_decode_strings.rs)
   - [x] [347. Top k frequent elements](src/medium/top_k_frequent_elements.rs)
+  - [ ] [739. Daily temperatures](src/medium/daily_temperatures.rs)
 - [ ] [Hard](src/hard)
