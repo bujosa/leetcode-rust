@@ -47,4 +47,5 @@
   - [x] [271. Encode and decode strings](src/medium/encode_and_decode_strings.rs)
   - [x] [347. Top k frequent elements](src/medium/top_k_frequent_elements.rs)
   - [x] [739. Daily temperatures](src/medium/daily_temperatures.rs)
+  - [ ] [853. Car fleet](src/medium/car_fleet.rs)
 - [ ] [Hard](src/hard)
