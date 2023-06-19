@@ -52,7 +52,7 @@
 - [x] [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | [Solution](../../../src/easy/min_stack.rs)
 - [x] [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Solution](../../../src/medium/evaluate_reverse_polish_notation.rs)
 - [x] [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | [Solution](../../../src/medium/generate_parentheses.rs)
-- [ ] [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Solution](../../../src/medium/daily_temperatures.rs)
+- [x] [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Solution](../../../src/medium/daily_temperatures.rs)
 - [ ] [Car Fleet](https://leetcode.com/problems/car-fleet/) | Medium | [Solution](../../../src/medium/car_fleet.rs)
 - [ ] [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | [Solution](../../../src/hard/largest_rectangle_in_histogram.rs)
 
