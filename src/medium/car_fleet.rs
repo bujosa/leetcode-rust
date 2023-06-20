@@ -20,6 +20,18 @@ pub fn car_fleet(target: i32, position: Vec<i32>, speed: Vec<i32>) -> i32 {
     stack.len() as i32
 }
 
+/*
+    Algorithm - Greedy
+
+    1. Sort the cars by position
+    2. Iterate through the cars and calculate the time it takes to reach the target
+    3. If the time is less than the time of the car in the stack, then pop the car from the stack
+    4. Return the length of the stack
+
+    Time: O(nlogn)
+    Space: O(n)
+ */
+
 #[test]
 fn test_car_fleet() {
     assert_eq!(car_fleet(12, vec![10, 8, 0, 5, 3], vec![2, 4, 1, 1, 3]), 3);
