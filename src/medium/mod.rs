@@ -10,4 +10,5 @@ pub mod product_of_array_except_self;
 pub mod three_sum;
 pub mod three_sum_closest;
 pub mod top_k_frequent_elements;
+pub mod two_sum_ii_input_array_is_sorted;
 pub mod valid_sudoku;
