@@ -983,6 +983,32 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 125. Valid palindrome
+
+## Description
+
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+Note: For the purpose of this problem, we define empty string as valid palindrome.
+
+## Examples
+
+```text
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+let mut easy::valid_palindrome::is_palindrome("race a car".to_string());
+  println!("result: {:?}", result);
+```
+
+````
+
 # 155. Min stack
 
 ## Description
@@ -1014,7 +1040,7 @@ minStack.getMin(); // return -3
 minStack.pop();
 minStack.top();    // return 0
 minStack.getMin(); // return -2
-```
+````
 
 ## How to Run in main.rs
 
