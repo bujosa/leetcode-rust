@@ -34,6 +34,21 @@ pub fn largest_rectangle_area(heights: Vec<i32>) -> i32 {
     max_area
 }
 
+/*
+    Algorithm - Stack
+     - Push index to stack if stack is empty or current height is greater than or equal to the height at index at top of stack
+        - If current height is less than the height at index at top of stack, pop the index from stack and calculate area
+        - Area = height[top] * (stack.is_empty() ? i : i - stack.top() - 1)
+        - Update max_area
+    - Pop all the indexes from stack and calculate area
+        - Area = height[top] * (stack.is_empty() ? i : i - stack.top() - 1)
+        - Update max_area
+    - Return max_area
+    
+    Time Complexity - O(n)
+    Space Complexity - O(n)
+ */
+
 #[cfg(test)]
 mod tests {
     use super::*;
