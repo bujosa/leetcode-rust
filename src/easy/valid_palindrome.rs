@@ -9,6 +9,18 @@ pub fn is_palindrome(s: String) -> bool {
     true
 }
 
+/*
+   Algorithm - Two Pointers
+   - Create a mutable iterator over the string
+   - While the iterator has a left and right value
+       - If the left and right values are not equal
+           - Return false
+   - Return true
+
+   Time Complexity - O(n)
+   Space Complexity - O(1)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
