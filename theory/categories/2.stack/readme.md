@@ -67,6 +67,6 @@
 
 Category: `Stack`
 Created on: 2023-06-14 20:00:00
-Last modified on: 2023-06-16 20:13:00
-Status: To Do
+Last modified on: 2023-06-22 19:00:00
+Status: Completed
 Author: [David Bujosa](https://github.com/bujosa)
