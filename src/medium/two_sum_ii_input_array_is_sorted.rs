@@ -15,6 +15,19 @@ pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
     vec![]
 }
 
+/*
+   Algorithm - Two Pointers
+   - Initialize two pointers left and right pointing to the first and last element of the array respectively.
+   - Loop until left < right
+       - If the sum of the elements at left and right is equal to target, return the indices of the elements.
+       - If the sum is less than target, increment left by 1.
+       - If the sum is greater than target, decrement right by 1.
+   - Return an empty vector if no such pair exists.
+
+   Time O(N)
+   Space O(1)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
