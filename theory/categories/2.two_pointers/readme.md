@@ -25,7 +25,7 @@
 ## Problems
 
 - [x] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | [Solution](../../../src/easy/valid_palindrome.rs)
-- [ ] [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Easy | [Solution](../../../src/easy/two_sum_ii_input_array_is_sorted.rs)
+- [x] [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Easy | [Solution](../../../src/easy/two_sum_ii_input_array_is_sorted.rs)
 - [ ] [3Sum](https://leetcode.com/problems/3sum/) | Medium | [Solution](../../../src/medium/3sum.rs)
 - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Solution](../../../src/medium/container_with_most_water.rs)
 - [ ] [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | [Solution](../../../src/hard/trapping_rain_water.rs)
