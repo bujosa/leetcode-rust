@@ -49,4 +49,4 @@
   - [x] [739. Daily temperatures](../src/medium/daily_temperatures.rs)
   - [x] [853. Car fleet](../src/medium/car_fleet.rs)
 - [Hard](../src/hard)
-  - [ ] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs)
+  - [x] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs)
