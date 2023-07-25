@@ -52,3 +52,4 @@
   - [x] [853. Car fleet](../src/medium/car_fleet.rs)
 - [Hard](../src/hard)
   - [x] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs)
+        = [ ] [42. Trapping rain water](../src/hard/trapping_rain_water.rs)
