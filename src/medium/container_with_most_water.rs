@@ -19,6 +19,23 @@ pub fn max_area(height: Vec<i32>) -> i32 {
     max_area
 }
 
+/*
+    Algorithm - Two Pointers
+
+    Time    O(N)
+    Space   O(1)
+
+    1. left = 0, right = len-1
+    2. loop while left < right
+        3. area = (right-left) * min(height[left], height[right])
+        4. maxArea = max(maxArea, area)
+        5. if height[left] < height[right]
+            6. left++
+        7. else
+            8. right--
+    9. return maxArea
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
