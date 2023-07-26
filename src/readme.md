@@ -38,6 +38,7 @@
   - [x] [242. Valid anagram](../src/easy/valid_anagram.rs)
 - [Medium](../src/medium)
   - [x] [2. Add two numbers](../src/medium/add_two_numbers.rs)
+  - [x] [11. Container with most water](../src/medium/container_with_most_water.rs)
   - [x] [15. Three sum](../src/medium/three_sum.rs)
   - [x] [16. Three sum closest](../src/medium/three_sum_closest.rs)
   - [x] [22. Generate parentheses](../src/medium/generate_parentheses.rs)

@@ -27,11 +27,11 @@
 - [x] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | [Solution](../../../src/easy/valid_palindrome.rs)
 - [x] [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Easy | [Solution](../../../src/easy/two_sum_ii_input_array_is_sorted.rs)
 - [x] [3Sum](https://leetcode.com/problems/3sum/) | Medium | [Solution](../../../src/medium/three_sum.rs)
-- [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Solution](../../../src/medium/container_with_most_water.rs)
+- [x] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Solution](../../../src/medium/container_with_most_water.rs)
 - [ ] [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | [Solution](../../../src/hard/trapping_rain_water.rs)
 
 Category: `Two Pointers`
 Created on: 2023-06-22 19:10:00
-Last modified on: 2023-07-24 00:20:000
+Last modified on: 2023-07-26 12:12:000
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
