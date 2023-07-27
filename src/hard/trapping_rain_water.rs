@@ -4,24 +4,18 @@ pub fn trap(height: Vec<i32>) -> i32 {
     let mut left = 0;
     let mut right = height.len() - 1;
     let mut max_capacity = 0;
-    let mut left_max = 0;
-    let mut right_max = 0;
+    let mut left_max = height[left];
+    let mut right_max = height[right];
 
     while left < right {
-        if height[left] < height[right] {
-            if height[left] >= left_max {
-                left_max = height[left];
-            } else {
-                max_capacity += left_max - height[left];
-            }
+        if left_max < right_max {
             left += 1;
+            left_max = left_max.max(height[left]);
+            max_capacity += left_max - height[left];
         } else {
-            if height[right] >= right_max {
-                right_max = height[right];
-            } else {
-                max_capacity += right_max - height[right];
-            }
             right -= 1;
+            right_max = right_max.max(height[right]);
+            max_capacity += right_max - height[right];
         }
     }
 
