@@ -28,6 +28,18 @@ pub fn trap(height: Vec<i32>) -> i32 {
     return max_capacity;
 }
 
+/*
+    Algorithm - Two Pointers
+
+    Time    O(N)
+    Space   O(1)
+
+    Explanation:
+    - The idea is to use two pointers to track the left and right side of the container
+    - The capacity of the container is determined by the shorter side
+
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
