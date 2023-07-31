@@ -7,6 +7,7 @@ pub mod evaluate_reverse_polish_notation;
 pub mod generate_parentheses;
 pub mod group_anagrams;
 pub mod longest_consecutive_sequence;
+pub mod longest_substring_without_repeating_characters;
 pub mod product_of_array_except_self;
 pub mod three_sum;
 pub mod three_sum_closest;
