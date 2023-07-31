@@ -39,6 +39,7 @@
   - [x] [242. Valid anagram](../src/easy/valid_anagram.rs)
 - [Medium](../src/medium)
   - [x] [2. Add two numbers](../src/medium/add_two_numbers.rs)
+  - [ ] [3. Longest substring without repeating characters](../src/medium/longest_substring_without_repeating_characters.rs)
   - [x] [11. Container with most water](../src/medium/container_with_most_water.rs)
   - [x] [15. Three sum](../src/medium/three_sum.rs)
   - [x] [16. Three sum closest](../src/medium/three_sum_closest.rs)
