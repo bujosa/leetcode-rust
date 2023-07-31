@@ -1,6 +1,17 @@
 #![allow(dead_code)]
 pub fn max_profit(prices: Vec<i32>) -> i32 {
-    todo!()
+    let mut min_price = std::i32::MAX;
+    let mut max_profit = 0;
+
+    for price in prices {
+        if price < min_price {
+            min_price = price;
+        } else if price - min_price > max_profit {
+            max_profit = price - min_price;
+        }
+    }
+
+    max_profit
 }
 
 #[cfg(test)]
