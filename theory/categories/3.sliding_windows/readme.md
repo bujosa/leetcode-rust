@@ -24,7 +24,7 @@
 
 ## Problems
 
-- [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [Solution](../../../src/easy/best_time_to_buy_and_sell_stock.rs)
+- [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | [Solution](../../../src/easy/best_time_to_buy_and_sell_stock.rs)
 - [ ] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Solution](../../../src/medium/longest_substring_without_repeating_characters.rs)
 - [ ] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium | [Solution](../../../src/medium/longest_repeating_character_replacement.rs)
 - [ ] [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | [Solution](../../../src/medium/permutation_in_string.rs)
@@ -33,6 +33,6 @@
 
 Category: `Sliding Windows`
 Created on: 2023-07-28 15:14:00
-Last modified on: 2023-07-28 15:14:00
+Last modified on: 2023-07-31 19:19:00
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
