@@ -32,6 +32,31 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 3. Longest Substring Without Repeating Characters
+
+## Description
+
+Given a string, find the length of the longest substring without repeating characters.
+
+## Examples
+
+```text
+Input: "abcabcbb"
+Output: 3
+
+Explanation: The answer is "abc", with the length of 3.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("abcabcbb");
+  let result = medium::longest_substring_without_repeating_characters::length_of_longest_substring(s);
+  println!("result: {}", result);
+```
+
 # 11. Container With Most Water
 
 ## Description
