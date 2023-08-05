@@ -402,6 +402,35 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 424. Longest Repeating Character Replacement
+
+## Description
+
+Given a string s that consists of only uppercase English letters, you can perform at most k operations on that string.
+
+In one operation, you can choose any character of the string and change it to any other uppercase English character.
+
+Find the length of the longest sub-string containing all repeating letters you can get after performing the above operations.
+
+## Examples
+
+```text
+Input: s = "ABAB", k = 2
+Output: 4
+Explanation: Replace the two 'A's with two 'B's or vice versa.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("ABAB");
+  let k = 2;
+  let result = medium::character_replacement::character_replacement(s, k);
+  println!("result: {}", result);
+```
+
 # 739. Daily Temperatures
 
 ## Description
