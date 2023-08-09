@@ -22,6 +22,21 @@ pub fn character_replacement(s: String, k: i32) -> i32 {
     max_length as i32
 }
 
+/*
+    Algorithm - Sliding Window
+
+    Time    O(N)
+    Space   O(1)
+
+    Explanation:
+    1. We use a sliding window to find the longest substring with the most frequent character
+    2. If the window size - most frequent character count > k, we have to shrink the window
+    3. We can shrink the window by moving the start pointer
+    4. We can move the start pointer by 1, and update the count of the character at the start pointer
+    5. We keep the max length of the window
+    6. Finally, we return the max length of the window
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
