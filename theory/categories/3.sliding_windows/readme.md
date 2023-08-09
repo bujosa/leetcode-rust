@@ -33,6 +33,6 @@
 
 Category: `Sliding Windows`
 Created on: 2023-07-28 15:14:00
-Last modified on: 2023-07-31 19:19:00
+Last modified on: 2023-08-8 21:03:00
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
