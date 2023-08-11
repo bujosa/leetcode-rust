@@ -52,6 +52,7 @@
   - [x] [271. Encode and decode strings](../src/medium/encode_and_decode_strings.rs)
   - [x] [347. Top k frequent elements](../src/medium/top_k_frequent_elements.rs)
   - [x] [424. Longest repeating character replacement](../src/medium/longest_repeating_character_replacement.rs)
+  - [ ] [567. Permutation in string](../src/medium/permutation_in_string.rs)
   - [x] [739. Daily temperatures](../src/medium/daily_temperatures.rs)
   - [x] [853. Car fleet](../src/medium/car_fleet.rs)
 - [Hard](../src/hard)
