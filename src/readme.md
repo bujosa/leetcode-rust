@@ -56,5 +56,6 @@
   - [x] [739. Daily temperatures](../src/medium/daily_temperatures.rs)
   - [x] [853. Car fleet](../src/medium/car_fleet.rs)
 - [Hard](../src/hard)
-  - [x] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs)
   - [x] [42. Trapping rain water](../src/hard/trapping_rain_water.rs)
+  - [x] [76. Minimum window substring](../src/hard/minimum_window_substring.rs)
+  - [x] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs)
