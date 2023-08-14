@@ -40,6 +40,26 @@ pub fn min_window(s: String, t: String) -> String {
     min_substring
 }
 
+/*
+    Algorithm - Sliding Window
+    - Create a need_map to store the number of characters in t
+    - Create a window_map to store the number of characters in the window
+    - Create a count to store the number of characters in the window that matches the characters in t
+    - Create a left and right pointer to shrink and expand the window
+    - Create a min_substring to store the minimum substring that contains all the characters in t
+    - Loop through the string
+        - If the window contains all the characters in t
+            - Try to shrink the window
+            - If the window is smaller than the min_substring
+                - Update the min_substring
+        - If the window does not contain all the characters in t
+            - Try to expand the window
+    - Return the min_substring
+
+    Time: O(n)
+    Space: O(n)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
