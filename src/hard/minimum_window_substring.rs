@@ -1,63 +1,78 @@
 #![allow(dead_code)]
+
+use std::collections::HashMap;
 pub fn min_window(s: String, t: String) -> String {
-    if t.len() > s.len() {
-        return "".to_string();
+    let s: Vec<char> = s.chars().collect();
+
+    if t.is_empty() || s.len() < t.len() {
+        return String::new();
     }
 
-    let need_map = t.chars().fold([0; 128], |mut acc, c| {
-        acc[c as usize] += 1;
-        acc
-    });
-    let mut window_map = [0; 128];
-    let mut left = 0;
-    let mut right = 0;
-    let mut count = 0;
-    let mut min_substring = "".to_string();
+    let mut l = 0;
+    let mut res = (-1, -1);
+    let mut res_len = usize::MAX;
+    let mut count_t: HashMap<char, usize> = HashMap::new();
+    let mut window: HashMap<char, _> = HashMap::new();
 
-    while right < s.len() {
-        let c = s.chars().nth(right).unwrap();
-        window_map[c as usize] += 1;
-        if window_map[c as usize] <= need_map[c as usize] {
-            count += 1;
-        }
-
-        // If the window contains all the characters in t
-        // Try to shrink the window
-        while count == t.len() {
-            let c = s.chars().nth(left).unwrap();
-            if right - left + 1 < min_substring.len() || min_substring.is_empty() {
-                min_substring = s[left..=right].to_string();
-            }
-            window_map[c as usize] -= 1;
-            if window_map[c as usize] < need_map[c as usize] {
-                count -= 1;
-            }
-            left += 1;
-        }
-        right += 1;
+    for c in t.chars() {
+        *count_t.entry(c).or_default() += 1;
     }
 
-    min_substring
+    let need = count_t.len();
+    let mut have = 0;
+
+    for r in 0..s.len() {
+        let c = s[r];
+
+        *window.entry(c).or_default() += 1;
+        have += (window.get(&c) == count_t.get(&c)) as usize;
+
+        while have == need {
+            if (r - l + 1) < res_len {
+                res = (l as i32, r as i32);
+                res_len = r - l + 1;
+            }
+            *window.get_mut(&s[l]).unwrap() -= 1;
+
+            if window.get(&s[l]) < count_t.get(&s[l]) {
+                have -= 1;
+            }
+
+            l += 1;
+        }
+    }
+
+    if res.0 > -1 && res.1 > -1 {
+        return s[res.0 as usize..=res.1 as usize].into_iter().collect();
+    }
+
+    String::new()
 }
 
 /*
     Algorithm - Sliding Window
-    - Create a need_map to store the number of characters in t
-    - Create a window_map to store the number of characters in the window
-    - Create a count to store the number of characters in the window that matches the characters in t
-    - Create a left and right pointer to shrink and expand the window
-    - Create a min_substring to store the minimum substring that contains all the characters in t
-    - Loop through the string
-        - If the window contains all the characters in t
-            - Try to shrink the window
-            - If the window is smaller than the min_substring
-                - Update the min_substring
-        - If the window does not contain all the characters in t
-            - Try to expand the window
-    - Return the min_substring
+    Time complexity: O(n)
+    Space complexity: O(n)
 
-    Time: O(n)
-    Space: O(n)
+    - Create a hashmap of the characters in t and their count
+    - Create a hashmap of the characters in the window and their count
+    - Create a variable to keep track of the number of unique characters in t
+    - Create a variable to keep track of the number of unique characters in the window
+    - Create a variable to keep track of the left index of the window
+    - Create a variable to keep track of the right index of the window
+    - Create a variable to keep track of the minimum window length
+    - Create a variable to keep track of the minimum window indices
+    - Iterate through the string
+        - Add the current character to the window hashmap
+        - If the count of the current character in the window hashmap is equal to the count of the current character in the t hashmap, increment the number of unique characters in the window
+        - While the number of unique characters in the window is equal to the number of unique characters in t
+            - If the current window length is less than the minimum window length, update the minimum window length and indices
+            - Remove the leftmost character from the window hashmap
+            - If the count of the leftmost character in the window hashmap is less than the count of the leftmost character in the t hashmap, decrement the number of unique characters in the window
+            - Increment the left index of the window
+    - If the minimum window indices are valid, return the substring of the minimum window indices
+    - Otherwise, return an empty string
+
 */
 
 #[cfg(test)]
