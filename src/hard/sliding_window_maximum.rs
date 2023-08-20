@@ -26,6 +26,20 @@ pub fn max_sliding_window(nums: Vec<i32>, k: i32) -> Vec<i32> {
     result
 }
 
+/*
+    Algorithm - Sliding Window
+
+    Time    O(N)
+    Space   O(N)
+
+    Description:
+    1. We use a window to store the index of the elements.
+    2. We remove the first element if it is out of the window.
+    3. We remove all elements smaller than the current one.
+    4. We add the current element.
+    5. We add the maximum to the result.
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
