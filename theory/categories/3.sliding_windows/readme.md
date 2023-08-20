@@ -29,10 +29,10 @@
 - [x] [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium | [Solution](../../../src/medium/longest_repeating_character_replacement.rs)
 - [x] [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | [Solution](../../../src/medium/permutation_in_string.rs)
 - [x] [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard | [Solution](../../../src/hard/minimum_window_substring.rs)
-- [ ] [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | [Solution](../../../src/hard/sliding_window_maximum.rs)
+- [x] [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | [Solution](../../../src/hard/sliding_window_maximum.rs)
 
 Category: `Sliding Windows`
 Created on: 2023-07-28 15:14:00
-Last modified on: 2023-08-14 16:07:00
-Status: In Progress
+Last modified on: 2023-08-20 19:30:00
+Status: Done
 Author: [David Bujosa](https://github.com/bujosa)
