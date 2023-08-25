@@ -24,6 +24,22 @@ pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
     prev
 }
 
+/*
+    Algorithm - Iterative
+    - Create a prev variable and set it to None
+    - Create a curr variable and set it to head
+    - While curr is not None
+        - Create a next_temp variable and set it to curr.next
+        - Set curr.next to prev
+        - Set prev to curr
+        - Set curr to next_temp
+    - Return prev
+
+    Analysis
+        - Time Complexity: O(n)
+        - Space Complexity: O(1)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
