@@ -12,7 +12,17 @@ impl ListNode {
     }
 }
 
-pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {}
+pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    let mut prev = None;
+    let mut curr = head;
+    while let Some(mut curr_node) = curr {
+        let next_temp = curr_node.next.take();
+        curr_node.next = prev;
+        prev = Some(curr_node);
+        curr = next_temp;
+    }
+    prev
+}
 
 #[cfg(test)]
 mod tests {
