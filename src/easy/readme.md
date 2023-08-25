@@ -1089,6 +1089,37 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 206. Reverse linked list
+
+## Description
+
+Reverse a singly linked list.
+
+## Examples
+
+```text
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut head = Some(Box::new(ListNode::new(1)));
+  let mut node2 = Some(Box::new(ListNode::new(2)));
+  let mut node3 = Some(Box::new(ListNode::new(3)));
+  let mut node4 = Some(Box::new(ListNode::new(4)));
+  let node5 = Some(Box::new(ListNode::new(5)));
+  node4.as_mut().unwrap().next = node5;
+  node3.as_mut().unwrap().next = node4;
+  node2.as_mut().unwrap().next = node3;
+  head.as_mut().unwrap().next = node2;
+  let result = easy::reverse_linked_list::reverse_list(head);
+  println!("result: {:?}", result);
+```
+
 # 217. Contains duplicate
 
 ## Description
