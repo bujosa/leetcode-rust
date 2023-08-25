@@ -34,6 +34,7 @@
   - [x] [125. Valid palindrome](../src/easy/valid_palindrome.rs)
   - [x] [150. Evaluate reverse polish notation](../src/easy/evaluate_reverse_polish_notation.rs)
   - [x] [155. Min stack](../src/easy/min_stack.rs)
+  - [ ] [206. Reverse linked list](../src/easy/reverse_linked_list.rs)
   - [x] [217. Contains duplicate](../src/easy/contains_duplicate.rs)
   - [x] [234. Palindrome linked list](../src/easy/palindrome_linked_list.rs)
   - [x] [242. Valid anagram](../src/easy/valid_anagram.rs)
