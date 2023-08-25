@@ -27,7 +27,7 @@
 
 ## Problems
 
-- [ ] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Solution](../../../src/easy/reverse_linked_list.rs)
+- [x] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Solution](../../../src/easy/reverse_linked_list.rs)
 - [ ] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Solution](../../../src/easy/merge_two_sorted_lists.rs)
 - [ ] [Reorder List](https://leetcode.com/problems/reorder-list/) | Medium | [Solution](../../../src/medium/reorder_list.rs)
 - [ ] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [Solution](../../../src/medium/remove_nth_node_from_end_of_list.rs)
@@ -41,6 +41,6 @@
 
 Category: `Linked List`
 Created on: 2023-08-22 01:00:00
-Last modified on: 2023-08-22 01:00:00
+Last modified on: 2023-08-24 21:15:00
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
