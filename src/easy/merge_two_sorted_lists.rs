@@ -12,7 +12,50 @@ impl ListNode {
     }
 }
 
-// Consider the two list arrays can be different length
+/// Merges two sorted linked lists into a single sorted linked list.
+///
+/// # Arguments
+///
+/// * `list1` - A linked list of type `Option<Box<ListNode>>`.
+/// * `list2` - A linked list of type `Option<Box<ListNode>>`.
+///
+/// # Example
+///
+/// ```
+/// use leetcode::easy::merge_two_sorted_lists::{merge_two_lists, ListNode};
+///
+/// let l1 = Some(Box::new(ListNode {
+///     val: 1,
+///     next: Some(Box::new(ListNode {
+///         val: 2,
+///         next: Some(Box::new(ListNode { val: 4, next: None })),
+///     })),
+/// }));
+///
+/// let l2 = Some(Box::new(ListNode {
+///     val: 1,
+///     next: Some(Box::new(ListNode {
+///         val: 3,
+///         next: Some(Box::new(ListNode { val: 4, next: None })),
+///     })),
+/// }));
+///
+/// let expected = Some(Box::new(ListNode {
+///     val: 1,
+///     next: Some(Box::new(ListNode {
+///         val: 1,
+///         next: Some(Box::new(ListNode {
+///             val: 2,
+///             next: Some(Box::new(ListNode {
+///                 val: 3,
+///                 next: Some(Box::new(ListNode { val: 4, next: Some(Box::new(ListNode { val: 4, next: None })) })),
+///             })),
+///         })),
+///     })),
+/// }));
+///
+/// assert_eq!(merge_two_lists(l1, l2), expected);
+/// ```
 pub fn merge_two_lists(
     list1: Option<Box<ListNode>>,
     list2: Option<Box<ListNode>>,
