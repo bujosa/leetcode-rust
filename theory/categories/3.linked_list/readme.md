@@ -41,6 +41,6 @@
 
 Category: `Linked List`
 Created on: 2023-08-22 01:00:00
-Last modified on: 2023-08-24 21:15:00
+Last modified on: 2023-08-25 21:25:00
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)

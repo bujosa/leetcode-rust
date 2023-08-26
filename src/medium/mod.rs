@@ -11,8 +11,10 @@ pub mod longest_repeating_character_replacement;
 pub mod longest_substring_without_repeating_characters;
 pub mod permutation_in_string;
 pub mod product_of_array_except_self;
+pub mod reorder_list;
 pub mod three_sum;
 pub mod three_sum_closest;
+
 pub mod top_k_frequent_elements;
 pub mod two_sum_ii_input_array_is_sorted;
 pub mod valid_sudoku;
