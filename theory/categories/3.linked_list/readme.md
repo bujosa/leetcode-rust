@@ -28,7 +28,7 @@
 ## Problems
 
 - [x] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | [Solution](../../../src/easy/reverse_linked_list.rs)
-- [ ] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Solution](../../../src/easy/merge_two_sorted_lists.rs)
+- [x] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [Solution](../../../src/easy/merge_two_sorted_lists.rs)
 - [ ] [Reorder List](https://leetcode.com/problems/reorder-list/) | Medium | [Solution](../../../src/medium/reorder_list.rs)
 - [ ] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [Solution](../../../src/medium/remove_nth_node_from_end_of_list.rs)
 - [ ] [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | [Solution](../../../src/medium/copy_list_with_random_pointer.rs)
