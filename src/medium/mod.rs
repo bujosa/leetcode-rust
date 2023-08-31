@@ -11,6 +11,7 @@ pub mod longest_repeating_character_replacement;
 pub mod longest_substring_without_repeating_characters;
 pub mod permutation_in_string;
 pub mod product_of_array_except_self;
+pub mod remove_nth_node_from_end_of_list;
 pub mod reorder_list;
 pub mod three_sum;
 pub mod three_sum_closest;
