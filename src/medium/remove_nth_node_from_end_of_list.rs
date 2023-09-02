@@ -10,6 +10,11 @@ impl ListNode {
     fn new(val: i32) -> Self {
         ListNode { next: None, val }
     }
+
+    fn add_next(&mut self, val: i32) {
+        let next_node = Some(Box::new(ListNode::new(val)));
+        self.next = next_node;
+    }
 }
 
 pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
