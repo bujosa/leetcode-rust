@@ -33,6 +33,20 @@ pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<Li
     dummy.unwrap().next
 }
 
+/*
+   Algorithm - Two Pointers
+
+   1. Create a dummy node and set its next to head
+   2. Create two pointers, fast and slow, and set them to dummy
+   3. Move fast n times
+   4. Move fast and slow until fast.next is None
+   5. Remove slow.next
+   6. Return dummy.next
+
+   Time: O(n)
+   Space: O(1)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
