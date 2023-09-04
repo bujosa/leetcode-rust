@@ -305,6 +305,33 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 143. Reorder List
+
+## Description
+
+Given a singly linked list L: L0→L1→…→Ln-1→Ln, reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
+
+You may not modify the values in the list's nodes, only nodes itself may be changed.
+
+## Examples
+
+```text
+Given 1->2->3->4, reorder it to 1->4->2->3.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let head = medium::reorder_list::ListNode::new(1)
+    .add_next(medium::reorder_list::ListNode::new(2))
+    .add_next(medium::reorder_list::ListNode::new(3))
+    .add_next(medium::reorder_list::ListNode::new(4));
+  let result = medium::reorder_list::reorder_list(head);
+  println!("result: {:?}", result);
+```
+
 # 150. Evaluate Reverse Polish Notation
 
 ## Description
