@@ -56,6 +56,17 @@ pub fn reorder_list(head: &mut Option<Box<ListNode>>) {
     merge_lists(head, head2);
 }
 
+/*
+    Algorithm - Two Pointers
+
+    1. Get the middle of the list
+    2. Reverse the second half of the list
+    3. Merge the two lists
+
+    Time: O(n)
+    Space: O(1)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
