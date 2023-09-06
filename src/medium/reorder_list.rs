@@ -12,7 +12,49 @@ impl ListNode {
     }
 }
 
-pub fn reorder_list(head: &mut Option<Box<ListNode>>) {}
+pub fn reorder_list(head: &mut Option<Box<ListNode>>) {
+    #[inline(always)]
+    fn get_list_middle(head: &mut Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let (mut fast, mut slow) = (&head.clone(), head);
+        while fast.is_some() {
+            fast = &(fast.as_ref().unwrap().next);
+            if fast.is_some() {
+                fast = &fast.as_ref().unwrap().next;
+                slow = &mut (slow.as_mut().unwrap().next);
+            }
+        }
+        slow.as_mut().unwrap().next.take()
+    }
+
+    #[inline(always)]
+    fn reverse_list(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let mut prev = None;
+        while let Some(mut curr) = head {
+            head = curr.next;
+            curr.next = prev;
+            prev = Some(curr);
+        }
+        prev
+    }
+
+    #[inline(always)]
+    fn merge_lists(head1: &mut Option<Box<ListNode>>, head2: Option<Box<ListNode>>) {
+        let mut h1 = head1;
+        let mut h2 = head2;
+        while h1.is_some() && h2.is_some() {
+            let h1next = h1.as_mut().unwrap().next.take();
+            let h2next = h2.as_mut().unwrap().next.take();
+            h1.as_mut().unwrap().next = h2;
+            h1.as_mut().unwrap().next.as_mut().unwrap().next = h1next;
+            h1 = &mut (h1.as_mut().unwrap().next.as_mut().unwrap().next);
+            h2 = h2next;
+        }
+    }
+
+    let mut head2 = get_list_middle(head);
+    head2 = reverse_list(head2);
+    merge_lists(head, head2);
+}
 
 #[cfg(test)]
 mod tests {
