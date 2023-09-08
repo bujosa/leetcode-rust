@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug with LLDB",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/leetcode",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "sourceLanguages": ["rust"],
+      "cargo": {
+        "args": ["build"],
+        "filter": {
+          "name": "leetcode"
+        }
+      }
+    }
+  ]
+}
