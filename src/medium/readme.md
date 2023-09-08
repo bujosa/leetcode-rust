@@ -324,12 +324,19 @@ Given 1->2->3->4, reorder it to 1->4->2->3.
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let head = medium::reorder_list::ListNode::new(1)
-    .add_next(medium::reorder_list::ListNode::new(2))
-    .add_next(medium::reorder_list::ListNode::new(3))
-    .add_next(medium::reorder_list::ListNode::new(4));
-  let result = medium::reorder_list::reorder_list(head);
-  println!("result: {:?}", result);
+  let mut head = Some(Box::new(
+        ListNode::new(1).add_next(
+            ListNode::new(2)
+                .add_next(ListNode::new(3).add_next(ListNode::new(4).add_next(ListNode::new(5)))),
+        ),
+  ));
+  medium::reorder_list::reorder_list(&mut head);
+
+  let mut curr = head;
+  while let Some(node) = curr {
+      println!("{}", node.val);
+      curr = node.next;
+  }
 ```
 
 # 150. Evaluate Reverse Polish Notation
