@@ -1,15 +1,22 @@
-mod easy;
+mod medium;
+
+use medium::reorder_list::ListNode;
 
 fn main() {
+    // Reorder List - Medium
+    let mut head = Some(Box::new(
+        ListNode::new(1).add_next(
+            ListNode::new(2)
+                .add_next(ListNode::new(3).add_next(ListNode::new(4).add_next(ListNode::new(5)))),
+        ),
+    ));
 
-    // Roman to Interger
-    let s = String::from("III");
-    let result = easy::roman_to_integer::roman_to_int(s);
-    println!("result: {}", result);
+    medium::reorder_list::reorder_list(&mut head);
 
-    // Longest Common Prefix
-    let strs = vec![String::from("flower"), String::from("flow"), String::from("flight")];
-    let result = easy::longest_common_prefix::longest_common_prefix(strs);
-    println!("result: {}", result);
-    
+    // Print elements of the list
+    let mut curr = head;
+    while let Some(node) = curr {
+        println!("{}", node.val);
+        curr = node.next;
+    }
 }
