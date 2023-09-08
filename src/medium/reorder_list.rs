@@ -7,8 +7,14 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
-    fn new(val: i32) -> Self {
+    pub fn new(val: i32) -> Self {
         ListNode { next: None, val }
+    }
+
+    #[inline]
+    pub fn add_next(mut self, next: Self) -> Self {
+        self.next = Some(Box::new(next));
+        self
     }
 }
 
