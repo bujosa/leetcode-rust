@@ -1036,7 +1036,38 @@ let mut easy::valid_palindrome::is_palindrome("race a car".to_string());
   println!("result: {:?}", result);
 ```
 
-````
+# 141. Linked list cycle
+
+## Description
+
+Given a linked list, determine if it has a cycle in it.
+
+To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list.
+
+## Examples
+
+```text
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+
+Explanation: There is a cycle in the linked list, where tail connects to the second node.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut head = Some(Box::new(ListNode::new(3)));
+  let mut node2 = Some(Box::new(ListNode::new(2)));
+  let mut node3 = Some(Box::new(ListNode::new(0)));
+  let node4 = Some(Box::new(ListNode::new(-4)));
+  node3.as_mut().unwrap().next = node4;
+  node2.as_mut().unwrap().next = node3;
+  head.as_mut().unwrap().next = node2;
+  let result = easy::linked_list_cycle::has_cycle(head);
+  println!("result: {:?}", result);
+```
 
 # 155. Min stack
 
@@ -1069,7 +1100,7 @@ minStack.getMin(); // return -3
 minStack.pop();
 minStack.top();    // return 0
 minStack.getMin(); // return -2
-````
+```
 
 ## How to Run in main.rs
 
