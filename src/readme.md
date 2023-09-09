@@ -32,6 +32,7 @@
   - [x] [119. Pascal's triangle II](../src/easy/pascals_triangle.rs)
   - [x] [121. Best time to buy and sell stock](../src/easy/best_time_to_buy_and_sell_stock.rs)
   - [x] [125. Valid palindrome](../src/easy/valid_palindrome.rs)
+  - [ ] [141. Linked list cycle](../src/easy/linked_list_cycle.rs)
   - [x] [150. Evaluate reverse polish notation](../src/easy/evaluate_reverse_polish_notation.rs)
   - [x] [155. Min stack](../src/easy/min_stack.rs)
   - [x] [206. Reverse linked list](../src/easy/reverse_linked_list.rs)
