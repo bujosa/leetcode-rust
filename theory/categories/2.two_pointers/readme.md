@@ -24,11 +24,11 @@
 
 ## Problems
 
-- [x] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | [Solution](../../../src/easy/valid_palindrome.rs)
-- [x] [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Easy | [Solution](../../../src/easy/two_sum_ii_input_array_is_sorted.rs)
-- [x] [3Sum](https://leetcode.com/problems/3sum/) | Medium | [Solution](../../../src/medium/three_sum.rs)
-- [x] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Solution](../../../src/medium/container_with_most_water.rs)
-- [x] [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | [Solution](../../../src/hard/trapping_rain_water.rs)
+- [x] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | [Solution](../../../src/easy/valid_palindrome.rs) | [Problem Description](../../../src/easy/readme.md#125-valid-palindrome)
+- [x] [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Easy | [Solution](../../../src/easy/two_sum_ii_input_array_is_sorted.rs) | [Problem Description](../../../src/easy/readme.md#167-two-sum-ii---input-array-is-sorted)
+- [x] [3Sum](https://leetcode.com/problems/3sum/) | Medium | [Solution](../../../src/medium/three_sum.rs) | [Problem Description](../../../src/medium/readme.md#15-3sum)
+- [x] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Solution](../../../src/medium/container_with_most_water.rs) | [Problem Description](../../../src/medium/readme.md#11-container-with-most-water)
+- [x] [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | [Solution](../../../src/hard/trapping_rain_water.rs) | [Problem Description](../../../src/hard/readme.md#42-trapping-rain-water)
 
 Category: `Two Pointers`
 Created on: 2023-06-22 19:10:00
