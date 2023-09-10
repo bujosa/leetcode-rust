@@ -48,13 +48,13 @@
 
 ## Problems
 
-- [x] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Solution](../../../src/easy/valid_parentheses.rs)
-- [x] [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | [Solution](../../../src/easy/min_stack.rs)
-- [x] [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Solution](../../../src/medium/evaluate_reverse_polish_notation.rs)
-- [x] [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | [Solution](../../../src/medium/generate_parentheses.rs)
-- [x] [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Solution](../../../src/medium/daily_temperatures.rs)
-- [x] [Car Fleet](https://leetcode.com/problems/car-fleet/) | Medium | [Solution](../../../src/medium/car_fleet.rs)
-- [x] [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | [Solution](../../../src/hard/largest_rectangle_in_histogram.rs)
+- [x] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Solution](../../../src/easy/valid_parentheses.rs) | [Problem Description](../../../src/easy/readme.md#20-valid-parentheses)
+- [x] [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | [Solution](../../../src/easy/min_stack.rs) | [Problem Description](../../../src/easy/readme.md#155-min-stack)
+- [x] [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [Solution](../../../src/medium/evaluate_reverse_polish_notation.rs) | [Problem Description](../../../src/medium/readme.md#150-evaluate-reverse-polish-notation)
+- [x] [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium | [Solution](../../../src/medium/generate_parentheses.rs) | [Problem Description](../../../src/medium/readme.md#22-generate-parentheses)
+- [x] [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [Solution](../../../src/medium/daily_temperatures.rs) | [Problem Description](../../../src/medium/readme.md#739-daily-temperatures)
+- [x] [Car Fleet](https://leetcode.com/problems/car-fleet/) | Medium | [Solution](../../../src/medium/car_fleet.rs) | [Problem Description](../../../src/medium/readme.md#853-car-fleet)
+- [x] [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | [Solution](../../../src/hard/largest_rectangle_in_histogram.rs) | [Problem Description](../../../src/hard/readme.md#84-largest-rectangle-in-histogram)
 
 ## References
 
