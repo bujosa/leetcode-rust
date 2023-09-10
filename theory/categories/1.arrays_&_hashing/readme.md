@@ -65,15 +65,15 @@
 
 ## Problems
 
-- [x] [1. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy problem | [Solution](../../../src/easy/contains_duplicate.rs)
-- [x] [2. Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy problem | [Solution](../../../src/easy/valid_anagram.rs)
-- [x] [3. Two Sum](https://leetcode.com/problems/two-sum/) | Easy problem | [Solution](../../../src/easy/two_sum.rs)
-- [x] [4. Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium Problem | [Solution](../../../src/medium/group_anagrams.rs)
-- [x] [5. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium Problem | [Solution](../../../src/medium/top_k_frequent_elements.rs)
-- [x] [6. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium Problem | [Solution](../../../src/medium/product_of_array_except_self.rs)
-- [x] [7. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium Problem | [Solution](../../../src/medium/valid_sudoku.rs)
-- [x] [8. Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium Problem | [Solution](../../../src/medium/encode_and_decode_strings.rs)
-- [x] [9. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium Problem | [Solution](../../../src/medium/longest_consecutive_sequence.rs)
+- [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy problem | [Solution](../../../src/easy/contains_duplicate.rs) | [Problem Description](../../../src/easy/readme.md#217-contains-duplicate)
+- [x] [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy problem | [Solution](../../../src/easy/valid_anagram.rs) | [Problem Description](../../../src/easy/readme.md#242-valid-anagram)
+- [x] [Two Sum](https://leetcode.com/problems/two-sum/) | Easy problem | [Solution](../../../src/easy/two_sum.rs) | [Problem Description](../../../src/easy/readme.md#1-two-sum)
+- [x] [ Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium Problem | [Solution](../../../src/medium/group_anagrams.rs) | [Problem Description](../../../src/medium/readme.md#49-group-anagrams)
+- [x] [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium Problem | [Solution](../../../src/medium/top_k_frequent_elements.rs) | [Problem Description](../../../src/medium/readme.md#347-top-k-frequent-elements)
+- [x] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium Problem | [Solution](../../../src/medium/product_of_array_except_self.rs) | [Problem Description](../../../src/medium/readme.md#238-product-of-array-except-self)
+- [x] [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium Problem | [Solution](../../../src/medium/valid_sudoku.rs) | [Problem Description](../../../src/medium/readme.md#36-valid-sudoku)
+- [x] [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium Problem | [Solution](../../../src/medium/encode_and_decode_strings.rs) | [Problem Description](../../../src/medium/readme.md#271-encode-and-decode-strings)
+- [x] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium Problem | [Solution](../../../src/medium/longest_consecutive_sequence.rs) | [Problem Description](../../../src/medium/readme.md#128-longest-consecutive-sequence)
 
 ## References
 
