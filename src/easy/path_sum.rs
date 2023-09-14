@@ -1,26 +1,24 @@
 #![allow(dead_code)]
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
-  pub val: i32,
-  pub left: Option<Rc<RefCell<TreeNode>>>,
-  pub right: Option<Rc<RefCell<TreeNode>>>,
+    pub val: i32,
+    pub left: Option<Rc<RefCell<TreeNode>>>,
+    pub right: Option<Rc<RefCell<TreeNode>>>,
 }
 
 impl TreeNode {
-  #[inline]
-  pub fn new(val: i32) -> Self {
-    TreeNode {
-      val,
-      left: None,
-      right: None
+    #[inline]
+    pub fn new(val: i32) -> Self {
+        TreeNode {
+            val,
+            left: None,
+            right: None,
+        }
     }
-  }
 }
-
-
 
 pub fn has_path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> bool {
     if root.is_none() {
@@ -47,18 +45,18 @@ pub fn has_path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> boo
 }
 
 /*
-  Algorithm - DFS
-  - If root is None, return false
-  - If root is not None, check if root is leaf node and if root.val == target_sum
-  - If root is not leaf node, recursively call has_path_sum on left and right child
-  - Return true if either of the recursive call returns true
-  - Return false if both recursive call returns false
+ Algorithm - DFS
+ - If root is None, return false
+ - If root is not None, check if root is leaf node and if root.val == target_sum
+ - If root is not leaf node, recursively call has_path_sum on left and right child
+ - Return true if either of the recursive call returns true
+ - Return false if both recursive call returns false
 
-  Complexity
-  - Time is O(n) where n is the number of nodes in the tree
-  - Space is O(n) where n is the number of nodes in the tree
+ Complexity
+ - Time is O(n) where n is the number of nodes in the tree
+ - Space is O(n) where n is the number of nodes in the tree
 
- */
+*/
 
 #[cfg(test)]
 mod test {
