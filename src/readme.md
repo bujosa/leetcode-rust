@@ -50,6 +50,7 @@
   - [x] [36. Valid sudoku](../src/medium/valid_sudoku.rs) -> [Problem Description](../src/medium/readme.md#36-valid-sudoku)
   - [x] [49. Group anagrams](../src/medium/group_anagrams.rs) -> [Problem Description](../src/medium/readme.md#49-group-anagrams)
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
+  - [ ] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
   - [x] [167. Two sum II - input array is sorted](../src/medium/two_sum_ii_input_array_is_sorted.rs) -> [Problem Description](../src/medium/readme.md#167-two-sum-ii---input-array-is-sorted)
   - [x] [238. Product of array except self](../src/medium/product_of_array_except_self.rs) -> [Problem Description](../src/medium/readme.md#238-product-of-array-except-self)
