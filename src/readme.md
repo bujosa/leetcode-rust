@@ -32,7 +32,7 @@
   - [x] [119. Pascal's triangle II](../src/easy/pascals_triangle.rs) -> [Problem Description](../src/easy/readme.md#119-pascals-triangle-ii)
   - [x] [121. Best time to buy and sell stock](../src/easy/best_time_to_buy_and_sell_stock.rs) -> [Problem Description](../src/easy/readme.md#121-best-time-to-buy-and-sell-stock)
   - [x] [125. Valid palindrome](../src/easy/valid_palindrome.rs) -> [Problem Description](../src/easy/readme.md#125-valid-palindrome)
-  - [ ] [141. Linked list cycle](../src/easy/linked_list_cycle.rs) -> [Problem Description](../src/easy/readme.md#141-linked-list-cycle)
+  - [x] [141. Linked list cycle](../src/easy/linked_list_cycle.rs) -> [Problem Description](../src/easy/readme.md#141-linked-list-cycle)
   - [x] [150. Evaluate reverse polish notation](../src/easy/evaluate_reverse_polish_notation.rs) -> [Problem Description](../src/easy/readme.md#150-evaluate-reverse-polish-notation)
   - [x] [155. Min stack](../src/easy/min_stack.rs) -> [Problem Description](../src/easy/readme.md#155-min-stack)
   - [x] [206. Reverse linked list](../src/easy/reverse_linked_list.rs) -> [Problem Description](../src/easy/readme.md#206-reverse-linked-list)
