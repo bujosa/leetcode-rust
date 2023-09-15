@@ -329,13 +329,19 @@ Node 2's value is 2, its next pointer points to null and its random pointer poin
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let head = Some(Box::new(
-    medium::copy_random_list::Node::new(1)
-      .add_next(medium::copy_random_list::Node::new(2))
-      .add_random(Some(Box::new(medium::copy_random_list::Node::new(2)))),
-  ));
-  let result = medium::copy_random_list::copy_random_list(head);
-  println!("result: {:?}", result);
+    use medium::copy_random_list::{Node, copy_random_list};
+
+    let node1 = Some(Box::new(Node::new(1)));
+    let node2 = Some(Box::new(Node::new(2)));
+    let node3 = Some(Box::new(Node::new(3)));
+
+    node1.as_ref().unwrap().next = node2.clone();
+    node2.as_ref().unwrap().next = node3.clone();
+    node1.as_ref().unwrap().random = Some(node3.clone());
+    node2.as_ref().unwrap().random = Some(node1.clone());
+    node3.as_ref().unwrap().random = Some(node2.clone());
+
+    copy_random_list(node1);
 ```
 
 # 143. Reorder List
