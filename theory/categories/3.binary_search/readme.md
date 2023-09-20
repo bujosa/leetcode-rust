@@ -28,7 +28,7 @@
 
 ## Problems
 
-- [ ] [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | [Solution](../../../src/easy/binary_search.rs)
+- [ ] [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | [Solution](../../../src/easy/binary_search.rs) | [Problem Description](../../../src/easy/readme.md#704-binary-search)
 - [ ] [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | [Solution](../../../src/medium/search_a_2d_matrix.rs)
 - [ ] [koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Medium | [Solution](../../../src/medium/koko_eating_bananas.rs)
 - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Solution](../../../src/medium/find_minimum_in_rotated_sorted_array.rs)
