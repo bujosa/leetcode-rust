@@ -14,6 +14,7 @@ pub mod permutation_in_string;
 pub mod product_of_array_except_self;
 pub mod remove_nth_node_from_end_of_list;
 pub mod reorder_list;
+pub mod search_a_2d_matrix;
 pub mod three_sum;
 pub mod three_sum_closest;
 pub mod top_k_frequent_elements;
