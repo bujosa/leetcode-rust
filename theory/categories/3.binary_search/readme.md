@@ -37,7 +37,7 @@
 - [ ] [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | [Solution](../../../src/hard/median_of_two_sorted_arrays.rs)
 
 Category: `Binary Search`
-Created on: 2023-09-22 22:51:00
-Last modified on: 2023-09-21 01:00:00
+Created on: 2023-09-21 01:00:00
+Last modified on: 2023-09-22 22:51:00
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
