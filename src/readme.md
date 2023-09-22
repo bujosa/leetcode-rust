@@ -50,6 +50,7 @@
   - [x] [22. Generate parentheses](../src/medium/generate_parentheses.rs) -> [Problem Description](../src/medium/readme.md#22-generate-parentheses)
   - [x] [36. Valid sudoku](../src/medium/valid_sudoku.rs) -> [Problem Description](../src/medium/readme.md#36-valid-sudoku)
   - [x] [49. Group anagrams](../src/medium/group_anagrams.rs) -> [Problem Description](../src/medium/readme.md#49-group-anagrams)
+  - [ ] [74. Search a 2D matrix](../src/medium/search_a_2d_matrix.rs) -> [Problem Description](../src/medium/readme.md#74-search-a-2d-matrix)
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
   - [ ] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
