@@ -55,25 +55,25 @@ pub fn add_binary(a: String, b: String) -> String {
 }
 
 /*
-    Algorithm:
-        - Convert the strings to chars and reverse them
-        - Loop through the chars and add them together
-        - If the sum is 2, add 0 to the result and carry 1
-        - If the sum is 3, add 1 to the result and carry 1
-        - If the sum is 1, add 1 to the result and carry 0
-        - If the sum is 0, add 0 to the result and carry 0
-        - If there is a carry at the end, add 1 to the result
-        - Reverse the result and return it
+   Algorithm:
+       - Convert the strings to chars and reverse them
+       - Loop through the chars and add them together
+       - If the sum is 2, add 0 to the result and carry 1
+       - If the sum is 3, add 1 to the result and carry 1
+       - If the sum is 1, add 1 to the result and carry 0
+       - If the sum is 0, add 0 to the result and carry 0
+       - If there is a carry at the end, add 1 to the result
+       - Reverse the result and return it
 
-    Time complexity:
-        - O(n) where n is the length of the longest string
+   Time complexity:
+       - O(n) where n is the length of the longest string
 
-    Space complexity:
-        - O(n) where n is the length of the longest string
+   Space complexity:
+       - O(n) where n is the length of the longest string
 
-        
 
- */
+
+*/
 
 #[cfg(test)]
 mod tests {
@@ -81,11 +81,17 @@ mod tests {
 
     #[test]
     fn test_1() {
-        assert_eq!(add_binary("11".to_string(), "1".to_string()), "100".to_string());
+        assert_eq!(
+            add_binary("11".to_string(), "1".to_string()),
+            "100".to_string()
+        );
     }
 
     #[test]
     fn test_2() {
-        assert_eq!(add_binary("1010".to_string(), "1011".to_string()), "10101".to_string());
+        assert_eq!(
+            add_binary("1010".to_string(), "1011".to_string()),
+            "10101".to_string()
+        );
     }
 }

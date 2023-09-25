@@ -1,7 +1,9 @@
+#![allow(dead_code)]
+
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
-    pub next: Option<Box<ListNode>>
+    pub next: Option<Box<ListNode>>,
 }
 
 impl ListNode {
@@ -11,7 +13,10 @@ impl ListNode {
     }
 }
 
-pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+pub fn add_two_numbers(
+    l1: Option<Box<ListNode>>,
+    l2: Option<Box<ListNode>>,
+) -> Option<Box<ListNode>> {
     let mut l1 = l1;
     let mut l2 = l2;
     let mut head = Some(Box::new(ListNode::new(0)));
@@ -34,7 +39,7 @@ pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> 
         carry = sum / 10;
 
         tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(sum % 10)));
-        
+
         tail = &mut tail.as_mut().unwrap().next;
     }
     head.unwrap().next
