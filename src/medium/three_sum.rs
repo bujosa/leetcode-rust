@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn three_sum(nums: Vec<i32>) -> Vec<Vec<i32>> {
     let mut nums = nums;
     nums.sort();
@@ -29,6 +30,12 @@ pub fn three_sum(nums: Vec<i32>) -> Vec<Vec<i32>> {
     }
     res
 }
+
+/*
+    Algorithm - Two Pointers
+        - Time Complexity: O(n^2)
+        - Space Complexity: O(1)
+*/
 
 #[cfg(test)]
 mod tests {

@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn three_sum_closest(nums: Vec<i32>, target: i32) -> i32 {
     let mut nums = nums;
     nums.sort();
@@ -21,6 +22,12 @@ pub fn three_sum_closest(nums: Vec<i32>, target: i32) -> i32 {
     }
     closest
 }
+
+/*
+    Algorithm - Two Pointers
+        - Time Complexity: O(n^2)
+        - Space Complexity: O(1)
+*/
 
 #[test]
 fn test_three_sum_closest() {
