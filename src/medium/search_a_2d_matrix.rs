@@ -29,11 +29,15 @@ pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
 }
 
 /*
-    Approach: Binary Search
-    - Treat the matrix as a sorted array
-    - Use binary search to find the target
-    - Time Complexity: O(log(mn))
-    - Space Complexity: O(1)
+     Algorithm - Binary Search
+        - Time Complexity: O(log(mn))
+        - Space Complexity: O(1)]
+
+    Steps:
+        1. Check if the matrix is empty or the first value is greater than the target or the last value is less than the target
+        2. If not, then perform binary search on the matrix
+        3. If the value is found, return true
+        4. If not, return false
 */
 
 #[cfg(test)]
