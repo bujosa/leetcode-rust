@@ -8,6 +8,7 @@ pub mod evaluate_reverse_polish_notation;
 pub mod find_the_duplicate_number;
 pub mod generate_parentheses;
 pub mod group_anagrams;
+pub mod koko_eating_bananas;
 pub mod longest_consecutive_sequence;
 pub mod longest_repeating_character_replacement;
 pub mod longest_substring_without_repeating_characters;
