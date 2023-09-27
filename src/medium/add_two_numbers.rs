@@ -45,6 +45,19 @@ pub fn add_two_numbers(
     head.unwrap().next
 }
 
+/*
+    Algorithm - Description
+
+    1. Create a new list with a dummy head node
+    2. Create a tail pointer to the dummy head
+    3. Create a carry variable to hold the carry value
+    4. Loop through both lists and add the values together
+    5. If the sum is greater than 10, set carry to 1
+
+    Time Complexity - O(n)
+    Space Complexity - O(n)
+*/
+
 #[cfg(test)]
 fn to_list(v: Vec<i32>) -> Option<Box<ListNode>> {
     let mut head = Some(Box::new(ListNode::new(0)));
