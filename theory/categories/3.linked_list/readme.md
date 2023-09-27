@@ -32,8 +32,8 @@
 - [x] [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | [Solution](../../../src/easy/linked_list_cycle.rs) | [Problem Description](../../../src/easy/readme.md#141-linked-list-cycle)
 - [x] [Reorder List](https://leetcode.com/problems/reorder-list/) | Medium | [Solution](../../../src/medium/reorder_list.rs) | [Problem Description](../../../src/medium/readme.md#143-reorder-list)
 - [x] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [Solution](../../../src/medium/remove_nth_node_from_end_of_list.rs) | [Problem Description](../../../src/medium/readme.md#19-remove-nth-node-from-end-of-list)
-- [ ] [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | [Solution](../../../src/medium/copy_list_with_random_pointer.rs)
-- [ ] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | [Solution](../../../src/medium/add_two_numbers.rs)
+- [x] [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | [Solution](../../../src/medium/copy_list_with_random_pointer.rs)
+- [x] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | [Solution](../../../src/medium/add_two_numbers.rs)
 - [ ] [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | [Solution](../../../src/medium/find_the_duplicate_number.rs)
 - [ ] [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | [Solution](../../../src/medium/lru_cache.rs)
 - [ ] [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | [Solution](../../../src/hard/merge_k_sorted_lists.rs)
@@ -41,6 +41,6 @@
 
 Category: `Linked List`
 Created on: 2023-08-22 01:00:00
-Last modified on: 2023-09-13 21:48:00
+Last modified on: 2023-09-27 04:30:00
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
