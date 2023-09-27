@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 use std::{cell::RefCell, collections::HashMap, rc::Rc};
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Node {
     pub val: i32,
     pub next: Option<Rc<RefCell<Node>>>,
@@ -19,6 +19,7 @@ impl Node {
     }
 }
 
+// Solution Semi Correct
 pub fn copy_random_list(head: Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<Node>>> {
     if head.is_none() {
         return None;
