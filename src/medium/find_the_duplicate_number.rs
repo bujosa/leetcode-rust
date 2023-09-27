@@ -47,3 +47,20 @@ pub fn find_duplicate(nums: Vec<i32>) -> i32 {
 
 
 */
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_find_duplicate() {
+        assert_eq!(find_duplicate(vec![1, 3, 4, 2, 2]), 2);
+        assert_eq!(find_duplicate(vec![3, 1, 3, 4, 2]), 3);
+    }
+
+    #[test]
+    fn test_find_duplicate_with_10_values() {
+        assert_eq!(find_duplicate(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 9]), 9);
+        assert_eq!(find_duplicate(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 8]), 8);
+    }
+}
