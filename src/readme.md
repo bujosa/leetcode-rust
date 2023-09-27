@@ -63,6 +63,7 @@
   - [x] [567. Permutation in string](../src/medium/permutation_in_string.rs) -> [Problem Description](../src/medium/readme.md#567-permutation-in-string)
   - [x] [739. Daily temperatures](../src/medium/daily_temperatures.rs) -> [Problem Description](../src/medium/readme.md#739-daily-temperatures)
   - [x] [853. Car fleet](../src/medium/car_fleet.rs) -> [Problem Description](../src/medium/readme.md#853-car-fleet)
+  - [ ] [875. Koko eating bananas](../src/medium/koko_eating_bananas.rs) -> [Problem Description](../src/medium/readme.md#875-koko-eating-bananas)
 - [Hard](../src/hard)
   - [x] [42. Trapping rain water](../src/hard/trapping_rain_water.rs) -> [Problem Description](../src/hard/readme.md#42-trapping-rain-water)
   - [x] [76. Minimum window substring](../src/hard/minimum_window_substring.rs) -> [Problem Description](../src/hard/readme.md#76-minimum-window-substring)
