@@ -23,3 +23,27 @@ pub fn find_duplicate(nums: Vec<i32>) -> i32 {
 
     ptr1
 }
+
+/*
+    Algorithm - Floyd's Tortoise and Hare (Cycle Detection)
+    ------------------------------------------------------
+    1. Initialize tortoise and hare to the first element of the array.
+    2. Move tortoise to nums[tortoise].
+    3. Move hare to nums[nums[hare]].
+    4. Repeat steps 2 and 3 until tortoise == hare.
+    5. Initialize ptr1 to the first element of the array.
+    6. Initialize ptr2 to tortoise.
+    7. Move ptr1 to nums[ptr1].
+    8. Move ptr2 to nums[ptr2].
+    9. Repeat steps 7 and 8 until ptr1 == ptr2.
+    10. Return ptr1.
+
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+
+    How works Floyd's Tortoise and Hare?
+    ------------------------------------
+    https://youtu.be/wjYnzkAhcNk?t=145
+
+
+*/
