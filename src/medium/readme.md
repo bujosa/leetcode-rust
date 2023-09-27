@@ -526,6 +526,29 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 287. Find the Duplicate Number
+
+## Description
+
+Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
+
+## Examples
+
+```text
+Input: [1,3,4,2,2]
+Output: 2
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![1, 3, 4, 2, 2];
+  let result = medium::find_duplicate::find_duplicate(nums);
+  println!("result: {}", result);
+```
+
 # 347. Top K Frequent Elements
 
 ## Description
