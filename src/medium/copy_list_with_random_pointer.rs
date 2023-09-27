@@ -85,3 +85,5 @@ pub fn copy_random_list(head: Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<No
 
     old_new_mapping.remove(&(head.as_ref() as *const _ as usize))
 }
+
+// Note u can make pull request resolving this issue completely
