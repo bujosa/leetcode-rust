@@ -16,6 +16,19 @@ pub fn find_min(nums: Vec<i32>) -> i32 {
     return nums[left];
 }
 
+/*
+    Algorithm - Binary Search
+     - Initialize left to 0 and right to the last index of the array
+     - While left < right
+      - Get the mid index
+      - If the mid value is greater than the right value
+       - Set left to mid + 1
+      - Else
+       - Set right to mid
+
+     - Return the value at the left index
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
