@@ -764,3 +764,52 @@ Put the code below in main.rs and run `cargo run`
   let result = medium::min_eating_speed::min_eating_speed(piles, h);
   println!("result: {}", result);
 ```
+
+# 981. Time Based Key-Value Store
+
+## Description
+
+Design a time-based key-value data structure that can store multiple values for the same key at different time stamps and retrieve the key's value at a certain timestamp.
+
+Implement the TimeMap class:
+
+- `TimeMap()` Initializes the object of the data structure.
+- `void set(String key, String value, int timestamp)` Stores the key `key` with the value `value` at the given time `timestamp`.
+- `String get(String key, int timestamp)` Returns a value such that `set` was called previously, with `timestamp_prev <= timestamp`. If there are multiple such values, it returns the value associated with the largest `timestamp_prev`. If there are no values, it returns `""`.
+
+## Examples
+
+```text
+Input
+["TimeMap", "set", "get", "get", "set", "get", "get"]
+[[], ["foo", "bar", 1], ["foo", 1], ["foo", 3], ["foo", "bar2", 4], ["foo", 4], ["foo", 5]]
+Output
+[null, null, "bar", "bar", null, "bar2", "bar2"]
+
+Explanation
+TimeMap timeMap = new TimeMap();
+
+timeMap.set("foo", "bar", 1);  // store the key "foo" and value "bar" along with timestamp = 1.
+timeMap.get("foo", 1);         // return "bar"
+timeMap.get("foo", 3);         // return "bar", since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 ie "bar".
+
+timeMap.set("foo", "bar2", 4);
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut time_map = medium::time_map::TimeMap::new();
+  time_map.set(String::from("foo"), String::from("bar"), 1);
+  let result = time_map.get(String::from("foo"), 1);
+  println!("result: {}", result);
+  let result = time_map.get(String::from("foo"), 3);
+  println!("result: {}", result);
+  time_map.set(String::from("foo"), String::from("bar2"), 4);
+  let result = time_map.get(String::from("foo"), 4);
+  println!("result: {}", result);
+  let result = time_map.get(String::from("foo"), 5);
+  println!("result: {}", result);
+```
