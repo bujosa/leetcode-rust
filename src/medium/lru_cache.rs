@@ -23,6 +23,7 @@ impl ListNode {
     }
 }
 
+/// A struct representing a doubly linked list node.
 #[derive(Debug)]
 struct DoubleListNode {
     head: Option<Rc<RefCell<ListNode>>>,
@@ -201,6 +202,13 @@ impl LRUCache {
         }
     }
 }
+
+/*
+    Algorithm - Using a doubly linked list and a hashmap
+
+    Time    O(1)
+    Space   O(n)
+*/
 
 #[cfg(test)]
 mod tests {
