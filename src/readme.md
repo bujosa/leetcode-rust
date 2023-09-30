@@ -54,7 +54,7 @@
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
   - [-] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
-  - [ ] [146. LRU cache](../src/medium/lru_cache.rs) -> [Problem Description](../src/medium/readme.md#146-lru-cache)
+  - [x] [146. LRU cache](../src/medium/lru_cache.rs) -> [Problem Description](../src/medium/readme.md#146-lru-cache)
   - [x] [153. Find minimum in rotated sorted array](../src/medium/find_minimum_in_rotated_sorted_array.rs) -> [Problem Description](../src/medium/readme.md#153-find-minimum-in-rotated-sorted-array)
   - [x] [167. Two sum II - input array is sorted](../src/medium/two_sum_ii_input_array_is_sorted.rs) -> [Problem Description](../src/medium/readme.md#167-two-sum-ii---input-array-is-sorted)
   - [x] [238. Product of array except self](../src/medium/product_of_array_except_self.rs) -> [Problem Description](../src/medium/readme.md#238-product-of-array-except-self)

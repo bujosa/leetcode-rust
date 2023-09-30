@@ -35,12 +35,12 @@
 - [-] [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | [Solution](../../../src/medium/copy_list_with_random_pointer.rs) | [Problem Description](../../../src/medium/readme.md#138-copy-list-with-random-pointer)
 - [x] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | [Solution](../../../src/medium/add_two_numbers.rs)
 - [x] [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | [Solution](../../../src/medium/find_the_duplicate_number.rs) | [Problem Description](../../../src/medium/readme.md#287-find-the-duplicate-number)
-- [ ] [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | [Solution](../../../src/medium/lru_cache.rs) | [Problem Description](../../../src/medium/readme.md#146-lru-cache)
+- [x] [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | [Solution](../../../src/medium/lru_cache.rs) | [Problem Description](../../../src/medium/readme.md#146-lru-cache)
 - [ ] [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | [Solution](../../../src/hard/merge_k_sorted_lists.rs)
 - [ ] [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | [Solution](../../../src/hard/reverse_nodes_in_k_group.rs)
 
 Category: `Linked List`
 Created on: 2023-08-22 01:00:00
-Last modified on: 2023-09-30 10:30:00
+Last modified on: 2023-09-30 12:25:00
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
