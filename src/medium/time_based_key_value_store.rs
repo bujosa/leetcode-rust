@@ -6,11 +6,15 @@ struct TimeMap {}
  * If you need a mutable reference, change it to `&mut self` instead.
  */
 impl TimeMap {
-    fn new() -> Self {}
+    fn new() -> Self {
+        TimeMap {}
+    }
 
     fn set(&self, key: String, value: String, timestamp: i32) {}
 
-    fn get(&self, key: String, timestamp: i32) -> String {}
+    fn get(&self, key: String, timestamp: i32) -> String {
+        "".to_string()
+    }
 }
 
 /**
