@@ -1,15 +1,19 @@
 # leetcode-challenges-in-rust
 
-This project is for leetcode challenges in rust and add some notes of theory and algorithms.
+This project is for leetcode challenges in Rust and includes notes on theory and algorithms.
 
 ## Description
 
-In this project, I will try to solve leetcode challenges in rust.
+In this project, I will attempt to solve LeetCode challenges in Rust.
 
 ## Directory Structure
 
-- [Problems](./src/readme.md) - Contains solutions of problems. Problems are categorized by difficulty. Each problem has a link to the problem on leetcode
-- [Theory](./theory/readme.md) - Contains notes of theory and algorithms. Theory is categorized by category. Each category contain a list of problems related to it.
+- [Problems](./src/readme.md) - Contains solutions to problems. Problems are categorized by difficulty. Each problem has a link to the problem on LeetCode.
+- [Theory](./theory/readme.md) - Contains notes on theory and algorithms. Theory is categorized by category. Each category contains a list of problems related to it.
+
+## Contribution
+
+We welcome contributions to this project. If you'd like to contribute, please follow the guidelines outlined in our [Contribution Guide](./CONTRIBUTION.md).
 
 ## References
 
