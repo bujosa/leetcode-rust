@@ -1,4 +1,4 @@
-# leetcode-challenges-in-rust
+# RustLeet
 
 This project is for leetcode challenges in Rust and includes notes on theory and algorithms.
 
