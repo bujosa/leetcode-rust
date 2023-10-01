@@ -31,7 +31,7 @@ To get started with contributing, follow these steps:
 2. Clone your forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/bujosa/leetcode-challenges-in-rust.git
+   git clone https://github.com/bujosa/leetcode-rust.git
    ```
 
 3. Create a new branch for your changes:
