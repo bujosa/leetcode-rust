@@ -1,19 +1,37 @@
 #![allow(dead_code)]
-struct TimeMap {}
+use std::collections::HashMap;
 
-/**
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
+struct TimeMap {
+    hm: HashMap<String, Vec<(String, i32)>>,
+}
+
 impl TimeMap {
     fn new() -> Self {
-        TimeMap {}
+        Self { hm: HashMap::new() }
     }
 
-    fn set(&self, key: String, value: String, timestamp: i32) {}
+    fn set(&mut self, key: String, value: String, timestamp: i32) {
+        self.hm.entry(key).or_default().push((value, timestamp));
+    }
 
     fn get(&self, key: String, timestamp: i32) -> String {
-        "".to_string()
+        let mut res = String::new();
+
+        if let Some(t_list) = self.hm.get(&key) {
+            let (mut l, mut r) = (0, t_list.len());
+
+            while l < r {
+                let m = l + (r - l) / 2;
+                if timestamp < t_list[m].1 {
+                    r = m;
+                } else {
+                    res = t_list[m].0.clone();
+                    l = m + 1;
+                }
+            }
+        }
+
+        res
     }
 }
 
@@ -29,8 +47,8 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_981() {
-        let obj = TimeMap::new();
+    fn test_1() {
+        let mut obj = TimeMap::new();
         obj.set("foo".to_string(), "bar".to_string(), 1);
         assert_eq!(obj.get("foo".to_string(), 1), "bar".to_string());
         assert_eq!(obj.get("foo".to_string(), 3), "bar".to_string());
