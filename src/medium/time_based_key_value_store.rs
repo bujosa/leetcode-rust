@@ -1,6 +1,12 @@
 #![allow(dead_code)]
 use std::collections::HashMap;
 
+/**
+ * Your TimeMap object will be instantiated and called as such:
+ * let obj = TimeMap::new();
+ * obj.set(key, value, timestamp);
+ * let ret_2: String = obj.get(key, timestamp);
+ */
 struct TimeMap {
     hm: HashMap<String, Vec<(String, i32)>>,
 }
@@ -35,12 +41,25 @@ impl TimeMap {
     }
 }
 
-/**
- * Your TimeMap object will be instantiated and called as such:
- * let obj = TimeMap::new();
- * obj.set(key, value, timestamp);
- * let ret_2: String = obj.get(key, timestamp);
- */
+/*
+    Algorithm - Binary Search
+
+    - Create a HashMap with key as String and value as Vec<(String, i32)>
+    - set(key, value, timestamp)
+        - Insert the key into the HashMap if it doesn't exist
+        - Push the value and timestamp into the Vec
+    - get(key, timestamp)
+        - If the key doesn't exist, return empty string
+        - If the key exists, do binary search on the Vec<(String, i32)>
+            - If the timestamp is less than the middle element's timestamp, search the left half
+            - If the timestamp is greater than or equal to the middle element's timestamp, search the right half
+            - If the timestamp is equal to the middle element's timestamp, return the value
+            - If the timestamp is greater than the middle element's timestamp, return the value of the right element
+            - If the timestamp is less than the middle element's timestamp, return the value of the left element
+
+    Time    O(logN)
+    Space   O(N)
+*/
 
 #[cfg(test)]
 mod tests {
