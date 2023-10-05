@@ -49,6 +49,59 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {:?}", result);
 ```
 
+# 23. Merge k Sorted Lists
+
+## Description
+
+You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
+
+Merge all the linked-lists into one sorted linked-list and return it.
+
+## Examples
+
+Example 1:
+
+```rust
+Input: lists = [[1,4,5],[1,3,4],[2,6]]
+Output: [1,1,2,3,4,4,5,6]
+Explanation: The linked-lists are:
+[
+  1->4->5,
+  1->3->4,
+  2->6
+]
+
+merging them into one sorted list:
+1->1->2->3->4->4->5->6
+```
+
+Example 2:
+
+```rust
+Input: lists = []
+Output: []
+```
+
+Example 3:
+
+```rust
+Input: lists = [[]]
+Output: []
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    let lists = vec![
+        ListNode::from_vec(vec![1, 4, 5]),
+        ListNode::from_vec(vec![1, 3, 4]),
+        ListNode::from_vec(vec![2, 6]),
+    ];
+    let result = hard::merge_k_sorted_lists::merge_k_lists(lists);
+    println!("result: {:?}", result);
+```
 
 # 42. Trapping Rain Water
 
