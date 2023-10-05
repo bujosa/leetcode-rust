@@ -34,10 +34,10 @@
 - [x] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [Solution](../../../src/medium/find_minimum_in_rotated_sorted_array.rs) | [Problem Description](../../../src/medium/readme.md#153-find-minimum-in-rotated-sorted-array)
 - [x] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | [Solution](../../../src/medium/search_in_rotated_sorted_array.rs)
 - [x] [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | Medium | [Solution](../../../src/medium/time_based_key_value_store.rs) | [Problem Description](../../../src/medium/readme.md#981-time-based-key-value-store)
-- [ ] [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | [Solution](../../../src/hard/median_of_two_sorted_arrays.rs) | [Problem Description](../../../src/hard/readme.md#4-median-of-two-sorted-arrays)
+- [x] [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | [Solution](../../../src/hard/median_of_two_sorted_arrays.rs) | [Problem Description](../../../src/hard/readme.md#4-median-of-two-sorted-arrays)
 
 Category: `Binary Search`
 Created on: 2023-09-21 01:00
-Last modified on: 2023-10-5 10:31
-Status: In Progress
+Last modified on: 2023-10-5 20:32
+Status: Finished
 Author: [David Bujosa](https://github.com/bujosa)
