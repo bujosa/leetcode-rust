@@ -69,6 +69,7 @@
   - [x] [981. Time based key-value store](../src/medium/time_based_key_value_store.rs) -> [Problem Description](../src/medium/readme.md#981-time-based-key-value-store)
 - [Hard](../src/hard)
   - [x] [4. Median of two sorted arrays](../src/hard/median_of_two_sorted_arrays.rs) -> [Problem Description](../src/hard/readme.md#4-median-of-two-sorted-arrays)
+  - [ ] [23. Merge k sorted lists](../src/hard/merge_k_sorted_lists.rs) -> [Problem Description](../src/hard/readme.md#23-merge-k-sorted-lists)
   - [x] [42. Trapping rain water](../src/hard/trapping_rain_water.rs) -> [Problem Description](../src/hard/readme.md#42-trapping-rain-water)
   - [x] [76. Minimum window substring](../src/hard/minimum_window_substring.rs) -> [Problem Description](../src/hard/readme.md#76-minimum-window-substring)
   - [x] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs) -> [Problem Description](../src/hard/readme.md#84-largest-rectangle-in-histogram)
