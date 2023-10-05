@@ -6,12 +6,13 @@ pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
         (nums1, nums2)
     };
 
+    let half = (nums1.len() + nums2.len() + 1) / 2;
     let (m, n) = (nums1.len(), nums2.len());
     let (mut low, mut high) = (0, m);
 
     while low <= high {
         let partition_x = (low + high) / 2;
-        let partition_y = (m + n + 1) / 2 - partition_x;
+        let partition_y =  half - partition_x;
 
         // Partition_x is always greater than 0
         let max_x = if partition_x == 0 {
@@ -88,5 +89,13 @@ mod tests {
     fn test_find_median_sorted_arrays_2() {
         assert_eq!(find_median_sorted_arrays(vec![0, 0], vec![0, 0]), 0.00000);
         assert_eq!(find_median_sorted_arrays(vec![], vec![1]), 1.00000);
+    }
+
+    #[test]
+    fn test_find_median_sorted_arrays_3() {
+        assert_eq!(
+            find_median_sorted_arrays(vec![1, 2, 3, 4, 5, 6, 7, 8], vec![1, 2, 3, 4, 5]),
+            4.00000
+        );
     }
 }
