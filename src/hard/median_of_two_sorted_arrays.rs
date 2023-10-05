@@ -13,6 +13,7 @@ pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
         let partition_x = (low + high) / 2;
         let partition_y = (m + n + 1) / 2 - partition_x;
 
+        // Partition_x is always greater than 0
         let max_x = if partition_x == 0 {
             i32::MIN
         } else {
@@ -25,6 +26,7 @@ pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
             nums1[partition_x]
         };
 
+        // Partition_y is always greater than 0
         let max_y = if partition_y == 0 {
             i32::MIN
         } else {
@@ -67,6 +69,9 @@ fn calculate_median(max_x: i32, max_y: i32, min_x: i32, min_y: i32, m: usize, n:
     nums2 = [7, 11, 18, 19, 21, 25]
 
     median1 = 8
+
+    Time Complexity - O(log(min(m, n)))
+    Space Complexity - O(1)
 */
 
 #[cfg(test)]
