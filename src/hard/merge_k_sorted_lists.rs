@@ -40,7 +40,7 @@ pub fn merge_k_lists(lists: Vec<Option<Box<Node>>>) -> Option<Box<Node>> {
     let mut heap = BinaryHeap::new();
     for list in lists {
         if let Some(node) = list {
-            heap.push(node);
+            heap.push(node); // O(logk)
         }
     }
 
@@ -48,7 +48,7 @@ pub fn merge_k_lists(lists: Vec<Option<Box<Node>>>) -> Option<Box<Node>> {
     let mut res_tail = &mut res;
     while let Some(mut node) = heap.pop() {
         if let Some(next) = node.next.take() {
-            heap.push(next);
+            heap.push(next); // O(logk)
         }
         *res_tail = Some(node);
         res_tail = &mut res_tail.as_mut().unwrap().next;
