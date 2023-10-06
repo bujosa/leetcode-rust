@@ -100,3 +100,35 @@ mod tests {
         assert_eq!(res, expected);
     }
 }
+
+// Solution without using BinaryHeap
+// pub fn merge_k_lists(lists: Vec<Option<Box<Node>>>) -> Option<Box<Node>> {
+//     let mut lists = lists;
+//     let mut res = None;
+//     let mut res_tail = &mut res;
+//     loop {
+//         let mut min = std::i32::MAX;
+//         let mut min_idx = 0;
+//         let mut all_none = true;
+//         for (i, list) in lists.iter().enumerate() {
+//             if let Some(node) = list {
+//                 all_none = false;
+//                 if node.val < min {
+//                     min = node.val;
+//                     min_idx = i;
+//                 }
+//             }
+//         }
+//         if all_none {
+//             break;
+//         }
+//         let mut node = lists[min_idx].take().unwrap();
+//         lists[min_idx] = node.next.take();
+//         *res_tail = Some(node);
+//         res_tail = &mut res_tail.as_mut().unwrap().next;
+//     }
+//     res
+// }
+// Algorithm - O(nk)
+// Time Complexity - O(nk)
+// Space Complexity - O(1)
