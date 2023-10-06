@@ -40,9 +40,11 @@ pub fn merge_k_lists(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>>
                 }
             }
         }
+
         if all_none {
             break;
         }
+
         let mut node = lists[min_idx].take().unwrap();
         lists[min_idx] = node.next.take();
         *res_tail = Some(node);
@@ -76,6 +78,22 @@ mod tests {
         ];
         let res = merge_k_lists(lists);
         let expected = ListNode::from_vec(vec![1, 1, 2, 3, 4, 4, 5, 6]);
+        assert_eq!(res, expected);
+    }
+
+    #[test]
+    fn merge_k_lists_test_2() {
+        let lists = vec![ListNode::from_vec(vec![]), ListNode::from_vec(vec![])];
+        let res = merge_k_lists(lists);
+        let expected = ListNode::from_vec(vec![]);
+        assert_eq!(res, expected);
+    }
+
+    #[test]
+    fn merge_k_lists_test_3() {
+        let lists = vec![];
+        let res = merge_k_lists(lists);
+        let expected = ListNode::from_vec(vec![]);
         assert_eq!(res, expected);
     }
 }
