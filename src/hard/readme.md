@@ -94,12 +94,13 @@ Output: []
 Put the code below in main.rs and run `cargo run`
 
 ```rust
+    use leetcode::hard::merge_k_sorted_lists::{Node, merge_k_lists};
     let lists = vec![
-        ListNode::from_vec(vec![1, 4, 5]),
-        ListNode::from_vec(vec![1, 3, 4]),
-        ListNode::from_vec(vec![2, 6]),
+        Node::from_vec(vec![1, 4, 5]),
+        Node::from_vec(vec![1, 3, 4]),
+        Node::from_vec(vec![2, 6]),
     ];
-    let result = hard::merge_k_sorted_lists::merge_k_lists(lists);
+    let result = merge_k_lists(lists);
     println!("result: {:?}", result);
 ```
 
