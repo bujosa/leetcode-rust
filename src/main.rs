@@ -1,14 +1,12 @@
 mod medium;
 
 fn main() {
-    let mut cache = medium::lru_cache::LRUCache::new(2);
-    cache.put(1, 1);
-    cache.put(2, 2);
-    println!("{}", cache.get(1)); // returns 1
-    cache.put(3, 3); // evicts key 2
-    println!("{}", cache.get(2)); // returns -1 (not found)
-    cache.put(4, 4); // evicts key 1
-    println!("{}", cache.get(1)); // returns -1 (not found)
-    println!("{}", cache.get(3)); // returns 3
-    println!("{}", cache.get(4)); // returns 4
+    use leetcode::hard::merge_k_sorted_lists::{merge_k_lists, Node};
+    let lists = vec![
+        Node::from_vec(vec![1, 4, 5]),
+        Node::from_vec(vec![1, 3, 4]),
+        Node::from_vec(vec![2, 6]),
+    ];
+    let result = merge_k_lists(lists);
+    println!("result: {:?}", result);
 }

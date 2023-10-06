@@ -9,11 +9,11 @@ pub struct Node {
 }
 
 impl Node {
-    fn new(val: i32) -> Self {
+    pub fn new(val: i32) -> Self {
         Node { val, next: None }
     }
 
-    fn from_vec(vec: Vec<i32>) -> Option<Box<Node>> {
+    pub fn from_vec(vec: Vec<i32>) -> Option<Box<Node>> {
         let mut head = None;
         for &val in vec.iter().rev() {
             let mut node = Node::new(val);
