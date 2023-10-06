@@ -1,21 +1,22 @@
 #![allow(dead_code)]
-// Definition for singly-linked list.
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
+use std::cmp::Ordering;
+use std::collections::BinaryHeap;
+
+#[derive(Debug, Eq, PartialEq)]
+pub struct Node {
+    val: i32,
+    next: Option<Box<Node>>,
 }
 
-impl ListNode {
-    #[inline]
+impl Node {
     fn new(val: i32) -> Self {
-        ListNode { next: None, val }
+        Node { val, next: None }
     }
 
-    fn from_vec(vec: Vec<i32>) -> Option<Box<ListNode>> {
+    fn from_vec(vec: Vec<i32>) -> Option<Box<Node>> {
         let mut head = None;
         for &val in vec.iter().rev() {
-            let mut node = ListNode::new(val);
+            let mut node = Node::new(val);
             node.next = head;
             head = Some(Box::new(node));
         }
@@ -23,30 +24,32 @@ impl ListNode {
     }
 }
 
-pub fn merge_k_lists(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
-    let mut lists = lists;
+impl Ord for Node {
+    fn cmp(&self, other: &Self) -> Ordering {
+        other.val.cmp(&self.val)
+    }
+}
+
+impl PartialOrd for Node {
+    fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
+        Some(self.cmp(other))
+    }
+}
+
+pub fn merge_k_lists(lists: Vec<Option<Box<Node>>>) -> Option<Box<Node>> {
+    let mut heap = BinaryHeap::new();
+    for list in lists {
+        if let Some(node) = list {
+            heap.push(node);
+        }
+    }
+
     let mut res = None;
     let mut res_tail = &mut res;
-    loop {
-        let mut min = std::i32::MAX;
-        let mut min_idx = 0;
-        let mut all_none = true;
-        for (i, list) in lists.iter().enumerate() {
-            if let Some(node) = list {
-                all_none = false;
-                if node.val < min {
-                    min = node.val;
-                    min_idx = i;
-                }
-            }
+    while let Some(mut node) = heap.pop() {
+        if let Some(next) = node.next.take() {
+            heap.push(next);
         }
-
-        if all_none {
-            break;
-        }
-
-        let mut node = lists[min_idx].take().unwrap();
-        lists[min_idx] = node.next.take();
         *res_tail = Some(node);
         res_tail = &mut res_tail.as_mut().unwrap().next;
     }
@@ -72,20 +75,20 @@ mod tests {
     #[test]
     fn merge_k_lists_test() {
         let lists = vec![
-            ListNode::from_vec(vec![1, 4, 5]),
-            ListNode::from_vec(vec![1, 3, 4]),
-            ListNode::from_vec(vec![2, 6]),
+            Node::from_vec(vec![1, 4, 5]),
+            Node::from_vec(vec![1, 3, 4]),
+            Node::from_vec(vec![2, 6]),
         ];
         let res = merge_k_lists(lists);
-        let expected = ListNode::from_vec(vec![1, 1, 2, 3, 4, 4, 5, 6]);
+        let expected = Node::from_vec(vec![1, 1, 2, 3, 4, 4, 5, 6]);
         assert_eq!(res, expected);
     }
 
     #[test]
     fn merge_k_lists_test_2() {
-        let lists = vec![ListNode::from_vec(vec![]), ListNode::from_vec(vec![])];
+        let lists = vec![Node::from_vec(vec![]), Node::from_vec(vec![])];
         let res = merge_k_lists(lists);
-        let expected = ListNode::from_vec(vec![]);
+        let expected = Node::from_vec(vec![]);
         assert_eq!(res, expected);
     }
 
@@ -93,7 +96,7 @@ mod tests {
     fn merge_k_lists_test_3() {
         let lists = vec![];
         let res = merge_k_lists(lists);
-        let expected = ListNode::from_vec(vec![]);
+        let expected = Node::from_vec(vec![]);
         assert_eq!(res, expected);
     }
 }
