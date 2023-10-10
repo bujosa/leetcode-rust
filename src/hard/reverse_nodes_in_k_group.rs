@@ -23,8 +23,33 @@ impl ListNode {
     }
 }
 
-pub fn reverse_k_group(head: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNode>> {
-    todo!()
+pub fn reverse_k_group(mut head: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNode>> {
+    let mut sentinel = ListNode::new(-1);
+    let mut last_solution_node = &mut sentinel;
+
+    'finish: loop {
+        for _ in 0..k {
+            if let Some(mut current) = head.take() {
+                head = current.next.take();
+                current.next = last_solution_node.next.take();
+                last_solution_node.next = Some(current);
+            } else {
+                break 'finish;
+            }
+        }
+        while let Some(ref mut next) = last_solution_node.next {
+            last_solution_node = next;
+        }
+    }
+
+    let mut final_reversal_head = ListNode::new(-1);
+    while let Some(mut current) = last_solution_node.next.take() {
+        last_solution_node.next = current.next.take();
+        current.next = final_reversal_head.next.take();
+        final_reversal_head.next = Some(current);
+    }
+    last_solution_node.next = final_reversal_head.next.take();
+    sentinel.next.take()
 }
 
 #[cfg(test)]
