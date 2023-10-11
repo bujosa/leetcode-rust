@@ -37,6 +37,7 @@
   - [x] [155. Min stack](../src/easy/min_stack.rs) -> [Problem Description](../src/easy/readme.md#155-min-stack)
   - [x] [206. Reverse linked list](../src/easy/reverse_linked_list.rs) -> [Problem Description](../src/easy/readme.md#206-reverse-linked-list)
   - [x] [217. Contains duplicate](../src/easy/contains_duplicate.rs) -> [Problem Description](../src/easy/readme.md#217-contains-duplicate)
+  - [x] [226. Invert binary tree](../src/easy/invert_binary_tree.rs) -> [Problem Description](../src/easy/readme.md#226-invert-binary-tree)
   - [x] [234. Palindrome linked list](../src/easy/palindrome_linked_list.rs) -> [Problem Description](../src/easy/readme.md#234-palindrome-linked-list)
   - [x] [242. Valid anagram](../src/easy/valid_anagram.rs) -> [Problem Description](../src/easy/readme.md#242-valid-anagram)
   - [x] [704. Binary search](../src/easy/binary_search.rs) -> [Problem Description](../src/easy/readme.md#704-binary-search)
