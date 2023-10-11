@@ -22,7 +22,19 @@ impl TreeNode {
 
 type Tree = Option<Rc<RefCell<TreeNode>>>;
 
-pub fn invert_tree(root: Tree) -> Tree {}
+pub fn invert_tree(root: Tree) -> Tree {
+    root.map(|root| {
+        match root.borrow_mut() {
+            mut node => {
+                let left = node.left.clone();
+                let right = node.right.clone();
+                node.left = invert_tree(right);
+                node.right = invert_tree(left);
+            }
+        };
+        root
+    })
+}
 
 #[cfg(test)]
 mod tests {
