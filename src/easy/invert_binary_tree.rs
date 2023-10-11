@@ -36,6 +36,18 @@ pub fn invert_tree(root: Tree) -> Tree {
     })
 }
 
+/*
+    Algorithm - Recursive
+
+    1. If root is None, return None
+    2. Swap the left and right nodes
+    3. Recursively call invert_tree on the left and right nodes
+    4. Return the root
+
+    Time: O(n)
+    Space: O(n)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
