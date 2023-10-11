@@ -93,5 +93,5 @@
 Category: `Arrays & Hashing`
 Created on: 2023-06-10 22:00:00
 Last modified on: 2023-06-10 22:00:00
-Status: Completed
+Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

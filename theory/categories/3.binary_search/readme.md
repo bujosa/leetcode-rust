@@ -39,5 +39,5 @@
 Category: `Binary Search`
 Created on: 2023-09-21 01:00
 Last modified on: 2023-10-5 20:32
-Status: Finished
+Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

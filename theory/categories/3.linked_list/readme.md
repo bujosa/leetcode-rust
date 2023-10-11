@@ -37,10 +37,10 @@
 - [x] [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | [Solution](../../../src/medium/find_the_duplicate_number.rs) | [Problem Description](../../../src/medium/readme.md#287-find-the-duplicate-number)
 - [x] [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | [Solution](../../../src/medium/lru_cache.rs) | [Problem Description](../../../src/medium/readme.md#146-lru-cache)
 - [x] [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | [Solution](../../../src/hard/merge_k_sorted_lists.rs) | [Problem Description](../../../src/hard/readme.md#23-merge-k-sorted-lists)
-- [ ] [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | [Solution](../../../src/hard/reverse_nodes_in_k_group.rs) | [Problem Description](../../../src/hard/readme.md#25-reverse-nodes-in-k-group)
+- [x] [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | [Solution](../../../src/hard/reverse_nodes_in_k_group.rs) | [Problem Description](../../../src/hard/readme.md#25-reverse-nodes-in-k-group)
 
 Category: `Linked List`
 Created on: 2023-08-22 01:00:00
-Last modified on: 2023-10-06 19:30:00
-Status: In Progress
+Last modified on: 2023-10-11 17:30:00
+Status: Done
 Author: [David Bujosa](https://github.com/bujosa)
