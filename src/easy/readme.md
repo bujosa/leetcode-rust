@@ -1181,6 +1181,55 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 226. Invert binary tree
+
+## Description
+
+Invert a binary tree.
+
+## Examples
+
+```text
+Input:
+
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+
+Output:
+
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  use easy::invert_binary_tree::{TreeNode, invert_tree};
+  let mut root = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(7))));
+  let node4 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let node5 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  let node6 = Some(Rc::new(RefCell::new(TreeNode::new(6))));
+  let node7 = Some(Rc::new(RefCell::new(TreeNode::new(9))));
+  node3.as_mut().unwrap().borrow_mut().left = node6;
+  node3.as_mut().unwrap().borrow_mut().right = node7;
+  node2.as_mut().unwrap().borrow_mut().left = node4;
+  node2.as_mut().unwrap().borrow_mut().right = node5;
+  root.as_mut().unwrap().borrow_mut().left = node2;
+  root.as_mut().unwrap().borrow_mut().right = node3;
+  let result = invert_tree(root);
+  println!("result: {:?}", result);
+```
+
 # 234. Palindrome linked list
 
 ## Description
