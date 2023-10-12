@@ -31,6 +31,7 @@ pub mod roman_to_integer;
 pub mod same_tree;
 pub mod search_insert_position;
 pub mod sqrt_x;
+pub mod subtree_of_another_tree;
 pub mod symmetric_tree;
 pub mod two_sum;
 pub mod valid_anagram;
