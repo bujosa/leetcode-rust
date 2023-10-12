@@ -22,7 +22,21 @@ impl TreeNode {
     }
 }
 
-pub fn diameter_of_binary_tree(root: Tree) -> i32 {}
+pub fn diameter_of_binary_tree(root: Tree) -> i32 {
+    let mut max = 0;
+    fn helper(root: Tree, max: &mut i32) -> i32 {
+        if let Some(node) = root {
+            let left = helper(node.borrow().left.clone(), max);
+            let right = helper(node.borrow().right.clone(), max);
+            *max = std::cmp::max(*max, left + right);
+            std::cmp::max(left, right) + 1
+        } else {
+            0
+        }
+    }
+    helper(root, &mut max);
+    max
+}
 
 #[cfg(test)]
 mod tests {
