@@ -1,27 +1,28 @@
 #![allow(dead_code)]
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
+
+type Tree = Option<Rc<RefCell<TreeNode>>>;
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
-  pub val: i32,
-  pub left: Option<Rc<RefCell<TreeNode>>>,
-  pub right: Option<Rc<RefCell<TreeNode>>>,
+    pub val: i32,
+    pub left: Tree,
+    pub right: Tree,
 }
 
 impl TreeNode {
-  #[inline]
-  pub fn new(val: i32) -> Self {
-    TreeNode {
-      val,
-      left: None,
-      right: None
+    #[inline]
+    pub fn new(val: i32) -> Self {
+        TreeNode {
+            val,
+            left: None,
+            right: None,
+        }
     }
-  }
 }
 
-
-pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+pub fn max_depth(root: Tree) -> i32 {
     if root.is_none() {
         return 0;
     }
@@ -33,16 +34,16 @@ pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
 }
 
 /*
-    Algorithm - Recursive DFS (Depth First Search)
-     - If the root is None, return 0
-      - Get the max depth of the left subtree
-      - Get the max depth of the right subtree
-      - Return 1 + the max of the left and right subtree
+   Algorithm - Recursive DFS (Depth First Search)
+    - If the root is None, return 0
+     - Get the max depth of the left subtree
+     - Get the max depth of the right subtree
+     - Return 1 + the max of the left and right subtree
 
-    Complexity
-        - Time: O(n)
-        - Space: O(n)
- */
+   Complexity
+       - Time: O(n)
+       - Space: O(n)
+*/
 
 #[cfg(test)]
 mod tests {
