@@ -1289,6 +1289,45 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 543. Diameter of binary tree
+
+## Description
+
+Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
+
+## Examples
+
+```text
+Given a binary tree
+
+          1
+         / \
+        2   3
+       / \
+      4   5
+
+Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  use easy::diameter_of_binary_tree::{TreeNode, diameter_of_binary_tree};
+  let mut root = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  let mut node4 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let node5 = Some(Rc::new(RefCell::new(TreeNode::new(5))));
+  node2.as_mut().unwrap().borrow_mut().left = node4;
+  node2.as_mut().unwrap().borrow_mut().right = node5;
+  root.as_mut().unwrap().borrow_mut().left = node2;
+  root.as_mut().unwrap().borrow_mut().right = node3;
+  let result = diameter_of_binary_tree(root);
+  println!("result: {:?}", result);
+```
+
 # 704. Binary search
 
 ## Description
