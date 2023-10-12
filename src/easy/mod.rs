@@ -12,7 +12,6 @@ pub mod invert_binary_tree;
 pub mod length_of_last_word;
 pub mod linked_list_cycle;
 pub mod longest_common_prefix;
-pub mod max_depth_of_binary_tree;
 pub mod maximum_depth_of_binary_tree;
 pub mod merge_sorted_array;
 pub mod merge_two_sorted_lists;
