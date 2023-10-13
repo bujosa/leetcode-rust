@@ -1328,6 +1328,58 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 572. Subtree of another tree
+
+## Description
+
+Given two non-empty binary trees s and t, check whether tree t has exactly the same structure and node values with a subtree of s. A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself.
+
+## Examples
+
+```text
+Given tree s:
+
+     3
+    / \
+   4   5
+  / \
+ 1   2
+
+Given tree t:
+
+   4
+  / \
+ 1   2
+
+Return true, because t has the same structure and node values with a subtree of s.
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  use easy::subtree_of_another_tree::{TreeNode, is_subtree};
+  let mut root1 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(5))));
+  let mut node4 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let node5 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  node2.as_mut().unwrap().borrow_mut().left = node4;
+  node2.as_mut().unwrap().borrow_mut().right = node5;
+  root1.as_mut().unwrap().borrow_mut().left = node2;
+  root1.as_mut().unwrap().borrow_mut().right = node3;
+
+  let mut root2 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let node6 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let node7 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+  root2.as_mut().unwrap().borrow_mut().left = node6;
+  root2.as_mut().unwrap().borrow_mut().right = node7;
+
+  let result = is_subtree(root1, root2);
+  println!("result: {:?}", result);
+```
+
 # 704. Binary search
 
 ## Description
