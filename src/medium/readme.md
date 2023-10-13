@@ -110,7 +110,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let nums = vec![-1, 0, 1, 2, -1, -4];
-  let result = easy::three_sum::three_sum(nums);
+  let result = leetcode::medium::three_sum::three_sum(nums);
   println!("result: {:?}", result);
 ```
 
@@ -564,7 +564,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let numbers = vec![2, 7, 11, 15];
   let target = 9;
-  let result = easy::two_sum::two_sum(numbers, target);
+  let result = leetcode::medium::two_sum_ii_input_array_is_sorted::two_sum(numbers, target);
   println!("result: {:?}", result);
 ```
 
