@@ -23,7 +23,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let nums = vec![2, 7, 11, 15];
   let target = 9;
-  let result = easy::two_sum::two_sum(nums, target);
+  let result = leetcode::easy::two_sum::two_sum(nums, target);
   println!("result: {:?}", result);
 ```
 
@@ -52,7 +52,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let x = 121;
-  let result = easy::palindrome_number::is_palindrome(x);
+  let result = leetcode::easy::palindrome_number::is_palindrome(x);
   println!("result: {}", result);
 ```
 
@@ -111,7 +111,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let s = String::from("III");
-  let result = easy::roman_to_integer::roman_to_int(s);
+  let result = leetcode::easy::roman_to_integer::roman_to_int(s);
   println!("result: {}", result);
 ```
 
@@ -140,7 +140,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let strs = vec![String::from("flower"), String::from("flow"), String::from("flight")];
-  let result = easy::longest_common_prefix::longest_common_prefix(strs);
+  let result = leetcode::easy::longest_common_prefix::longest_common_prefix(strs);
   println!("result: {}", result);
 ```
 
@@ -175,7 +175,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let s = String::from("()[]{}");
-  let result = easy::valid_parentheses::is_valid(s);
+  let result = leetcode::easy::valid_parentheses::is_valid(s);
   println!("result: {}", result);
 ```
 
@@ -203,7 +203,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let mut nums = vec![0,0,1,1,1,2,2,3,3,4];
-  let result = easy::remove_duplicates_from_sorted_array::remove_duplicates(&mut nums);
+  let result = leetcode::easy::remove_duplicates_from_sorted_array::remove_duplicates(&mut nums);
   println!("result: {}", result);
 ```
 
@@ -237,7 +237,7 @@ Put the code below in main.rs and run `cargo run`
   node2.as_mut().unwrap().next = node3;
   l2.as_mut().unwrap().next = node2;
 
-  let result = easy::merge_two_sorted_lists::merge_two_lists(l1, l2);
+  let result = leetcode::easy::merge_two_sorted_lists::merge_two_lists(l1, l2);
   println!("result: {:?}", result);
 ```
 
@@ -268,7 +268,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let mut nums = vec![3, 2, 2, 3];
   let val = 3;
-  let result = easy::remove_element::remove_element(&mut nums, val);
+  let result = leetcode::easy::remove_element::remove_element(&mut nums, val);
   println!("result: {:?}", result);
 ```
 
@@ -295,7 +295,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let haystack = String::from("hello");
   let needle = String::from("ll");
-  let result = easy::implement_strstr::str_str(haystack, needle);
+  let result = leetcode::easy::implement_strstr::str_str(haystack, needle);
   println!("result: {:?}", result);
 ```
 
@@ -324,7 +324,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let nums = vec![1, 3, 5, 6];
   let target = 5;
-  let result = easy::search_insert_position::search_insert(nums, target);
+  let result = leetcode::easy::search_insert_position::search_insert(nums, target);
   println!("result: {:?}", result);
 ```
 
@@ -358,7 +358,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let s = String::from("Hello World");
-  let result = easy::length_of_last_word::length_of_last_word(s);
+  let result = leetcode::easy::length_of_last_word::length_of_last_word(s);
   println!("result: {:?}", result);
 ```
 
@@ -390,7 +390,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let digits = vec![1, 2, 3];
-  let result = easy::plus_one::plus_one(digits);
+  let result = leetcode::easy::plus_one::plus_one(digits);
   println!("result: {:?}", result);
 ```
 
@@ -419,7 +419,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let a = String::from("11");
   let b = String::from("1");
-  let result = easy::add_binary::add_binary(a, b);
+  let result = leetcode::easy::add_binary::add_binary(a, b);
   println!("result: {:?}", result);
 ```
 
@@ -452,7 +452,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let x = 8;
-  let result = easy::sqrt_x::my_sqrt(x);
+  let result = leetcode::easy::sqrt_x::my_sqrt(x);
   println!("result: {:?}", result);
 ```
 
@@ -491,7 +491,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let n = 3;
-  let result = easy::climbing_stairs::climb_stairs(n);
+  let result = leetcode::easy::climbing_stairs::climb_stairs(n);
   println!("result: {:?}", result);
 ```
 
@@ -521,7 +521,7 @@ Put the code below in main.rs and run `cargo run`
   let node3 = Some(Box::new(ListNode::new(2)));
   node2.as_mut().unwrap().next = node3;
   head.as_mut().unwrap().next = node2;
-  let result = easy::remove_duplicates_from_sorted_list::delete_duplicates(head);
+  let result = leetcode::easy::remove_duplicates_from_sorted_list::delete_duplicates(head);
   println!("result: {:?}", result);
 ```
 
@@ -554,7 +554,7 @@ Put the code below in main.rs and run `cargo run`
   let m = 3;
   let nums2 = vec![2, 5, 6];
   let n = 3;
-  easy::merge_sorted_array::merge(&mut nums1, m, nums2, n);
+  leetcode::easy::merge_sorted_array::merge(&mut nums1, m, nums2, n);
   println!("result: {:?}", nums1);
 ```
 
@@ -597,7 +597,7 @@ Put the code below in main.rs and run `cargo run`
   let node3 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
   node2.as_mut().unwrap().borrow_mut().left = node3;
   root.as_mut().unwrap().borrow_mut().right = node2;
-  let result = easy::binary_tree_inorder_traversal::inorder_traversal(root);
+  let result = leetcode::easy::binary_tree_inorder_traversal::inorder_traversal(root);
   println!("result: {:?}", result);
 ```
 
@@ -646,7 +646,7 @@ Put the code below in main.rs and run `cargo run`
   node2.as_mut().unwrap().borrow_mut().left = node3;
   root2.as_mut().unwrap().borrow_mut().right = node2;
 
-  let result = easy::same_tree::is_same_tree(root1, root2);
+  let result = leetcode::easy::same_tree::is_same_tree(root1, root2);
   println!("result: {:?}", result);
 ```
 
@@ -696,7 +696,7 @@ Put the code below in main.rs and run `cargo run`
   node2.as_mut().unwrap().borrow_mut().right = node5;
   root.as_mut().unwrap().borrow_mut().left = node2;
   root.as_mut().unwrap().borrow_mut().right = node3;
-  let result = easy::symmetric_tree::is_symmetric(root);
+  let result = leetcode::easy::symmetric_tree::is_symmetric(root);
   println!("result: {:?}", result);
 ```
 
@@ -735,7 +735,7 @@ Put this code below in main.rs and run `cargo run`
   node3.as_mut().unwrap().borrow_mut().right = node5;
   root.as_mut().unwrap().borrow_mut().left = node2;
   root.as_mut().unwrap().borrow_mut().right = node3;
-  let result = easy::maximum_depth_of_binary_tree::max_depth(root);
+  let result = leetcode::easy::maximum_depth_of_binary_tree::max_depth(root);
   println!("result: {:?}", result);
 ```
 
@@ -767,7 +767,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let nums = vec![-10, -3, 0, 5, 9];
-  let result = easy::convert_sorted_array_to_binary_search_tree::sorted_array_to_bst(nums);
+  let result = leetcode::easy::convert_sorted_array_to_binary_search_tree::sorted_array_to_bst(nums);
   println!("result: {:?}", result);
 ```
 
@@ -821,7 +821,7 @@ Put the code below in main.rs and run `cargo run`
   node3.as_mut().unwrap().borrow_mut().right = node5;
   root.as_mut().unwrap().borrow_mut().left = node2;
   root.as_mut().unwrap().borrow_mut().right = node3;
-  let result = easy::balanced_binary_tree::is_balanced(root);
+  let result = leetcode::easy::balanced_binary_tree::is_balanced(root);
   println!("result: {:?}", result);
 ```
 
@@ -874,7 +874,7 @@ Put this code below in main.rs and run `cargo run`
   node3.as_mut().unwrap().borrow_mut().right = node5;
   root.as_mut().unwrap().borrow_mut().left = node2;
   root.as_mut().unwrap().borrow_mut().right = node3;
-  let result = easy::minimum_depth_of_binary_tree::min_depth(root);
+  let result = leetcode::easy::minimum_depth_of_binary_tree::min_depth(root);
   println!("result: {:?}", result);
 ```
 
@@ -922,7 +922,7 @@ Put this code below in main.rs and run `cargo run`
   node2.as_mut().unwrap().borrow_mut().left = node4;
   root.as_mut().unwrap().borrow_mut().left = node2;
   root.as_mut().unwrap().borrow_mut().right = node3;
-  let result = easy::path_sum::has_path_sum(root, 22);
+  let result = leetcode::easy::path_sum::has_path_sum(root, 22);
   println!("result: {:?}", result);
 ```
 
@@ -953,7 +953,7 @@ Output:
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  let result = easy::pascals_triangle::generate(5);
+  let result = leetcode::easy::pascals_triangle::generate(5);
   println!("result: {:?}", result);
 ```
 
@@ -979,7 +979,7 @@ Output: [1,3,3,1]
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  let result = easy::pascals_triangle::get_row(3);
+  let result = leetcode::easy::pascals_triangle::get_row(3);
   println!("result: {:?}", result);
 ```
 
@@ -1008,7 +1008,7 @@ Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  let result = easy::best_time_to_buy_and_sell_stock::max_profit(vec![7, 1, 5, 3, 6, 4]);
+  let result = leetcode::easy::best_time_to_buy_and_sell_stock::max_profit(vec![7, 1, 5, 3, 6, 4]);
   println!("result: {:?}", result);
 ```
 
@@ -1032,7 +1032,7 @@ Output: true
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-let mut easy::valid_palindrome::is_palindrome("race a car".to_string());
+let mut leetcode::easy::valid_palindrome::is_palindrome("race a car".to_string());
   println!("result: {:?}", result);
 ```
 
@@ -1065,7 +1065,7 @@ Put the code below in main.rs and run `cargo run`
   node3.as_mut().unwrap().next = node4;
   node2.as_mut().unwrap().next = node3;
   head.as_mut().unwrap().next = node2;
-  let result = easy::linked_list_cycle::has_cycle(head);
+  let result = leetcode::easy::linked_list_cycle::has_cycle(head);
   println!("result: {:?}", result);
 ```
 
@@ -1107,7 +1107,7 @@ minStack.getMin(); // return -2
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  let mut min_stack = easy::min_stack::MinStack::new();
+  let mut min_stack = leetcode::easy::min_stack::MinStack::new();
   min_stack.push(-2);
   min_stack.push(0);
   min_stack.push(-3);
@@ -1147,7 +1147,7 @@ Put the code below in main.rs and run `cargo run`
   node3.as_mut().unwrap().next = node4;
   node2.as_mut().unwrap().next = node3;
   head.as_mut().unwrap().next = node2;
-  let result = easy::reverse_linked_list::reverse_list(head);
+  let result = leetcode::easy::reverse_linked_list::reverse_list(head);
   println!("result: {:?}", result);
 ```
 
@@ -1177,7 +1177,7 @@ Output: true
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  let result = easy::contains_duplicate::contains_duplicate(vec![1, 2, 3, 1]);
+  let result = leetcode::easy::contains_duplicate::contains_duplicate(vec![1, 2, 3, 1]);
   println!("result: {:?}", result);
 ```
 
@@ -1212,7 +1212,7 @@ Output:
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  use easy::invert_binary_tree::{TreeNode, invert_tree};
+  use leetcode::easy::invert_binary_tree::{TreeNode, invert_tree};
   let mut root = Some(Rc::new(RefCell::new(TreeNode::new(4))));
   let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
   let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(7))));
@@ -1258,7 +1258,7 @@ Put the code below in main.rs and run `cargo run`
   node3.as_mut().unwrap().next = node4;
   node2.as_mut().unwrap().next = node3;
   head.as_mut().unwrap().next = node2;
-  let result = easy::palindrome_linked_list::is_palindrome(head);
+  let result = leetcode::easy::palindrome_linked_list::is_palindrome(head);
   println!("result: {}", result);
 ```
 
@@ -1285,7 +1285,7 @@ Output: false
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  let result = easy::valid_anagram::is_anagram(String::from("anagram"), String::from("nagaram"));
+  let result = leetcode::easy::valid_anagram::is_anagram(String::from("anagram"), String::from("nagaram"));
   println!("result: {:?}", result);
 ```
 
@@ -1314,11 +1314,11 @@ Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  use easy::diameter_of_binary_tree::{TreeNode, diameter_of_binary_tree};
+  use leetcode::easy::diameter_of_binary_tree::{TreeNode, diameter_of_binary_tree};
   let mut root = Some(Rc::new(RefCell::new(TreeNode::new(1))));
   let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
-  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
-  let mut node4 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
+  let node3 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+  let node4 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
   let node5 = Some(Rc::new(RefCell::new(TreeNode::new(5))));
   node2.as_mut().unwrap().borrow_mut().left = node4;
   node2.as_mut().unwrap().borrow_mut().right = node5;
@@ -1359,11 +1359,12 @@ Return true, because t has the same structure and node values with a subtree of 
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  use easy::subtree_of_another_tree::{TreeNode, is_subtree};
+  use std::{cell::RefCell, rc::Rc};
+  use leetcode::easy::subtree_of_another_tree::{TreeNode, is_subtree};
   let mut root1 = Some(Rc::new(RefCell::new(TreeNode::new(3))));
   let mut node2 = Some(Rc::new(RefCell::new(TreeNode::new(4))));
-  let mut node3 = Some(Rc::new(RefCell::new(TreeNode::new(5))));
-  let mut node4 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+  let node3 = Some(Rc::new(RefCell::new(TreeNode::new(5))));
+  let node4 = Some(Rc::new(RefCell::new(TreeNode::new(1))));
   let node5 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
   node2.as_mut().unwrap().borrow_mut().left = node4;
   node2.as_mut().unwrap().borrow_mut().right = node5;
@@ -1405,6 +1406,6 @@ Explanation: 2 does not exist in nums so return -1
 Put this code below in main.rs and run `cargo run`
 
 ```rust
-  let result = easy::binary_search::search(vec![-1, 0, 3, 5, 9, 12], 9);
+  let result = leetcode::easy::binary_search::search(vec![-1, 0, 3, 5, 9, 12], 9);
   println!("result: {:?}", result);
 ```
