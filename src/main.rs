@@ -1,12 +1,9 @@
 mod medium;
 
 fn main() {
-    use leetcode::hard::merge_k_sorted_lists::{merge_k_lists, Node};
-    let lists = vec![
-        Node::from_vec(vec![1, 4, 5]),
-        Node::from_vec(vec![1, 3, 4]),
-        Node::from_vec(vec![2, 6]),
-    ];
-    let result = merge_k_lists(lists);
+    use leetcode::medium::add_two_numbers::ListNode;
+    let l1 = ListNode::from_vec(vec![2, 4, 3]);
+    let l2 = ListNode::from_vec(vec![5, 6, 4]);
+    let result = leetcode::medium::add_two_numbers::add_two_numbers(l1, l2);
     println!("result: {:?}", result);
 }

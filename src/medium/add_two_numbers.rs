@@ -11,6 +11,16 @@ impl ListNode {
     pub fn new(val: i32) -> Self {
         ListNode { val, next: None }
     }
+
+    pub fn from_vec(v: Vec<i32>) -> Option<Box<ListNode>> {
+        let mut head = Some(Box::new(ListNode::new(0)));
+        let mut tail = &mut head;
+        for i in v {
+            tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(i)));
+            tail = &mut tail.as_mut().unwrap().next;
+        }
+        head.unwrap().next
+    }
 }
 
 pub fn add_two_numbers(
@@ -59,25 +69,14 @@ pub fn add_two_numbers(
 */
 
 #[cfg(test)]
-fn to_list(v: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut head = Some(Box::new(ListNode::new(0)));
-    let mut tail = &mut head;
-    for i in v {
-        tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(i)));
-        tail = &mut tail.as_mut().unwrap().next;
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_add_two_numbers() {
+        let l1 = ListNode::from_vec(vec![2, 4, 3]);
+        let l2 = ListNode::from_vec(vec![5, 6, 4]);
+        let result = add_two_numbers(l1, l2);
+        assert_eq!(result, ListNode::from_vec(vec![7, 0, 8]));
     }
-    head.unwrap().next
-}
-
-#[test]
-fn test_add_two_numbers() {
-    let l1 = to_list(vec![2, 4, 3]);
-    let l2 = to_list(vec![5, 6, 4]);
-    let l3 = to_list(vec![7, 0, 8]);
-    assert_eq!(add_two_numbers(l1, l2), l3);
-
-    let l1 = to_list(vec![2, 4, 3, 7]);
-    let l2 = to_list(vec![5, 6, 4]);
-    let l3 = to_list(vec![7, 0, 8, 7]);
-    assert_eq!(add_two_numbers(l1, l2), l3);
 }
