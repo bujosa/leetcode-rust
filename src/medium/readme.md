@@ -22,14 +22,11 @@ Explanation: 342 + 465 = 807.
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let l1 = ListNode::new(2)
-    .add_next(ListNode::new(4))
-    .add_next(ListNode::new(3));
-  let l2 = ListNode::new(5)
-    .add_next(ListNode::new(6))
-    .add_next(ListNode::new(4));
-  let result = medium::add_two_numbers::add_two_numbers(l1, l2);
-  println!("result: {:?}", result);
+    use leetcode::medium::add_two_numbers::ListNode;
+    let l1 = ListNode::from_vec(vec![2, 4, 3]);
+    let l2 = ListNode::from_vec(vec![5, 6, 4]);
+    let result = leetcode::medium::add_two_numbers::add_two_numbers(l1, l2);
+    println!("result: {:?}", result);
 ```
 
 # 3. Longest Substring Without Repeating Characters
@@ -53,7 +50,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let s = String::from("abcabcbb");
-  let result = medium::longest_substring_without_repeating_characters::length_of_longest_substring(s);
+  let result = leetcode::medium::longest_substring_without_repeating_characters::length_of_longest_substring(s);
   println!("result: {}", result);
 ```
 
@@ -78,7 +75,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let height = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
-  let result = medium::container_with_most_water::max_area(height);
+  let result = leetcode::medium::container_with_most_water::max_area(height);
   println!("result: {}", result);
 ```
 
@@ -138,7 +135,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let nums = vec![-1, 2, 1, -4];
   let target = 1;
-  let result = medium::three_sum_closest::three_sum_closest(nums, target);
+  let result = leetcode::medium::three_sum_closest::three_sum_closest(nums, target);
   println!("result: {}", result);
 ```
 
@@ -160,14 +157,10 @@ After removing the second node from the end, the linked list becomes 1->2->3->5.
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let head= medium::remove_nth_from_end::ListNode::new(1)
-    .add_next(ListNode::new(2))
-    .add_next(ListNode::new(3))
-    .add_next(ListNode::new(4))
-    .add_next(ListNode::new(5));
-  let n = 2;
-  let result = medium::remove_nth_from_end::remove_nth_from_end(head, n);
-  println!("result: {:?}", result);
+    use leetcode::medium::remove_nth_node_from_end_of_list::ListNode;
+    let head = ListNode::from_vec(vec![1, 2, 3, 4, 5]);
+    let result = leetcode::medium::remove_nth_node_from_end_of_list::remove_nth_from_end(head, 2);
+    println!("result: {:?}", result);
 ```
 
 # 22. Generate Parentheses
@@ -198,7 +191,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let n = 3;
-  let result = medium::generate_parentheses::generate_parenthesis(n);
+  let result = leetcode::medium::generate_parentheses::generate_parenthesis(n);
   println!("result: {:?}", result);
 ```
 
@@ -246,7 +239,7 @@ Put the code below in main.rs and run `cargo run`
     vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
     vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
   ];
-  let result = medium::is_valid_sudoku::is_valid_sudoku(board);
+  let result = leetcode::medium::valid_sudoku::is_valid_sudoku(board);
   println!("result: {}", result);
 ```
 
@@ -273,9 +266,10 @@ Output:
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let strs = vec!["eat", "tea", "tan", "ate", "nat", "bat"];
-  let result = medium::group_anagrams::group_anagrams(strs);
-  println!("result: {:?}", result);
+    let strs = vec!["eat", "tea", "tan", "ate", "nat", "bat"];
+    let strs = strs.iter().map(|s| s.to_string()).collect();
+    let result = leetcode::medium::group_anagrams::group_anagrams(strs);
+    println!("result: {:?}", result);
 ```
 
 # 74. Search a 2D Matrix
@@ -311,7 +305,7 @@ Put the code below in main.rs and run `cargo run`
     vec![23, 30, 34, 50],
   ];
   let target = 3;
-  let result = medium::search_2d_matrix::search_matrix(matrix, target);
+  let result = leetcode::medium::search_a_2d_matrix::search_matrix(matrix, target);
   println!("result: {}", result);
 ```
 
@@ -338,7 +332,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let nums = vec![100, 4, 200, 1, 3, 2];
-  let result = hard::longest_consecutive::longest_consecutive(nums);
+  let result = leetcode::medium::longest_consecutive_sequence::longest_consecutive(nums);
   println!("result: {}", result);
 ```
 
@@ -376,11 +370,13 @@ Node 2's value is 2, its next pointer points to null and its random pointer poin
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-    use medium::copy_random_list::{Node, copy_random_list};
+    use std::{cell::RefCell, rc::Rc};
 
-    let node1 = Some(Box::new(Node::new(1)));
-    let node2 = Some(Box::new(Node::new(2)));
-    let node3 = Some(Box::new(Node::new(3)));
+    use leetcode::medium::copy_list_with_random_pointer::{copy_random_list, Node};
+
+    let mut node1 = Some(Rc::new(RefCell::new(Node::new(1))));
+    let mut node2 = Some(Rc::new(RefCell::new(Node::new(2))));
+    let mut node3 = Some(Rc::new(RefCell::new(Node::new(3))));
 
     node1.as_ref().unwrap().next = node2.clone();
     node2.as_ref().unwrap().next = node3.clone();
@@ -410,19 +406,20 @@ Given 1->2->3->4, reorder it to 1->4->2->3.
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let mut head = Some(Box::new(
+    use leetcode::medium::reorder_list::ListNode;
+    let mut head = Some(Box::new(
         ListNode::new(1).add_next(
             ListNode::new(2)
                 .add_next(ListNode::new(3).add_next(ListNode::new(4).add_next(ListNode::new(5)))),
         ),
-  ));
-  medium::reorder_list::reorder_list(&mut head);
+    ));
+    leetcode::medium::reorder_list::reorder_list(&mut head);
 
-  let mut curr = head;
-  while let Some(node) = curr {
-      println!("{}", node.val);
-      curr = node.next;
-  }
+    let mut curr = head;
+    while let Some(node) = curr {
+        println!("{}", node.val);
+        curr = node.next;
+    }
 ```
 
 # 146. LRU Cache
@@ -461,7 +458,7 @@ cache.get(4);       // returns 4
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let mut cache = medium::lru_cache::LRUCache::new(2);
+  let mut cache = leetcode::medium::lru_cache::LRUCache::new(2);
   cache.put(1, 1);
   cache.put(2, 2);
   println!("{}", cache.get(1)); // returns 1
@@ -500,9 +497,12 @@ Explanation: ((2 + 1) * 3) = 9
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let tokens = vec!["2", "1", "+", "3", "*"];
-  let result = medium::eval_rpn::eval_rpn(tokens);
-  println!("result: {}", result);
+    let tokens = vec!["2", "1", "+", "3", "*"]
+        .iter()
+        .map(|&s| s.to_string())
+        .collect();
+    let result = leetcode::medium::evaluate_reverse_polish_notation::eval_rpn(tokens);
+    println!("result: {}", result);
 ```
 
 # 153. Find Minimum in Rotated Sorted Array
@@ -536,7 +536,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let nums = vec![3, 4, 5, 1, 2];
-  let result = medium::find_min::find_min(nums);
+  let result = leetcode::medium::find_min::find_min(nums);
   println!("result: {}", result);
 ```
 
@@ -587,7 +587,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let nums = vec![1, 2, 3, 4];
-  let result = medium::product_except_self::product_except_self(nums);
+  let result = leetcode::medium::product_of_array_except_self::product_except_self(nums);
   println!("result: {:?}", result);
 ```
 
@@ -602,11 +602,17 @@ Design an algorithm to encode a list of strings to a string. The encoded string 
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let strs = vec!["Hello", "World"];
-  let result = medium::encode_and_decode_strings::encode(strs.clone());
-  println!("result: {}", result);
-  let result = medium::encode_and_decode_strings::decode(result);
-  println!("result: {:?}", result);
+     let strs = vec![
+        "Hello".to_string(),
+        "World".to_string(),
+        "How".to_string(),
+        "Are".to_string(),
+        "You".to_string(),
+    ];
+    let result = leetcode::medium::encode_and_decode_strings::encode(strs);
+    println!("result: {}", result);
+    let result = leetcode::medium::encode_and_decode_strings::decode(result);
+    println!("result: {:?}", result);
 ```
 
 # 287. Find the Duplicate Number
@@ -628,7 +634,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let nums = vec![1, 3, 4, 2, 2];
-  let result = medium::find_duplicate::find_duplicate(nums);
+  let result = leetcode::medium::find_duplicate::find_duplicate(nums);
   println!("result: {}", result);
 ```
 
@@ -652,7 +658,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let nums = vec![1, 1, 1, 2, 2, 3];
   let k = 2;
-  let result = medium::top_k_frequent::top_k_frequent(nums, k);
+  let result = leetcode::medium::top_k_frequent_elements::top_k_frequent(nums, k);
   println!("result: {:?}", result);
 ```
 
@@ -681,7 +687,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let s = String::from("ABAB");
   let k = 2;
-  let result = medium::character_replacement::character_replacement(s, k);
+  let result = leetcode::medium::longest_repeating_character_replacement::character_replacement(s, k);
   println!("result: {}", result);
 ```
 
@@ -707,7 +713,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let s1 = String::from("ab");
   let s2 = String::from("eidbaooo");
-  let result = medium::check_inclusion::check_inclusion(s1, s2);
+  let result = leetcode::medium::permutation_in_string::check_inclusion(s1, s2);
   println!("result: {}", result);
 ```
 
@@ -730,7 +736,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
   let t = vec![73, 74, 75, 71, 69, 72, 76, 73];
-  let result = medium::daily_temperatures::daily_temperatures(t);
+  let result = leetcode::medium::daily_temperatures::daily_temperatures(t);
   println!("result: {:?}", result);
 ```
 
@@ -773,7 +779,7 @@ Put the code below in main.rs and run `cargo run`
   let target = 12;
   let position = vec![10, 8, 0, 5, 3];
   let speed = vec![2, 4, 1, 1, 3];
-  let result = medium::car_fleet::car_fleet(target, position, speed);
+  let result = leetcode::medium::car_fleet::car_fleet(target, position, speed);
   println!("result: {}", result);
 ```
 
@@ -809,7 +815,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
   let piles = vec![3, 6, 7, 11];
   let h = 8;
-  let result = medium::min_eating_speed::min_eating_speed(piles, h);
+  let result = leetcode::medium::koko_eating_bananas::min_eating_speed(piles, h);
   println!("result: {}", result);
 ```
 
@@ -849,15 +855,15 @@ timeMap.set("foo", "bar2", 4);
 Put the code below in main.rs and run `cargo run`
 
 ```rust
-  let mut time_map = medium::time_map::TimeMap::new();
-  time_map.set(String::from("foo"), String::from("bar"), 1);
-  let result = time_map.get(String::from("foo"), 1);
-  println!("result: {}", result);
-  let result = time_map.get(String::from("foo"), 3);
-  println!("result: {}", result);
-  time_map.set(String::from("foo"), String::from("bar2"), 4);
-  let result = time_map.get(String::from("foo"), 4);
-  println!("result: {}", result);
-  let result = time_map.get(String::from("foo"), 5);
-  println!("result: {}", result);
+    let mut time_map = leetcode::medium::time_based_key_value_store::TimeMap::new();
+    time_map.set(String::from("foo"), String::from("bar"), 1);
+    let result = time_map.get(String::from("foo"), 1);
+    println!("result: {}", result);
+    let result = time_map.get(String::from("foo"), 3);
+    println!("result: {}", result);
+    time_map.set(String::from("foo"), String::from("bar2"), 4);
+    let result = time_map.get(String::from("foo"), 4);
+    println!("result: {}", result);
+    let result = time_map.get(String::from("foo"), 5);
+    println!("result: {}", result);
 ```

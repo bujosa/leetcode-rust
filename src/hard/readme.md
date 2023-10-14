@@ -45,7 +45,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
     let nums1 = vec![1, 3];
     let nums2 = vec![2];
-    let result = hard::median_of_two_sorted_arrays::find_median_sorted_arrays(nums1, nums2);
+    let result = leetcode::hard::median_of_two_sorted_arrays::find_median_sorted_arrays(nums1, nums2);
     println!("result: {:?}", result);
 ```
 
@@ -178,7 +178,7 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
     let height = vec![0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
-    let result = hard::trapping_rain_water::trap(height);
+    let result = leetcode::hard::trapping_rain_water::trap(height);
     println!("result: {:?}", result);
 ```
 
@@ -226,7 +226,7 @@ Put the code below in main.rs and run `cargo run`
 ```rust
     let s = String::from("ADOBECODEBANC");
     let t = String::from("ABC");
-    let result = hard::minimum_window_substring::min_window(s, t);
+    let result = leetcode::hard::minimum_window_substring::min_window(s, t);
     println!("result: {:?}", result);
 ```
 
@@ -254,7 +254,7 @@ Put the code below in main.rs and run `cargo run`
 
 ````rust
     let heights = vec![2, 1, 5, 6, 2, 3];
-    let result = hard::largest_rectangle_in_histogram::largest_rectangle_area(heights);
+    let result = leetcode::hard::largest_rectangle_in_histogram::largest_rectangle_area(heights);
     println!("result: {:?}", result);
     ```
 ````
@@ -320,6 +320,6 @@ Put the code below in main.rs and run `cargo run`
 ```rust
     let nums = vec![1, 3, -1, -3, 5, 3, 6, 7];
     let k = 3;
-    let result = hard::sliding_window_maximum::max_sliding_window(nums, k);
+    let result = leetcode::hard::sliding_window_maximum::max_sliding_window(nums, k);
     println!("result: {:?}", result);
 ```

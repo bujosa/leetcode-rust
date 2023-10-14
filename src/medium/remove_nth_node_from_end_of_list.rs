@@ -7,13 +7,23 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
-    fn new(val: i32) -> Self {
+    pub fn new(val: i32) -> Self {
         ListNode { next: None, val }
     }
 
-    fn add_next(&mut self, val: i32) {
+    pub fn add_next(&mut self, val: i32) {
         let next_node = Some(Box::new(ListNode::new(val)));
         self.next = next_node;
+    }
+
+    pub fn from_vec(v: Vec<i32>) -> Option<Box<ListNode>> {
+        let mut head = Some(Box::new(ListNode::new(0)));
+        let mut tail = &mut head;
+        for i in v {
+            tail.as_mut().unwrap().next = Some(Box::new(ListNode::new(i)));
+            tail = &mut tail.as_mut().unwrap().next;
+        }
+        head.unwrap().next
     }
 }
 
@@ -53,22 +63,8 @@ mod tests {
 
     #[test]
     fn test_remove_nth_from_end() {
-        let mut l1 = Some(Box::new(ListNode::new(1)));
-        let mut l2 = Some(Box::new(ListNode::new(2)));
-        let mut l3 = Some(Box::new(ListNode::new(3)));
-        let mut l4 = Some(Box::new(ListNode::new(4)));
-        let l5 = Some(Box::new(ListNode::new(5)));
-        l4.as_mut().unwrap().next = l5;
-        l3.as_mut().unwrap().next = l4;
-        l2.as_mut().unwrap().next = l3;
-        l1.as_mut().unwrap().next = l2;
-        let mut r1 = Some(Box::new(ListNode::new(1)));
-        let mut r2 = Some(Box::new(ListNode::new(2)));
-        let mut r3 = Some(Box::new(ListNode::new(3)));
-        let r5 = Some(Box::new(ListNode::new(5)));
-        r3.as_mut().unwrap().next = r5;
-        r2.as_mut().unwrap().next = r3;
-        r1.as_mut().unwrap().next = r2;
+        let l1 = ListNode::from_vec(vec![1, 2, 3, 4, 5]);
+        let r1 = ListNode::from_vec(vec![1, 2, 3, 5]);
         assert_eq!(remove_nth_from_end(l1, 2), r1);
     }
 }

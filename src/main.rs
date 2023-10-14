@@ -1,9 +1,8 @@
 mod medium;
 
 fn main() {
-    use leetcode::medium::add_two_numbers::ListNode;
-    let l1 = ListNode::from_vec(vec![2, 4, 3]);
-    let l2 = ListNode::from_vec(vec![5, 6, 4]);
-    let result = leetcode::medium::add_two_numbers::add_two_numbers(l1, l2);
+    use leetcode::medium::remove_nth_node_from_end_of_list::ListNode;
+    let head = ListNode::from_vec(vec![1, 2, 3, 4, 5]);
+    let result = leetcode::medium::remove_nth_node_from_end_of_list::remove_nth_from_end(head, 2);
     println!("result: {:?}", result);
 }
