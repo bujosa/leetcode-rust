@@ -7,20 +7,20 @@ use std::collections::HashMap;
  * obj.set(key, value, timestamp);
  * let ret_2: String = obj.get(key, timestamp);
  */
-struct TimeMap {
+pub struct TimeMap {
     hm: HashMap<String, Vec<(String, i32)>>,
 }
 
 impl TimeMap {
-    fn new() -> Self {
+    pub fn new() -> Self {
         Self { hm: HashMap::new() }
     }
 
-    fn set(&mut self, key: String, value: String, timestamp: i32) {
+    pub fn set(&mut self, key: String, value: String, timestamp: i32) {
         self.hm.entry(key).or_default().push((value, timestamp));
     }
 
-    fn get(&self, key: String, timestamp: i32) -> String {
+    pub fn get(&self, key: String, timestamp: i32) -> String {
         let mut res = String::new();
 
         if let Some(t_list) = self.hm.get(&key) {
