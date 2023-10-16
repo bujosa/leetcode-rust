@@ -4,7 +4,7 @@ use std::rc::Rc;
 
 type Tree = Option<Rc<RefCell<TreeNode>>>;
 
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
     pub left: Tree,
@@ -20,10 +20,40 @@ impl TreeNode {
             right: None,
         }
     }
+
+    pub fn add_left(&mut self, val: i32) {
+        let left_node = Some(Rc::new(RefCell::new(TreeNode::new(val))));
+        self.left = left_node;
+    }
+
+    pub fn add_right(&mut self, val: i32) {
+        let right_node = Some(Rc::new(RefCell::new(TreeNode::new(val))));
+        self.right = right_node;
+    }
 }
 
 pub fn is_subtree(root: Tree, sub_root: Tree) -> bool {
-    todo!()
+    match (root, sub_root) {
+        (None, _) => false,
+        (Some(root), Some(sub_root)) => {
+            is_same_tree(Some(root.clone()), Some(sub_root.clone()))
+                || is_subtree(root.borrow().left.clone(), Some(sub_root.clone()))
+                || is_subtree(root.borrow().right.clone(), Some(sub_root.clone()))
+        }
+        _ => false,
+    }
+}
+
+fn is_same_tree(root: Tree, sub_root: Tree) -> bool {
+    match (root, sub_root) {
+        (None, None) => true,
+        (Some(root), Some(sub_root)) => {
+            root.borrow().val == sub_root.borrow().val
+                && is_same_tree(root.borrow().left.clone(), sub_root.borrow().left.clone())
+                && is_same_tree(root.borrow().right.clone(), sub_root.borrow().right.clone())
+        }
+        _ => false,
+    }
 }
 
 #[cfg(test)]
@@ -47,16 +77,18 @@ mod test {
     #[test]
     fn test_is_subtree_large() {
         let root = Some(Rc::new(RefCell::new(TreeNode::new(3))));
-        let root_right = Some(Rc::new(RefCell::new(TreeNode::new(4))));
-        let root_left = Some(Rc::new(RefCell::new(TreeNode::new(5))));
-        let root_left_left = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+        root.as_ref().unwrap().borrow_mut().add_left(4);
+        root.as_ref().unwrap().borrow_mut().add_right(5);
+        root.as_ref()
+            .unwrap()
+            .borrow_mut()
+            .right
+            .as_ref()
+            .unwrap()
+            .borrow_mut()
+            .add_left(1);
         let sub_root = Some(Rc::new(RefCell::new(TreeNode::new(5))));
-        let sub_root_left = Some(Rc::new(RefCell::new(TreeNode::new(1))));
-
-        root_left.as_ref().unwrap().borrow_mut().left = root_left_left;
-        root.as_ref().unwrap().borrow_mut().left = root_left;
-        root.as_ref().unwrap().borrow_mut().right = root_right;
-        sub_root.as_ref().unwrap().borrow_mut().left = sub_root_left;
+        sub_root.as_ref().unwrap().borrow_mut().add_left(1);
         assert_eq!(is_subtree(root, sub_root), true);
     }
 }
