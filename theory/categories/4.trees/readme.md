@@ -65,7 +65,7 @@
 - [x] [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | [Solution](../../../src/easy/diameter_of_binary_tree.rs) | [Problem Description](../../../src/easy/readme.md#543-diameter-of-binary-tree)
 - [x] [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Easy | [Solution](../../../src/easy/balanced_binary_tree.rs) | [Problem Description](../../../src/easy/readme.md#110-balanced-binary-tree)
 - [x] [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | [Solution](../../../src/easy/same_tree.rs) | [Problem Description](../../../src/easy/readme.md#100-same-tree)
-- [ ] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Solution](../../../src/easy/subtree_of_another_tree.rs) | [Problem Description](../../../src/easy/readme.md#572-subtree-of-another-tree)
+- [x] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Solution](../../../src/easy/subtree_of_another_tree.rs) | [Problem Description](../../../src/easy/readme.md#572-subtree-of-another-tree)
 - [ ] [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [Solution](../../../src/easy/lowest_common_ancestor_of_a_binary_search_tree.rs) | [Problem Description](../../../src/medium/readme.md#235-lowest-common-ancestor-of-a-binary-search-tree)
 - [ ] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Solution](../../../src/medium/binary_tree_level_order_traversal.rs) | [Problem Description](../../../src/medium/readme.md#102-binary-tree-level-order-traversal)
 - [ ] [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [Solution](../../../src/medium/binary_tree_right_side_view.rs) | [Problem Description](../../../src/medium/readme.md#199-binary-tree-right-side-view)
@@ -78,6 +78,6 @@
 
 Category: `Trees`
 Created on: 2023-10-07 19:00
-Last modified on: 2023-10-12 17:05
+Last modified on: 2023-10-15 22:36
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)

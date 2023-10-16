@@ -41,6 +41,7 @@
   - [x] [234. Palindrome linked list](../src/easy/palindrome_linked_list.rs) -> [Problem Description](../src/easy/readme.md#234-palindrome-linked-list)
   - [x] [242. Valid anagram](../src/easy/valid_anagram.rs) -> [Problem Description](../src/easy/readme.md#242-valid-anagram)
   - [x] [543. Diameter of binary tree](../src/easy/diameter_of_binary_tree.rs) -> [Problem Description](../src/easy/readme.md#543-diameter-of-binary-tree)
+  - [x] [572. Subtree of another tree](../src/easy/subtree_of_another_tree.rs) -> [Problem Description](../src/easy/readme.md#572-subtree-of-another-tree)
   - [x] [704. Binary search](../src/easy/binary_search.rs) -> [Problem Description](../src/easy/readme.md#704-binary-search)
 - [Medium](../src/medium)
   - [x] [2. Add two numbers](../src/medium/add_two_numbers.rs) -> [Problem Description](../src/medium/readme.md#2-add-two-numbers)
