@@ -44,6 +44,19 @@ pub fn is_subtree(root: Tree, sub_root: Tree) -> bool {
     }
 }
 
+/*
+    Algorithm - Recursion
+
+    - If root is None, then return false
+    - If root is not None, then check if root and sub_root are same
+        - If they are same, then return true
+        - If they are not same, then check if left subtree of root and sub_root are same
+            - If they are same, then return true
+            - If they are not same, then check if right subtree of root and sub_root are same
+                - If they are same, then return true
+                - If they are not same, then return false
+*/
+
 fn is_same_tree(root: Tree, sub_root: Tree) -> bool {
     match (root, sub_root) {
         (None, None) => true,
@@ -55,6 +68,16 @@ fn is_same_tree(root: Tree, sub_root: Tree) -> bool {
         _ => false,
     }
 }
+
+/*
+    Algorithm - Recursion
+     - If both trees are empty then they are same
+     - If both trees are non-empty
+         - Check if current data of both trees are same
+         - Recursively check if left subtree of both trees are same
+         - Recursively check if right subtree of both trees are same
+     - If one of them is empty and other is not, then they are not same
+*/
 
 #[cfg(test)]
 mod test {
