@@ -1,66 +1,52 @@
 #![allow(dead_code)]
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
+
+type Tree = Option<Rc<RefCell<TreeNode>>>;
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
-  pub val: i32,
-  pub left: Option<Rc<RefCell<TreeNode>>>,
-  pub right: Option<Rc<RefCell<TreeNode>>>,
+    pub val: i32,
+    pub left: Tree,
+    pub right: Tree,
 }
 
 impl TreeNode {
-  #[inline]
-  pub fn new(val: i32) -> Self {
-    TreeNode {
-      val,
-      left: None,
-      right: None
+    #[inline]
+    pub fn new(val: i32) -> Self {
+        TreeNode {
+            val,
+            left: None,
+            right: None,
+        }
     }
-  }
 }
 
-
-pub fn is_same_tree(p: Option<Rc<RefCell<TreeNode>>>, q: Option<Rc<RefCell<TreeNode>>>) -> bool {
-    let mut stack = Vec::new();
-    stack.push((p, q));
-    while let Some((p, q)) = stack.pop() {
-        if p.is_none() && q.is_none() {
-            continue;
+pub fn is_same_tree(p: Tree, q: Tree) -> bool {
+    match (p, q) {
+        (None, None) => true,
+        (Some(p), Some(q)) => {
+            p.borrow().val == q.borrow().val
+                && is_same_tree(p.borrow().left.clone(), q.borrow().left.clone())
+                && is_same_tree(p.borrow().right.clone(), q.borrow().right.clone())
         }
-        if p.is_none() || q.is_none() {
-            return false;
-        }
-        let p = p.unwrap();
-        let q = q.unwrap();
-        if p.borrow().val != q.borrow().val {
-            return false;
-        }
-        stack.push((p.borrow().left.clone(), q.borrow().left.clone()));
-        stack.push((p.borrow().right.clone(), q.borrow().right.clone()));
+        _ => false,
     }
-    true
 }
 
 /*
-    Algorithm:
-        1. Create a stack
-        2. Push p and q to stack
-        3. While stack is not empty
-            1. Pop p and q from stack
-            2. If p and q are None
-                1. Continue
-            3. If p or q is None
-                1. Return false
-            4. If p's value is not equal to q's value
-                1. Return false
-            5. Push p's left and q's left to stack
-            6. Push p's right and q's right to stack
-        4. Return true
+   Algorithm - Recursion
+    - If both trees are empty then they are same
+    - If both trees are non-empty
+        - Check if current data of both trees are same
+        - Recursively check if left subtree of both trees are same
+        - Recursively check if right subtree of both trees are same
+    - If one of them is empty and other is not, then they are not same
 
-    Time complexity: O(n)
-    Space complexity: O(n)
- */
+    Complexity
+        - Time is O(n) where n is the number of nodes in the tree
+        - Space is O(n) where n is the number of nodes in the tree
+*/
 
 #[test]
 fn test_is_same_tree() {
