@@ -568,6 +568,57 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 235. Lowest Common Ancestor of a Binary Search Tree
+
+## Description
+
+Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow **a node to be a descendant of itself**).”
+
+## Examples
+
+```text
+Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
+Output: 6
+Explanation: The LCA of nodes 2 and 8 is 6.
+
+Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
+Output: 2
+Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+    use leetcode::medium::lowest_common_ancestor_of_a_binary_search_tree::{lowest_common_ancestor, TreeNode};
+    let mut root = TreeNode::new(6);
+    let mut node2 = TreeNode::new(2);
+    let mut node8 = TreeNode::new(8);
+    let mut node0 = TreeNode::new(0);
+    let mut node4 = TreeNode::new(4);
+    let mut node7 = TreeNode::new(7);
+    let mut node9 = TreeNode::new(9);
+    let mut node3 = TreeNode::new(3);
+    let mut node5 = TreeNode::new(5);
+
+    node2.left = Some(Rc::new(RefCell::new(node0)));
+    node2.right = Some(Rc::new(RefCell::new(node4)));
+    node4.left = Some(Rc::new(RefCell::new(node3)));
+    node4.right = Some(Rc::new(RefCell::new(node5)));
+    node8.left = Some(Rc::new(RefCell::new(node7)));
+    node8.right = Some(Rc::new(RefCell::new(node9)));
+    root.left = Some(Rc::new(RefCell::new(node2)));
+    root.right = Some(Rc::new(RefCell::new(node8)));
+
+    let p = Some(Rc::new(RefCell::new(node2)));
+    let q = Some(Rc::new(RefCell::new(node8)));
+    let result = lowest_common_ancestor(root, p, q);
+    println!("result: {}", result.unwrap().borrow().val);
+```
+
 # 238. Product of Array Except Self
 
 ## Description
