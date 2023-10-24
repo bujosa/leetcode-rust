@@ -23,5 +23,19 @@ impl TreeNode {
 }
 
 pub fn lowest_common_ancestor(root: Tree, p: Tree, q: Tree) -> Tree {
-    todo!()
+    if root.is_none() {
+        return None;
+    }
+
+    let root_val = root.as_ref().unwrap().borrow().val;
+    let p_val = p.as_ref().unwrap().borrow().val;
+    let q_val = q.as_ref().unwrap().borrow().val;
+
+    if p_val > root_val && q_val > root_val {
+        lowest_common_ancestor(root.as_ref().unwrap().borrow().right.clone(), p, q)
+    } else if p_val < root_val && q_val < root_val {
+        lowest_common_ancestor(root.as_ref().unwrap().borrow().left.clone(), p, q)
+    } else {
+        root
+    }
 }
