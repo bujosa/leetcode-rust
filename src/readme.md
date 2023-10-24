@@ -60,6 +60,7 @@
   - [x] [146. LRU cache](../src/medium/lru_cache.rs) -> [Problem Description](../src/medium/readme.md#146-lru-cache)
   - [x] [153. Find minimum in rotated sorted array](../src/medium/find_minimum_in_rotated_sorted_array.rs) -> [Problem Description](../src/medium/readme.md#153-find-minimum-in-rotated-sorted-array)
   - [x] [167. Two sum II - input array is sorted](../src/medium/two_sum_ii_input_array_is_sorted.rs) -> [Problem Description](../src/medium/readme.md#167-two-sum-ii---input-array-is-sorted)
+  - [x] [235. Lowest common ancestor of a binary search tree](../src/medium/lowest_common_ancestor_of_a_binary_search_tree.rs) -> [Problem Description](../src/medium/readme.md#235-lowest-common-ancestor-of-a-binary-search-tree)
   - [x] [238. Product of array except self](../src/medium/product_of_array_except_self.rs) -> [Problem Description](../src/medium/readme.md#238-product-of-array-except-self)
   - [x] [271. Encode and decode strings](../src/medium/encode_and_decode_strings.rs) -> [Problem Description](../src/medium/readme.md#271-encode-and-decode-strings)
   - [x] [287. Find the duplicate number](../src/medium/find_the_duplicate_number.rs) -> [Problem Description](../src/medium/readme.md#287-find-the-duplicate-number)

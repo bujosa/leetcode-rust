@@ -66,7 +66,7 @@
 - [x] [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Easy | [Solution](../../../src/easy/balanced_binary_tree.rs) | [Problem Description](../../../src/easy/readme.md#110-balanced-binary-tree)
 - [x] [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | [Solution](../../../src/easy/same_tree.rs) | [Problem Description](../../../src/easy/readme.md#100-same-tree)
 - [x] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Solution](../../../src/easy/subtree_of_another_tree.rs) | [Problem Description](../../../src/easy/readme.md#572-subtree-of-another-tree)
-- [ ] [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [Solution](../../../src/medium/lowest_common_ancestor_of_a_binary_search_tree.rs) | [Problem Description](../../../src/medium/readme.md#235-lowest-common-ancestor-of-a-binary-search-tree)
+- [x] [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [Solution](../../../src/medium/lowest_common_ancestor_of_a_binary_search_tree.rs) | [Problem Description](../../../src/medium/readme.md#235-lowest-common-ancestor-of-a-binary-search-tree)
 - [ ] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Solution](../../../src/medium/binary_tree_level_order_traversal.rs) | [Problem Description](../../../src/medium/readme.md#102-binary-tree-level-order-traversal)
 - [ ] [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [Solution](../../../src/medium/binary_tree_right_side_view.rs) | [Problem Description](../../../src/medium/readme.md#199-binary-tree-right-side-view)
 - [ ] [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | [Solution](../../../src/medium/count_good_nodes_in_binary_tree.rs) | [Problem Description](../../../src/medium/readme.md#1448-count-good-nodes-in-binary-tree)
@@ -78,6 +78,6 @@
 
 Category: `Trees`
 Created on: 2023-10-07 19:00
-Last modified on: 2023-10-15 22:36
+Last modified on: 2023-10-23 20:20
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
