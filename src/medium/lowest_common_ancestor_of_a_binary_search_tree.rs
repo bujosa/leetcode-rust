@@ -65,3 +65,52 @@ pub fn lowest_common_ancestor(root: Tree, p: Tree, q: Tree) -> Tree {
         root
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_lowest_common_ancestor() {
+        let root = TreeNode::from_vec(vec![
+            Some(6),
+            Some(2),
+            Some(8),
+            Some(0),
+            Some(4),
+            Some(7),
+            Some(9),
+            None,
+            None,
+            Some(3),
+            Some(5),
+        ]);
+
+        let p = TreeNode::from_vec(vec![
+            Some(2),
+            Some(0),
+            Some(4),
+            None,
+            None,
+            Some(3),
+            Some(5),
+        ]);
+
+        let q = TreeNode::from_vec(vec![Some(8), Some(7), Some(9)]);
+
+        let expected = TreeNode::from_vec(vec![
+            Some(6),
+            Some(2),
+            Some(8),
+            Some(0),
+            Some(4),
+            Some(7),
+            Some(9),
+            None,
+            None,
+            Some(3),
+            Some(5),
+        ]);
+        assert_eq!(lowest_common_ancestor(root, p, q), expected);
+    }
+}
