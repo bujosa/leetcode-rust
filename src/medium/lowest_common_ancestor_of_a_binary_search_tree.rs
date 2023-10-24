@@ -20,6 +20,32 @@ impl TreeNode {
             right: None,
         }
     }
+
+    pub fn from_vec(vec: Vec<Option<i32>>) -> Tree {
+        let mut nodes: Vec<Tree> = vec![];
+
+        for val in vec {
+            match val {
+                Some(val) => nodes.push(Some(Rc::new(RefCell::new(TreeNode::new(val))))),
+                None => nodes.push(None),
+            }
+        }
+
+        let mut i = 0;
+        let mut j = 1;
+
+        while j < nodes.len() {
+            if let Some(node) = nodes[i].as_ref() {
+                node.borrow_mut().left = nodes[j].clone();
+                node.borrow_mut().right = nodes[j + 1].clone();
+            }
+
+            i += 1;
+            j += 2;
+        }
+
+        nodes[0].clone()
+    }
 }
 
 pub fn lowest_common_ancestor(root: Tree, p: Tree, q: Tree) -> Tree {
