@@ -4,6 +4,7 @@ pub mod binary_tree_right_side_view;
 pub mod car_fleet;
 pub mod container_with_most_water;
 pub mod copy_list_with_random_pointer;
+pub mod count_good_nodes_in_binary_tree;
 pub mod daily_temperatures;
 pub mod encode_and_decode_strings;
 pub mod evaluate_reverse_polish_notation;
