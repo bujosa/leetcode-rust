@@ -1,18 +1,17 @@
 mod medium;
 
 fn main() {
-    use leetcode::medium::binary_tree_level_order_traversal::{level_order, TreeNode};
+    use leetcode::medium::binary_tree_right_side_view::{right_side_view, TreeNode};
     let root = TreeNode::from_vec(vec![
+        Some(1),
+        Some(2),
         Some(3),
-        Some(9),
-        Some(20),
         None,
+        Some(5),
         None,
-        Some(15),
-        Some(7),
+        Some(4),
     ]);
-
-    let result = level_order(root);
+    let result = right_side_view(root);
     println!("result: {:?}", result);
 }
 
