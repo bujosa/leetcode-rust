@@ -19,6 +19,35 @@ impl TreeNode {
             right: None,
         }
     }
+
+    #[inline]
+    pub fn from_vec(vec: Vec<Option<i32>>) -> Option<Rc<RefCell<TreeNode>>> {
+        let mut nodes = vec![];
+
+        for val in vec {
+            match val {
+                Some(val) => nodes.push(Some(Rc::new(RefCell::new(TreeNode::new(val))))),
+                None => nodes.push(None),
+            }
+        }
+
+        let mut i = 0;
+        while i < nodes.len() {
+            if let Some(node) = nodes[i].as_ref() {
+                let left = i * 2 + 1;
+                if left < nodes.len() {
+                    node.borrow_mut().left = nodes[left].clone();
+                }
+                let right = i * 2 + 2;
+                if right < nodes.len() {
+                    node.borrow_mut().right = nodes[right].clone();
+                }
+            }
+            i += 1;
+        }
+
+        nodes[0].clone()
+    }
 }
 
 pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
@@ -68,16 +97,16 @@ mod tests {
 
     #[test]
     fn test_level_order() {
-        let mut t1 = TreeNode::new(3);
-        let mut t2 = TreeNode::new(9);
-        let t3 = TreeNode::new(20);
-        let t4 = TreeNode::new(15);
-        let t5 = TreeNode::new(7);
-        t2.left = Some(Rc::new(RefCell::new(t4)));
-        t2.right = Some(Rc::new(RefCell::new(t5)));
-        t1.left = Some(Rc::new(RefCell::new(t2)));
-        t1.right = Some(Rc::new(RefCell::new(t3)));
+        let t = TreeNode::from_vec(vec![
+            Some(3),
+            Some(9),
+            Some(20),
+            None,
+            None,
+            Some(15),
+            Some(7),
+        ]);
         let result = vec![vec![3], vec![9, 20], vec![15, 7]];
-        assert_eq!(level_order(Some(Rc::new(RefCell::new(t1)))), result);
+        assert_eq!(level_order(t), result);
     }
 }
