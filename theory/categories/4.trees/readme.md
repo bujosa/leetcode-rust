@@ -68,7 +68,7 @@
 - [x] [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | [Solution](../../../src/easy/subtree_of_another_tree.rs) | [Problem Description](../../../src/easy/readme.md#572-subtree-of-another-tree)
 - [x] [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [Solution](../../../src/medium/lowest_common_ancestor_of_a_binary_search_tree.rs) | [Problem Description](../../../src/medium/readme.md#235-lowest-common-ancestor-of-a-binary-search-tree)
 - [x] [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [Solution](../../../src/medium/binary_tree_level_order_traversal.rs) | [Problem Description](../../../src/medium/readme.md#102-binary-tree-level-order-traversal)
-- [ ] [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [Solution](../../../src/medium/binary_tree_right_side_view.rs) | [Problem Description](../../../src/medium/readme.md#199-binary-tree-right-side-view)
+- [x] [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [Solution](../../../src/medium/binary_tree_right_side_view.rs) | [Problem Description](../../../src/medium/readme.md#199-binary-tree-right-side-view)
 - [ ] [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | [Solution](../../../src/medium/count_good_nodes_in_binary_tree.rs) | [Problem Description](../../../src/medium/readme.md#1448-count-good-nodes-in-binary-tree)
 - [ ] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [Solution](../../../src/medium/validate_binary_search_tree.rs) | [Problem Description](../../../src/medium/readme.md#98-validate-binary-search-tree)
 - [ ] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Solution](../../../src/medium/kth_smallest_element_in_a_bst.rs) | [Problem Description](../../../src/medium/readme.md#230-kth-smallest-element-in-a-bst)
@@ -78,6 +78,6 @@
 
 Category: `Trees`
 Created on: 2023-10-07 19:00
-Last modified on: 2023-10-29 04:49
+Last modified on: 2023-10-29 19:04
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
