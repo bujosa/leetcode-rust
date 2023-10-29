@@ -21,7 +21,8 @@ def level_order(root: 'TreeNode') -> List[List[int]]:
                 next_queue.append(node.left)
             if node.right:
                 next_queue.append(node.right)
-        result.append(level)
+        if level:
+            result.append(level)
         queue = next_queue
     return result
 
