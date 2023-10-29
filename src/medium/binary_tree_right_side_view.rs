@@ -83,6 +83,24 @@ pub fn right_side_view(root: Node) -> Vec<i32> {
     }
 }
 
+/*
+    Algorithm - BFS (Breadth First Search) - Level Order Traversal
+
+    1. Create a queue and push the root node and its depth (0) to the queue.
+    2. While the queue is not empty, pop the front element of the queue.
+    3. If the depth of the popped node is equal to the length of the result vector,
+       push the value of the popped node to the result vector.
+    4. If the depth of the popped node is not equal to the length of the result vector,
+         update the value of the result vector at the index equal to the depth of the popped node.
+    5. If the popped node has a left child, push the left child and its depth to the queue.
+    6. If the popped node has a right child, push the right child and its depth to the queue.
+    7. Return the result vector.
+
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
