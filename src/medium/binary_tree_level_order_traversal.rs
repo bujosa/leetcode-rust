@@ -45,6 +45,23 @@ pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
     result
 }
 
+/*
+    Algorithm - BFS (Breadth First Search) - Iterative
+
+    1. Create a queue and push the root node into it
+    2. While the queue is not empty, create a level array and a next queue
+    3. Iterate through the queue and push the node's value into the level array
+    4. If the node has a left child, push it into the next queue
+    5. If the node has a right child, push it into the next queue
+    6. Push the level array into the result array
+    7. Set the queue to the next queue
+    8. Return the result array
+
+    Complexity Analysis
+     - Time Complexity: O(n)
+     - Space Complexity: O(n)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
