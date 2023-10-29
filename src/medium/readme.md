@@ -333,16 +333,15 @@ Put the code below in main.rs and run `cargo run`
 
 ```rust
     use leetcode::medium::binary_tree_level_order_traversal::{level_order, TreeNode};
-    let mut root = TreeNode::new(3);
-    let mut node9 = TreeNode::new(9);
-    let mut node20 = TreeNode::new(20);
-    let mut node15 = TreeNode::new(15);
-    let mut node7 = TreeNode::new(7);
-
-    node20.left = Some(Rc::new(RefCell::new(node15)));
-    node20.right = Some(Rc::new(RefCell::new(node7)));
-    root.left = Some(Rc::new(RefCell::new(node9)));
-    root.right = Some(Rc::new(RefCell::new(node20)));
+    let root = TreeNode::from_vec(vec![
+            Some(3),
+            Some(9),
+            Some(20),
+            None,
+            None,
+            Some(15),
+            Some(7),
+    ]);
 
     let result = level_order(root);
     println!("result: {:?}", result);

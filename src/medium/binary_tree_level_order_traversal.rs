@@ -2,12 +2,14 @@
 use std::cell::RefCell;
 use std::rc::Rc;
 
+type Tree = Option<Rc<RefCell<TreeNode>>>;
+
 // Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
+    pub left: Tree,
+    pub right: Tree,
 }
 
 impl TreeNode {
@@ -21,7 +23,7 @@ impl TreeNode {
     }
 
     #[inline]
-    pub fn from_vec(vec: Vec<Option<i32>>) -> Option<Rc<RefCell<TreeNode>>> {
+    pub fn from_vec(vec: Vec<Option<i32>>) -> Tree {
         let mut nodes = vec![];
 
         for val in vec {
@@ -50,7 +52,7 @@ impl TreeNode {
     }
 }
 
-pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
+pub fn level_order(root: Tree) -> Vec<Vec<i32>> {
     let mut result = vec![];
     if root.is_none() {
         return result;

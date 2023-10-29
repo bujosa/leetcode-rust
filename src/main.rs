@@ -1,9 +1,18 @@
 mod medium;
 
 fn main() {
-    use leetcode::medium::remove_nth_node_from_end_of_list::ListNode;
-    let head = ListNode::from_vec(vec![1, 2, 3, 4, 5]);
-    let result = leetcode::medium::remove_nth_node_from_end_of_list::remove_nth_from_end(head, 2);
+    use leetcode::medium::binary_tree_level_order_traversal::{level_order, TreeNode};
+    let root = TreeNode::from_vec(vec![
+        Some(3),
+        Some(9),
+        Some(20),
+        None,
+        None,
+        Some(15),
+        Some(7),
+    ]);
+
+    let result = level_order(root);
     println!("result: {:?}", result);
 }
 
