@@ -606,6 +606,46 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 199. Binary Tree Right Side View
+
+## Description
+
+Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+## Examples
+
+```text
+Input: [1,2,3,null,5,null,4]
+Output: [1, 3, 4]
+
+Explanation:
+
+   1            <---
+ /   \
+2     3         <---
+  \     \
+    5     4       <---
+  ```
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use leetcode::medium::binary_tree_right_side_view::{right_side_view, TreeNode};
+    let root = TreeNode::from_vec(vec![
+        Some(1),
+        Some(2),
+        Some(3),
+        None,
+        Some(5),
+        None,
+        Some(4),
+    ]);
+    let result = right_side_view(root);
+    println!("result: {:?}", result);
+```
+
+
 # 235. Lowest Common Ancestor of a Binary Search Tree
 
 ## Description
