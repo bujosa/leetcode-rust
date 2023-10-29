@@ -49,4 +49,20 @@ impl TreeNode {
     }
 }
 
-pub fn right_side_view(root: Node) -> Vec<i32> {}
+pub fn right_side_view(root: Node) -> Vec<i32> {
+    let mut result = vec![];
+    let mut queue = vec![];
+    if let Some(node) = root {
+        queue.push(node);
+    }
+
+    while !queue.is_empty() {
+        if let Some(node) = queue.pop() {
+            result.push(node.borrow().val);
+            if let Some(right) = node.borrow_mut().right.take() {
+                queue.push(right);
+            }
+        }
+    }
+    result
+}
