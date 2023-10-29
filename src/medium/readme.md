@@ -309,6 +309,45 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 102. Binary Tree Level Order Traversal
+
+## Description
+
+Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+
+## Examples
+
+```text
+Input: [3,9,20,null,null,15,7]
+Output:
+[
+  [3],
+  [9,20],
+  [15,7]
+]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use leetcode::medium::binary_tree_level_order_traversal::{level_order, TreeNode};
+    let mut root = TreeNode::new(3);
+    let mut node9 = TreeNode::new(9);
+    let mut node20 = TreeNode::new(20);
+    let mut node15 = TreeNode::new(15);
+    let mut node7 = TreeNode::new(7);
+
+    node20.left = Some(Rc::new(RefCell::new(node15)));
+    node20.right = Some(Rc::new(RefCell::new(node7)));
+    root.left = Some(Rc::new(RefCell::new(node9)));
+    root.right = Some(Rc::new(RefCell::new(node20)));
+
+    let result = level_order(root);
+    println!("result: {:?}", result);
+```
+
 # 128. Longest Consecutive Sequence
 
 ## Description
