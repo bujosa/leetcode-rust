@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 use std::cell::RefCell;
+use std::collections::VecDeque;
 use std::rc::Rc;
 
 type Node = Option<Rc<RefCell<TreeNode>>>;
@@ -50,21 +51,36 @@ impl TreeNode {
 }
 
 pub fn right_side_view(root: Node) -> Vec<i32> {
-    let mut result = vec![];
-    let mut queue = vec![];
-    if let Some(node) = root {
-        queue.push(node);
-    }
+    if let Some(root) = root {
+        let mut queue: VecDeque<(Rc<RefCell<TreeNode>>, usize)> = VecDeque::from([(root, 0)]);
+        let mut res = Vec::with_capacity(100);
+        let mut res_len: usize = 0;
 
-    while !queue.is_empty() {
-        if let Some(node) = queue.pop() {
-            result.push(node.borrow().val);
-            if let Some(right) = node.borrow_mut().right.take() {
-                queue.push(right);
+        while let Some((node, depth)) = queue.pop_front() {
+            let val = node.borrow().val;
+            let left = node.borrow_mut().left.take();
+            let right = node.borrow_mut().right.take();
+
+            if res_len == depth {
+                res.push(val);
+                res_len += 1;
+            } else {
+                res[res_len - 1] = val;
+            }
+
+            if let Some(left) = left {
+                queue.push_back((left, depth + 1));
+            }
+
+            if let Some(right) = right {
+                queue.push_back((right, depth + 1));
             }
         }
+
+        res
+    } else {
+        vec![]
     }
-    result
 }
 
 #[cfg(test)]
@@ -109,5 +125,11 @@ mod tests {
     fn test_right_side_view_4() {
         let expected = vec![] as Vec<i32>;
         assert_eq!(expected, right_side_view(None));
+    }
+
+    #[test]
+    fn test_right_side_view_5() {
+        let tree = TreeNode::from_vec(vec![Some(1), Some(2), None]);
+        assert_eq!(vec![1, 2], right_side_view(tree));
     }
 }

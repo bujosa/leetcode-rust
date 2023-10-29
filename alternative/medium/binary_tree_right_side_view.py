@@ -8,17 +8,22 @@ class TreeNode:
         self.right = right
 
 def right_side_view(root: 'TreeNode') -> List[List[int]]:
-    result = []
-    if not root:
-        return result
-    queue = deque([root])
-    while queue:
-        node = queue.pop()
-        result.append(node.val)
-        if node.right:
-            queue.append(node.right)
-        
-    return result
+    res = []
+    q = deque([root])
+
+    while q:
+        rightSide = None
+        qLen = len(q)
+
+        for i in range(qLen):
+            node = q.popleft()
+            if node:
+                rightSide = node
+                q.append(node.left)
+                q.append(node.right)
+        if rightSide:
+            res.append(rightSide.val)
+    return res
 
 def test_right_side_view():
     t1 = TreeNode(1)
