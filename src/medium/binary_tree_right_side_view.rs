@@ -66,3 +66,48 @@ pub fn right_side_view(root: Node) -> Vec<i32> {
     }
     result
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_right_side_view() {
+        let tree = TreeNode::from_vec(vec![
+            Some(1),
+            Some(2),
+            Some(3),
+            None,
+            Some(5),
+            None,
+            Some(4),
+        ]);
+        assert_eq!(vec![1, 3, 4], right_side_view(tree));
+    }
+
+    #[test]
+    fn test_right_side_view_2() {
+        let tree = TreeNode::from_vec(vec![
+            Some(1),
+            Some(2),
+            Some(3),
+            Some(4),
+            None,
+            None,
+            Some(5),
+        ]);
+        assert_eq!(vec![1, 3, 5], right_side_view(tree));
+    }
+
+    #[test]
+    fn test_right_side_view_3() {
+        let tree = TreeNode::from_vec(vec![Some(1), None, Some(3)]);
+        assert_eq!(vec![1, 3], right_side_view(tree));
+    }
+
+    #[test]
+    fn test_right_side_view_4() {
+        let expected = vec![] as Vec<i32>;
+        assert_eq!(expected, right_side_view(None));
+    }
+}
