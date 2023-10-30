@@ -73,7 +73,7 @@ fn is_valid_bst(root: Node) -> bool {
 }
 
 /*
-    Algorithm - Recursion
+    Algorithm - Recursion (DFS)
 
     - Check if the current node's value is between min and max
     - Check if the left subtree is valid
