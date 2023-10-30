@@ -73,6 +73,7 @@
   - [x] [853. Car fleet](../src/medium/car_fleet.rs) -> [Problem Description](../src/medium/readme.md#853-car-fleet)
   - [x] [875. Koko eating bananas](../src/medium/koko_eating_bananas.rs) -> [Problem Description](../src/medium/readme.md#875-koko-eating-bananas)
   - [x] [981. Time based key-value store](../src/medium/time_based_key_value_store.rs) -> [Problem Description](../src/medium/readme.md#981-time-based-key-value-store)
+  - [x] [1448. Count good nodes in binary tree](../src/medium/count_good_nodes_in_binary_tree.rs) -> [Problem Description](../src/medium/readme.md#1448-count-good-nodes-in-binary-tree)
 - [Hard](../src/hard)
   - [x] [4. Median of two sorted arrays](../src/hard/median_of_two_sorted_arrays.rs) -> [Problem Description](../src/hard/readme.md#4-median-of-two-sorted-arrays)
   - [x] [23. Merge k sorted lists](../src/hard/merge_k_sorted_lists.rs) -> [Problem Description](../src/hard/readme.md#23-merge-k-sorted-lists)
