@@ -309,6 +309,62 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 98. Validate Binary Search Tree
+
+## Description
+
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+
+- The left subtree of a node contains only nodes with keys less than the node's key.
+- The right subtree of a node contains only nodes with keys greater than the node's key.
+- Both the left and right subtrees must also be binary search trees.
+
+## Examples
+
+```text
+Input:
+    2
+   / \
+  1   3
+Output: true
+
+Input:
+    5
+   / \
+  1   4
+     / \
+    3   6
+Output: false
+
+Explanation: The input is: [5,1,4,null,null,3,6]. The root node's value
+             is 5 but its right child's value is 4.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use std::{cell::RefCell, rc::Rc};
+
+    use leetcode::medium::validate_binary_search_tree::{is_valid_bst, TreeNode};
+
+    let mut root = TreeNode::new(2);
+    let mut node1 = TreeNode::new(1);
+    let mut node3 = TreeNode::new(3);
+
+    node1.left = Some(Rc::new(RefCell::new(TreeNode::new(1))));
+    node1.right = Some(Rc::new(RefCell::new(TreeNode::new(3))));
+    root.left = Some(Rc::new(RefCell::new(node1)));
+    root.right = Some(Rc::new(RefCell::new(node3)));
+
+    let result = is_valid_bst(root);
+    println!("result: {}", result);
+```
+
+
 # 102. Binary Tree Level Order Traversal
 
 ## Description

@@ -54,6 +54,7 @@
   - [x] [36. Valid sudoku](../src/medium/valid_sudoku.rs) -> [Problem Description](../src/medium/readme.md#36-valid-sudoku)
   - [x] [49. Group anagrams](../src/medium/group_anagrams.rs) -> [Problem Description](../src/medium/readme.md#49-group-anagrams)
   - [x] [74. Search a 2D matrix](../src/medium/search_a_2d_matrix.rs) -> [Problem Description](../src/medium/readme.md#74-search-a-2d-matrix)
+  - [ ] [98. Validate binary search tree](../src/medium/validate_binary_search_tree.rs) -> [Problem Description](../src/medium/readme.md#98-validate-binary-search-tree)
   - [x] [102. Binary tree level order traversal](../src/medium/binary_tree_level_order_traversal.rs) -> [Problem Description](../src/medium/readme.md#102-binary-tree-level-order-traversal)
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
   - [-] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
