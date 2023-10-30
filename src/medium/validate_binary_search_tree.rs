@@ -52,3 +52,40 @@ impl TreeNode {
 pub fn is_valid_bst(root: Node) -> bool {
     true
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_98() {
+        assert_eq!(
+            is_valid_bst(TreeNode::from_vec(vec![Some(2), Some(1), Some(3)])),
+            true
+        );
+        assert_eq!(
+            is_valid_bst(TreeNode::from_vec(vec![
+                Some(5),
+                Some(1),
+                Some(4),
+                None,
+                None,
+                Some(3),
+                Some(6)
+            ])),
+            false
+        );
+        assert_eq!(
+            is_valid_bst(TreeNode::from_vec(vec![
+                Some(10),
+                Some(5),
+                Some(15),
+                None,
+                None,
+                Some(6),
+                Some(20)
+            ])),
+            false
+        );
+    }
+}
