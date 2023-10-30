@@ -68,6 +68,22 @@ pub fn good_nodes(root: Node) -> i32 {
     result
 }
 
+/*
+    Algorithm - DFS
+
+    1. Create a stack to store the node and the max value of the path
+    2. Push the root node and the minimum value of i32 to the stack
+    3. While the stack is not empty
+        1. Pop the node and the max value of the path from the stack
+        2. If the node is not None
+            1. If the node's value is greater than or equal to the max value of the path
+                1. Increment the result by 1
+            2. Push the left node and the max value of the path to the stack
+            3. Push the right node and the max value of the path to the stack
+    4. Return the result
+
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
