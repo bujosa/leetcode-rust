@@ -49,9 +49,42 @@ impl TreeNode {
     }
 }
 
-pub fn is_valid_bst(root: Node) -> bool {
-    true
+fn is_valid_bst(root: Node) -> bool {
+    fn helper(node: Node, min: Option<i32>, max: Option<i32>) -> bool {
+        if let Some(n) = node {
+            let val = n.borrow().val;
+            if let Some(min) = min {
+                if val <= min {
+                    return false;
+                }
+            }
+            if let Some(max) = max {
+                if val >= max {
+                    return false;
+                }
+            }
+            return helper(n.borrow().left.clone(), min, Some(val))
+                && helper(n.borrow().right.clone(), Some(val), max);
+        }
+        true
+    }
+
+    helper(root, None, None)
 }
+
+/*
+    Algorithm - Recursion
+
+    - Check if the current node's value is between min and max
+    - Check if the left subtree is valid
+    - Check if the right subtree is valid
+    - If all the above conditions are met, return true
+    - If any of the above conditions are not met, return false
+
+    Complexity:
+        Time: O(n)
+        Space: O(n)
+*/
 
 #[cfg(test)]
 mod tests {
