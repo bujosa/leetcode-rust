@@ -996,3 +996,40 @@ Put the code below in main.rs and run `cargo run`
     let result = time_map.get(String::from("foo"), 5);
     println!("result: {}", result);
 ```
+
+# 1448. Count Good Nodes in Binary Tree
+
+## Description
+
+Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.
+
+Return the number of good nodes in the binary tree.
+
+## Examples
+
+```text
+Input: root = [3,1,4,3,null,1,5]
+Output: 4
+
+Explanation: Nodes in blue are good.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use leetcode::medium::count_good_nodes_in_binary_tree::{good_nodes, TreeNode};
+    let root = TreeNode::from_vec(vec![
+        Some(3),
+        Some(1),
+        Some(4),
+        Some(3),
+        None,
+        Some(1),
+        Some(5),
+    ]);
+    let result = good_nodes(root);
+    println!("result: {}", result);
+```
+
