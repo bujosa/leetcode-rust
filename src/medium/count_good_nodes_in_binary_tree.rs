@@ -50,7 +50,22 @@ impl TreeNode {
 type Node = Option<Rc<RefCell<TreeNode>>>;
 
 pub fn good_nodes(root: Node) -> i32 {
-    todo!()
+    let mut result = 0;
+    let mut stack: Vec<(Node, i32)> = vec![(root, std::i32::MIN)];
+
+    while let Some((node, max)) = stack.pop() {
+        if let Some(node) = node {
+            let node = node.borrow();
+            let max = std::cmp::max(max, node.val);
+            if node.val >= max {
+                result += 1;
+            }
+            stack.push((node.left.clone(), max));
+            stack.push((node.right.clone(), max));
+        }
+    }
+
+    result
 }
 
 #[cfg(test)]
@@ -59,7 +74,15 @@ mod tests {
 
     #[test]
     fn test_1448_example_1() {
-        let root = TreeNode::from_vec(vec![Some(3), Some(1), Some(4), Some(3), None, Some(1)]);
+        let root = TreeNode::from_vec(vec![
+            Some(3),
+            Some(1),
+            Some(4),
+            Some(3),
+            None,
+            Some(1),
+            Some(5),
+        ]);
         let result = 4;
 
         assert_eq!(good_nodes(root), result);
