@@ -26,8 +26,10 @@ pub mod remove_nth_node_from_end_of_list;
 pub mod reorder_list;
 pub mod search_a_2d_matrix;
 pub mod search_in_rotated_sorted_array;
+pub mod subsets;
 pub mod three_sum;
 pub mod three_sum_closest;
+
 pub mod time_based_key_value_store;
 pub mod top_k_frequent_elements;
 pub mod two_sum_ii_input_array_is_sorted;
