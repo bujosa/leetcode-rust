@@ -62,6 +62,21 @@ pub fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> Node {
     helper(&preorder, &inorder)
 }
 
+/*
+    Algorithm - Recursion
+
+    Preorder: [root, left, right]
+    Inorder: [left, root, right]
+
+    1. The first element in preorder is the root.
+    2. Find the root in inorder, the elements on the left of the root are the left subtree, the elements on the right of the root are the right subtree.
+    3. Recursively build the left and right subtree.
+    4. Return the root.
+
+    Time complexity: O(n)
+    Space complexity: O(n)
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
