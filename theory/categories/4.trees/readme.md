@@ -71,13 +71,13 @@
 - [x] [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [Solution](../../../src/medium/binary_tree_right_side_view.rs) | [Problem Description](../../../src/medium/readme.md#199-binary-tree-right-side-view)
 - [x] [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | [Solution](../../../src/medium/count_good_nodes_in_binary_tree.rs) | [Problem Description](../../../src/medium/readme.md#1448-count-good-nodes-in-binary-tree)
 - [x] [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [Solution](../../../src/medium/validate_binary_search_tree.rs) | [Problem Description](../../../src/medium/readme.md#98-validate-binary-search-tree)
-- [ ] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Solution](../../../src/medium/kth_smallest_element_in_a_bst.rs) | [Problem Description](../../../src/medium/readme.md#230-kth-smallest-element-in-a-bst)
+- [x] [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [Solution](../../../src/medium/kth_smallest_element_in_a_bst.rs) | [Problem Description](../../../src/medium/readme.md#230-kth-smallest-element-in-a-bst)
 - [x] [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | [Solution](../../../src/medium/construct_binary_tree_from_preorder_and_inorder_traversal.rs) | [Problem Description](../../../src/medium/readme.md#105-construct-binary-tree-from-preorder-and-inorder-traversal)
 - [ ] [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | [Solution](../../../src/hard/binary_tree_maximum_path_sum.rs) | [Problem Description](../../../src/hard/readme.md#124-binary-tree-maximum-path-sum)
 - [ ] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [Solution](../../../src/hard/serialize_and_deserialize_binary_tree.rs) | [Problem Description](../../../src/hard/readme.md#297-serialize-and-deserialize-binary-tree)
 
 Category: `Trees`
 Created on: 2023-10-07 19:00
-Last modified on: 2023-10-31 02:32
+Last modified on: 2023-10-31 02:50
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
