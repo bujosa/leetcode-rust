@@ -734,6 +734,45 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {:?}", result);
 ```
 
+# 230. Kth Smallest Element in a BST
+
+## Description
+
+Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+## Examples
+
+```text
+Input: root = [3,1,4,null,2], k = 1
+Output: 1
+
+Input: root = [5,3,6,2,4,null,null,1], k = 3
+Output: 3
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use std::{cell::RefCell, rc::Rc};
+
+    use leetcode::medium::kth_smallest_element_in_a_bst::{kth_smallest, TreeNode};
+
+    let mut root = TreeNode::new(3);
+    let mut node1 = TreeNode::new(1);
+    let mut node4 = TreeNode::new(4);
+    let mut node2 = TreeNode::new(2);
+
+    node1.right = Some(Rc::new(RefCell::new(node2)));
+    root.left = Some(Rc::new(RefCell::new(node1)));
+    root.right = Some(Rc::new(RefCell::new(node4)));
+
+    let result = kth_smallest(root, 1);
+    println!("result: {}", result);
+```
+
+
 
 # 235. Lowest Common Ancestor of a Binary Search Tree
 
