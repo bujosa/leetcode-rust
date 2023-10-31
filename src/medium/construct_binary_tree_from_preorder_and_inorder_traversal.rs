@@ -42,5 +42,47 @@ impl TreeNode {
 }
 
 pub fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> Node {
-    todo!("construct_binary_tree_from_preorder_and_inorder_traversal")
+    fn helper(preorder: &[i32], inorder: &[i32]) -> Node {
+        if preorder.is_empty() {
+            return None;
+        }
+        let root = preorder[0];
+        let mut root_idx = 0;
+        for (i, &val) in inorder.iter().enumerate() {
+            if val == root {
+                root_idx = i;
+                break;
+            }
+        }
+        let mut node = TreeNode::new(root);
+        node.left = helper(&preorder[1..=root_idx], &inorder[..root_idx]);
+        node.right = helper(&preorder[root_idx + 1..], &inorder[root_idx + 1..]);
+        Some(Rc::new(RefCell::new(node)))
+    }
+    helper(&preorder, &inorder)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_build_tree() {
+        assert_eq!(
+            build_tree(vec![3, 9, 20, 15, 7], vec![9, 3, 15, 20, 7]),
+            TreeNode::from_vec(vec![
+                Some(3),
+                Some(9),
+                Some(20),
+                None,
+                None,
+                Some(15),
+                Some(7)
+            ])
+        );
+        assert_eq!(
+            build_tree(vec![-1], vec![-1]),
+            TreeNode::from_vec(vec![Some(-1)])
+        );
+    }
 }
