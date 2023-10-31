@@ -42,5 +42,52 @@ impl TreeNode {
 }
 
 pub fn kth_smallest(root: Option<Rc<RefCell<TreeNode>>>, k: i32) -> i32 {
+    let mut stack = vec![];
+    let mut node = root;
+    let mut k = k;
+    while node.is_some() || !stack.is_empty() {
+        while let Some(n) = node {
+            stack.push(n.clone());
+            node = n.borrow().left.clone();
+        }
+        node = stack.pop();
+        k -= 1;
+        if k == 0 {
+            return node.unwrap().borrow().val;
+        }
+        node = node.unwrap().borrow().right.clone();
+    }
     0
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_230() {
+        assert_eq!(
+            kth_smallest(
+                TreeNode::from_vec(vec![Some(3), Some(1), Some(4), None, Some(2)]),
+                1
+            ),
+            1
+        );
+        assert_eq!(
+            kth_smallest(
+                TreeNode::from_vec(vec![
+                    Some(5),
+                    Some(3),
+                    Some(6),
+                    Some(2),
+                    Some(4),
+                    None,
+                    None,
+                    Some(1)
+                ]),
+                3
+            ),
+            3
+        );
+    }
 }
