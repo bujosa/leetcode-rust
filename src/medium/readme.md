@@ -403,6 +403,39 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {:?}", result);
 ```
 
+# 105. Construct Binary Tree from Preorder and Inorder Traversal
+
+## Description
+
+Given preorder and inorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+## Examples
+
+```text
+Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+Output:
+    3
+   / \
+  9  20
+    /  \
+   15   7
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use leetcode::medium::construct_binary_tree_from_preorder_and_inorder_traversal::{build_tree, TreeNode};
+    let preorder = vec![3, 9, 20, 15, 7];
+    let inorder = vec![9, 3, 15, 20, 7];
+    let result = build_tree(preorder, inorder);
+    println!("result: {:?}", result);
+```
+
 # 128. Longest Consecutive Sequence
 
 ## Description
