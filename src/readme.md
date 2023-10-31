@@ -56,7 +56,7 @@
   - [x] [74. Search a 2D matrix](../src/medium/search_a_2d_matrix.rs) -> [Problem Description](../src/medium/readme.md#74-search-a-2d-matrix)
   - [x] [98. Validate binary search tree](../src/medium/validate_binary_search_tree.rs) -> [Problem Description](../src/medium/readme.md#98-validate-binary-search-tree)
   - [x] [102. Binary tree level order traversal](../src/medium/binary_tree_level_order_traversal.rs) -> [Problem Description](../src/medium/readme.md#102-binary-tree-level-order-traversal)
-  - [ ] [105. Construct binary tree from preorder and inorder traversal](../src/medium/construct_binary_tree_from_preorder_and_inorder_traversal.rs) -> [Problem Description](../src/medium/readme.md#105-construct-binary-tree-from-preorder-and-inorder-traversal)
+  - [x] [105. Construct binary tree from preorder and inorder traversal](../src/medium/construct_binary_tree_from_preorder_and_inorder_traversal.rs) -> [Problem Description](../src/medium/readme.md#105-construct-binary-tree-from-preorder-and-inorder-traversal)
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
   - [-] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
