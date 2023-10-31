@@ -60,6 +60,26 @@ pub fn kth_smallest(root: Option<Rc<RefCell<TreeNode>>>, k: i32) -> i32 {
     0
 }
 
+/*
+    Algorithm - Kth Smallest Element in a BST
+    1. Create a stack
+    2. Create a node and set it to root
+    3. While node is not None or stack is not empty
+        1. While node is not None
+            1. Push node to stack
+            2. Set node to node's left
+        2. Set node to stack.pop()
+        3. Decrement k
+        4. If k is 0
+            1. Return node's value
+        5. Set node to node's right
+
+    Analysis
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
