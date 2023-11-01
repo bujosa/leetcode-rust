@@ -53,6 +53,7 @@
   - [x] [22. Generate parentheses](../src/medium/generate_parentheses.rs) -> [Problem Description](../src/medium/readme.md#22-generate-parentheses)
   - [x] [36. Valid sudoku](../src/medium/valid_sudoku.rs) -> [Problem Description](../src/medium/readme.md#36-valid-sudoku)
   - [x] [39. Combination sum](../src/medium/combination_sum.rs) -> [Problem Description](../src/medium/readme.md#39-combination-sum)
+  - [ ] [40. Combination sum II](../src/medium/combination_sum_ii.rs) -> [Problem Description](../src/medium/readme.md#40-combination-sum-ii)
   - [x] [46. Permutations](../src/medium/permutations.rs) -> [Problem Description](../src/medium/readme.md#46-permutations)
   - [x] [49. Group anagrams](../src/medium/group_anagrams.rs) -> [Problem Description](../src/medium/readme.md#49-group-anagrams)
   - [x] [74. Search a 2D matrix](../src/medium/search_a_2d_matrix.rs) -> [Problem Description](../src/medium/readme.md#74-search-a-2d-matrix)
