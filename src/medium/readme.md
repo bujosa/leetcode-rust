@@ -287,6 +287,37 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 46. Permutations
+
+## Description
+
+Given a collection of distinct integers, return all possible permutations.
+
+## Examples
+
+```text
+Input: [1,2,3]
+Output:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![1, 2, 3];
+  let result = leetcode::medium::permutations::permute(nums);
+  println!("result: {:?}", result);
+```
+
 # 49. Group Anagrams
 
 ## Description
