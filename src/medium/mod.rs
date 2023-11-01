@@ -22,6 +22,7 @@ pub mod longest_substring_without_repeating_characters;
 pub mod lowest_common_ancestor_of_a_binary_search_tree;
 pub mod lru_cache;
 pub mod permutation_in_string;
+pub mod permutations;
 pub mod product_of_array_except_self;
 pub mod remove_nth_node_from_end_of_list;
 pub mod reorder_list;
