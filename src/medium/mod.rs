@@ -3,6 +3,7 @@ pub mod binary_tree_level_order_traversal;
 pub mod binary_tree_right_side_view;
 pub mod car_fleet;
 pub mod combination_sum;
+pub mod combination_sum_ii;
 pub mod construct_binary_tree_from_preorder_and_inorder_traversal;
 pub mod container_with_most_water;
 pub mod copy_list_with_random_pointer;
