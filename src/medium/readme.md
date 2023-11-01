@@ -464,6 +464,44 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 79. Word Search
+
+## Description
+
+Given a 2D board and a word, find if the word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+
+## Examples
+
+```text
+board =
+[
+  ['A','B','C','E'],
+  ['S','F','C','S'],
+  ['A','D','E','E']
+]
+
+Given word = "ABCCED", return true.
+Given word = "SEE", return true.
+Given word = "ABCB", return false.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let board = vec![
+    vec!['A', 'B', 'C', 'E'],
+    vec!['S', 'F', 'C', 'S'],
+    vec!['A', 'D', 'E', 'E'],
+  ];
+  let word = String::from("ABCCED");
+  let result = leetcode::medium::word_search::exist(board, word);
+  println!("result: {}", result);
+```
+
 # 90. Subsets II
 
 ## Description
