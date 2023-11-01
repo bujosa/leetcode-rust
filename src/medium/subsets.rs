@@ -37,7 +37,6 @@ pub fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {
 mod tests {
     use super::*;
 
-    // Create function for validate the subsets doesnt import the order
     fn validate_subsets(mut result: Vec<Vec<i32>>, expected: Vec<Vec<i32>>) -> bool {
         result.sort();
         result == expected
