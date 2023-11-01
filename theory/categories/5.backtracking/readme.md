@@ -38,7 +38,7 @@
 - O(n)
 
 ## Problems
-- [ ] [Subsets](https://leetcode.com/problems/subsets/) | Medium | [Solution](../../../src/medium/subsets.rs) | [Problem Description](../../../src/medium/readme.md#78-subsets)
+- [x] [Subsets](https://leetcode.com/problems/subsets/) | Medium | [Solution](../../../src/medium/subsets.rs) | [Problem Description](../../../src/medium/readme.md#78-subsets)
 - [ ] [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | [Solution](../../../src/medium/combination_sum.rs) | [Problem Description](../../../src/medium/readme.md#39-combination-sum)
 - [ ] [Permutations](https://leetcode.com/problems/permutations/) | Medium | [Solution](../../../src/medium/permutations.rs) | [Problem Description](../../../src/medium/readme.md#46-permutations)
 - [ ] [Subsets II](https://leetcode.com/problems/subsets-ii/) | Medium | [Solution](../../../src/medium/subsets_ii.rs) | [Problem Description](../../../src/medium/readme.md#90-subsets-ii)
@@ -50,6 +50,6 @@
 
 Category: `Backtracking`
 Created on: 2023-10-31 03:01
-Last modified on: 2023-10-31 03:01
+Last modified on: 2023-10-31 20:11
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
