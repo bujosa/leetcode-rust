@@ -419,6 +419,39 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 90. Subsets II
+
+## Description
+
+Given a collection of integers that might contain duplicates, nums, return all possible subsets (the power set).
+
+Note: The solution set must not contain duplicate subsets.
+
+## Examples
+
+```text
+Input: [1,2,2]
+Output:
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![1, 2, 2];
+  let result = leetcode::medium::subsets_ii::subsets_with_dup(nums);
+  println!("result: {:?}", result);
+```
+
 # 98. Validate Binary Search Tree
 
 ## Description
