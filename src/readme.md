@@ -52,6 +52,7 @@
   - [x] [19. Remove nth node from end of list](../src/medium/remove_nth_node_from_end_of_list.rs)
   - [x] [22. Generate parentheses](../src/medium/generate_parentheses.rs) -> [Problem Description](../src/medium/readme.md#22-generate-parentheses)
   - [x] [36. Valid sudoku](../src/medium/valid_sudoku.rs) -> [Problem Description](../src/medium/readme.md#36-valid-sudoku)
+  - [ ] [39. Combination sum](../src/medium/combination_sum.rs) -> [Problem Description](../src/medium/readme.md#39-combination-sum)
   - [x] [49. Group anagrams](../src/medium/group_anagrams.rs) -> [Problem Description](../src/medium/readme.md#49-group-anagrams)
   - [x] [74. Search a 2D matrix](../src/medium/search_a_2d_matrix.rs) -> [Problem Description](../src/medium/readme.md#74-search-a-2d-matrix)
   - [x] [78. Subsets](../src/medium/subsets.rs) -> [Problem Description](../src/medium/readme.md#78-subsets)
