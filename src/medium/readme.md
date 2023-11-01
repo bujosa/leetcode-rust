@@ -287,6 +287,51 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 40. Combination Sum II
+
+## Description
+
+Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
+
+Each number in candidates may only be used once in the combination.
+
+Note:
+ - All numbers (including target) will be positive integers.
+ - The solution set must not contain duplicate combinations.
+
+## Examples
+  
+  ```text
+  Input: candidates = [10,1,2,7,6,1,5], target = 8,
+  A solution set is:
+  [
+    [1, 7],
+    [1, 2, 5],
+    [2, 6],
+    [1, 1, 6]
+  ]
+  ```
+    
+  ```text
+  Input: candidates = [2,5,2,1,2], target = 5,
+  A solution set is:
+  [
+    [1,2,2],
+    [5]
+  ]
+  ```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let candidates = vec![10, 1, 2, 7, 6, 1, 5];
+  let target = 8;
+  let result = leetcode::medium::combination_sum_ii::combination_sum2(candidates, target);
+  println!("result: {:?}", result);
+```
+
 # 46. Permutations
 
 ## Description
