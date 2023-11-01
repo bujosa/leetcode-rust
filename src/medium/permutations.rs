@@ -1,7 +1,19 @@
 #![allow(dead_code)]
 
 pub fn permute(nums: Vec<i32>) -> Vec<Vec<i32>> {
-    todo!("Implement it")
+    if nums.len() == 1 {
+        return vec![nums];
+    }
+    let mut result = vec![];
+    for i in 0..nums.len() {
+        let mut nums_clone = nums.clone();
+        let num = nums_clone.remove(i);
+        for mut perm in permute(nums_clone) {
+            perm.insert(0, num);
+            result.push(perm);
+        }
+    }
+    result
 }
 
 #[cfg(test)]
@@ -26,5 +38,18 @@ mod tests {
                 vec![3, 2, 1]
             ]
         ));
+    }
+
+    #[test]
+    fn test_permutations_2() {
+        assert!(validate_permutations(
+            permute(vec![0, 1]),
+            vec![vec![0, 1], vec![1, 0]]
+        ));
+    }
+
+    #[test]
+    fn test_permutations_3() {
+        assert!(validate_permutations(permute(vec![1]), vec![vec![1]]));
     }
 }
