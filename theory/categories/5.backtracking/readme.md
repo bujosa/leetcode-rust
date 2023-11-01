@@ -26,17 +26,6 @@
 
 - Using recursion.
 
-### Backtracking Time Complexity
-
-- Access: O(n)
-- Search: O(n)
-- Insertion: O(1)
-- Deletion: O(1)
-
-### Backtracking Space Complexity
-
-- O(n)
-
 ## Problems
 - [x] [Subsets](https://leetcode.com/problems/subsets/) | Medium | [Solution](../../../src/medium/subsets.rs) | [Problem Description](../../../src/medium/readme.md#78-subsets)
 - [x] [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | [Solution](../../../src/medium/combination_sum.rs) | [Problem Description](../../../src/medium/readme.md#39-combination-sum)
