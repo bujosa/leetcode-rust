@@ -35,10 +35,10 @@
 - [x] [Word Search](https://leetcode.com/problems/word-search/) | Medium | [Solution](../../../src/medium/word_search.rs) | [Problem Description](../../../src/medium/readme.md#79-word-search)
 - [x] [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | [Solution](../../../src/medium/palindrome_partitioning.rs) | [Problem Description](../../../src/medium/readme.md#131-palindrome-partitioning)
 - [x] [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | [Solution](../../../src/medium/letter_combinations_of_a_phone_number.rs) | [Problem Description](../../../src/medium/readme.md#17-letter-combinations-of-a-phone-number)
-- [ ] [N Queens](https://leetcode.com/problems/n-queens/) | Hard | [Solution](../../../src/hard/n_queens.rs) | [Problem Description](../../../src/hard/readme.md#51-n-queens)
+- [x] [N Queens](https://leetcode.com/problems/n-queens/) | Hard | [Solution](../../../src/hard/n_queens.rs) | [Problem Description](../../../src/hard/readme.md#51-n-queens)
 
 Category: `Backtracking`
 Created on: 2023-10-31 03:01
-Last modified on: 2023-11-01 23:16
-Status: In Progress
+Last modified on: 2023-11-02 03:00
+Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

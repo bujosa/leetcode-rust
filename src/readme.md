@@ -90,6 +90,7 @@
   - [x] [23. Merge k sorted lists](../src/hard/merge_k_sorted_lists.rs) -> [Problem Description](../src/hard/readme.md#23-merge-k-sorted-lists)
   - [x] [25. Reverse nodes in k-group](../src/hard/reverse_nodes_in_k_group.rs) -> [Problem Description](../src/hard/readme.md#25-reverse-nodes-in-k-group)
   - [x] [42. Trapping rain water](../src/hard/trapping_rain_water.rs) -> [Problem Description](../src/hard/readme.md#42-trapping-rain-water)
+  - [x] [51. N-queens](../src/hard/n_queens.rs) -> [Problem Description](../src/hard/readme.md#51-n-queens)
   - [x] [76. Minimum window substring](../src/hard/minimum_window_substring.rs) -> [Problem Description](../src/hard/readme.md#76-minimum-window-substring)
   - [x] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs) -> [Problem Description](../src/hard/readme.md#84-largest-rectangle-in-histogram)
   - [x] [239. Sliding window maximum](../src/hard/sliding_window_maximum.rs) -> [Problem Description](../src/hard/readme.md#239-sliding-window-maximum)
