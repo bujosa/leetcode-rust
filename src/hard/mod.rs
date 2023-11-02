@@ -6,3 +6,4 @@ pub mod n_queens;
 pub mod reverse_nodes_in_k_group;
 pub mod sliding_window_maximum;
 pub mod trapping_rain_water;
+pub mod word_search_ii;
