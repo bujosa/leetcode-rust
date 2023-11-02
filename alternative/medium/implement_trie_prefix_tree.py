@@ -10,29 +10,29 @@ class Trie:
     def insert(self, word: str) -> None:
         cur = self.root
 
-        for w in word:
-            if w not in self.root.children:
-                cur.children[w] = TrieNode()
-            cur = cur.children[w]
+        for c in word:
+            if c not in cur.children:
+                cur.children[c] = TrieNode()
+            cur = cur.children[c]
         cur.is_word = True
         
 
     def search(self, word: str) -> bool:
         cur = self.root
 
-        for w in word:
-            if w not in cur.children:
+        for c in word:
+            if c not in cur.children:
                 return False
-            cur = cur.children[w]
+            cur = cur.children[c]
         return cur.is_word
         
 
     def startsWith(self, prefix: str) -> bool:
         cur = self.root
-        for w in prefix:
-            if w not in cur.children:
+        for c in prefix:
+            if c not in cur.children:
                 return False
-            cur = cur.children[w]
+            cur = cur.children[c]
         return True
         
 assert Trie().insert("apple") == None
