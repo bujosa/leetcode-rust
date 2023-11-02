@@ -139,6 +139,31 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 17. Letter Combinations of a Phone Number
+
+## Description
+
+Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent.
+
+A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+
+## Examples
+
+```text
+Input: "23"
+Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let digits = String::from("23");
+  let result = leetcode::medium::letter_combinations_of_a_phone_number::letter_combinations(digits);
+  println!("result: {:?}", result);
+```
+
 # 19. Remove Nth Node From End of List
 
 ## Description
