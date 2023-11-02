@@ -73,8 +73,12 @@ class WordDictionary:
         return helper(word, self.trie.root)
         
 
+assert WordDictionary().addWord("bad") == None
 
-# Your WordDictionary object will be instantiated and called as such:
-# obj = WordDictionary()
-# obj.addWord(word)
-# param_2 = obj.search(word)
+wordDictionary = WordDictionary()
+wordDictionary.addWord("bad")
+wordDictionary.addWord("dad")
+wordDictionary.addWord("mad")
+assert wordDictionary.search("pad") == False
+assert wordDictionary.search("bad") == True
+assert wordDictionary.search(".ad") == True
