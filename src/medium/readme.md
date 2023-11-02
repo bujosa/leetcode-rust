@@ -689,6 +689,36 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+
+# 131. Palindrome Partitioning
+
+## Description
+
+Given a string s, partition s such that every substring of the partition is a palindrome.
+
+Return all possible palindrome partitioning of s.
+
+## Examples
+
+```text
+Input: "aab"
+Output:
+[
+  ["a","a","b"],
+  ["aa","b"],
+]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("aab");
+  let result = leetcode::medium::palindrome_partitioning::partition(s);
+  println!("result: {:?}", result);
+```
+
 # 138. Copy List with Random Pointer
 
 ## Description
