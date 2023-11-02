@@ -1015,6 +1015,38 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {:?}", result);
 ```
 
+# 208. Implement Trie (Prefix Tree)
+
+## Description
+
+Implement a trie with insert, search, and startsWith methods.
+
+## Examples
+
+```text
+Input
+["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
+[[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
+Output
+[null, null, true, false, true, null, true]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use leetcode::medium::implement_trie_prefix_tree::Trie;
+    let mut trie = Trie::new();
+    trie.insert("apple".to_string());
+    println!("{}", trie.search("apple".to_string())); // returns true
+    println!("{}", trie.search("app".to_string())); // returns false
+    println!("{}", trie.starts_with("app".to_string())); // returns true
+    trie.insert("app".to_string());
+    println!("{}", trie.search("app".to_string())); // returns true
+```
+
+
 # 230. Kth Smallest Element in a BST
 
 ## Description
