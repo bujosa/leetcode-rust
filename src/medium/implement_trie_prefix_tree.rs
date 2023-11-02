@@ -1,19 +1,19 @@
 #![allow(dead_code)]
 
-struct Trie {
-    is_end: bool,
-    children: [Option<Box<Trie>>; 26],
+pub struct Trie {
+    pub is_end: bool,
+    pub children: [Option<Box<Trie>>; 26],
 }
 
 impl Trie {
-    fn new() -> Self {
+    pub fn new() -> Self {
         Trie {
             is_end: false,
             children: Default::default(),
         }
     }
 
-    fn insert(&mut self, word: String) {
+    pub fn insert(&mut self, word: String) {
         let mut node = self;
         for ch in word.chars().map(|ch| (ch as u8 - 'a' as u8) as usize) {
             node = node.children[ch].get_or_insert(Box::new(Trie::new()));
@@ -21,7 +21,7 @@ impl Trie {
         node.is_end = true;
     }
 
-    fn search(&self, word: String) -> bool {
+    pub fn search(&self, word: String) -> bool {
         let mut node = self;
         for ch in word.chars().map(|ch| (ch as u8 - 'a' as u8) as usize) {
             match node.children[ch].as_ref() {
@@ -32,7 +32,7 @@ impl Trie {
         node.is_end
     }
 
-    fn starts_with(&self, prefix: String) -> bool {
+    pub fn starts_with(&self, prefix: String) -> bool {
         let mut node = self;
         for ch in prefix.chars().map(|ch| (ch as u8 - 'a' as u8) as usize) {
             match node.children[ch].as_ref() {
