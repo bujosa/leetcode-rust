@@ -32,13 +32,13 @@
 - [x] [Permutations](https://leetcode.com/problems/permutations/) | Medium | [Solution](../../../src/medium/permutations.rs) | [Problem Description](../../../src/medium/readme.md#46-permutations)
 - [x] [Subsets II](https://leetcode.com/problems/subsets-ii/) | Medium | [Solution](../../../src/medium/subsets_ii.rs) | [Problem Description](../../../src/medium/readme.md#90-subsets-ii)
 - [x] [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | [Solution](../../../src/medium/combination_sum_ii.rs) | [Problem Description](../../../src/medium/readme.md#40-combination-sum-ii)
-- [ ] [Word Search](https://leetcode.com/problems/word-search/) | Medium | [Solution](../../../src/medium/word_search.rs) | [Problem Description](../../../src/medium/readme.md#79-word-search)
+- [x] [Word Search](https://leetcode.com/problems/word-search/) | Medium | [Solution](../../../src/medium/word_search.rs) | [Problem Description](../../../src/medium/readme.md#79-word-search)
 - [ ] [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | [Solution](../../../src/medium/palindrome_partitioning.rs) | [Problem Description](../../../src/medium/readme.md#131-palindrome-partitioning)
 - [ ] [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | [Solution](../../../src/medium/letter_combinations_of_a_phone_number.rs) | [Problem Description](../../../src/medium/readme.md#17-letter-combinations-of-a-phone-number)
 - [ ] [N Queens](https://leetcode.com/problems/n-queens/) | Hard | [Solution](../../../src/hard/n_queens.rs) | [Problem Description](../../../src/hard/readme.md#51-n-queens)
 
 Category: `Backtracking`
 Created on: 2023-10-31 03:01
-Last modified on: 2023-11-01 02:48
+Last modified on: 2023-11-01 21:12
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
