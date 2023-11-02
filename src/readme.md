@@ -73,6 +73,7 @@
   - [x] [167. Two sum II - input array is sorted](../src/medium/two_sum_ii_input_array_is_sorted.rs) -> [Problem Description](../src/medium/readme.md#167-two-sum-ii---input-array-is-sorted)
   - [x] [199. Binary tree right side view](../src/medium/binary_tree_right_side_view.rs) -> [Problem Description](../src/medium/readme.md#199-binary-tree-right-side-view)
   - [x] [208. Implement trie (prefix tree)](../src/medium/implement_trie_prefix_tree.rs) -> [Problem Description](../src/medium/readme.md#208-implement-trie-prefix-tree)
+  - [x] [211. Design add and search words data structure](../src/medium/design_add_and_search_words_data_structure.rs) -> [Problem Description](../src/medium/readme.md#211-design-add-and-search-words-data-structure)
   - [x] [230. Kth smallest element in a BST](../src/medium/kth_smallest_element_in_a_bst.rs) -> [Problem Description](../src/medium/readme.md#230-kth-smallest-element-in-a-bst)
   - [x] [235. Lowest common ancestor of a binary search tree](../src/medium/lowest_common_ancestor_of_a_binary_search_tree.rs) -> [Problem Description](../src/medium/readme.md#235-lowest-common-ancestor-of-a-binary-search-tree)
   - [x] [238. Product of array except self](../src/medium/product_of_array_except_self.rs) -> [Problem Description](../src/medium/readme.md#238-product-of-array-except-self)
