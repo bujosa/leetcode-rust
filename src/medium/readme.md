@@ -1046,6 +1046,44 @@ Put the code below in main.rs and run `cargo run`
     println!("{}", trie.search("app".to_string())); // returns true
 ```
 
+# 211. Add and Search Word - Data structure design
+
+## Description
+
+Design a data structure that supports the following two operations:
+
+- void addWord(word)
+- bool search(word)
+
+search(word) can search a literal word or a regular expression string containing only letters a-z or .. A . means it can represent any one letter.
+
+## Examples
+
+```text
+addWord("bad")
+addWord("dad")
+addWord("mad")
+search("pad") -> false
+search("bad") -> true
+search(".ad") -> true
+search("b..") -> true
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use leetcode::medium::add_and_search_word_data_structure_design::WordDictionary;
+    let mut word_dictionary = WordDictionary::new();
+    word_dictionary.add_word("bad".to_string());
+    word_dictionary.add_word("dad".to_string());
+    word_dictionary.add_word("mad".to_string());
+    println!("{}", word_dictionary.search("pad".to_string())); // returns false
+    println!("{}", word_dictionary.search("bad".to_string())); // returns true
+    println!("{}", word_dictionary.search(".ad".to_string())); // returns true
+    println!("{}", word_dictionary.search("b..".to_string())); // returns true
+```
 
 # 230. Kth Smallest Element in a BST
 
