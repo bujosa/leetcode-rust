@@ -15,6 +15,7 @@ pub mod find_minimum_in_rotated_sorted_array;
 pub mod find_the_duplicate_number;
 pub mod generate_parentheses;
 pub mod group_anagrams;
+pub mod implement_trie_prefix_tree;
 pub mod koko_eating_bananas;
 pub mod kth_smallest_element_in_a_bst;
 pub mod letter_combinations_of_a_phone_number;
