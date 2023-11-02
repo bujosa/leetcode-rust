@@ -9,6 +9,7 @@ pub mod container_with_most_water;
 pub mod copy_list_with_random_pointer;
 pub mod count_good_nodes_in_binary_tree;
 pub mod daily_temperatures;
+pub mod design_add_and_search_words_data_structure;
 pub mod encode_and_decode_strings;
 pub mod evaluate_reverse_polish_notation;
 pub mod find_minimum_in_rotated_sorted_array;
