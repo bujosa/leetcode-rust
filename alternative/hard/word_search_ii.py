@@ -4,13 +4,9 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.is_word = False
-
-class Trie:
-    def __init__(self):
-        self.root = TrieNode()
-
+    
     def insert(self, word: str) -> None:
-        cur = self.root
+        cur = self
 
         for c in word:
             if c not in cur.children:
@@ -18,60 +14,49 @@ class Trie:
             cur = cur.children[c]
         cur.is_word = True
         
-
-    def search(self, word: str) -> bool:
-        cur = self.root
-
-        for c in word:
-            if c not in cur.children:
-                return False
-            cur = cur.children[c]
-        return cur.is_word
-        
-
-    def startsWith(self, prefix: str) -> bool:
-        cur = self.root
-        for c in prefix:
-            if c not in cur.children:
-                return False
-            cur = cur.children[c]
-        return True
-
-def findWords( board: List[List[str]], words: List[str]) -> List[str]:
-    trie = Trie()
+def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+    root = TrieNode()
 
     for word in words:
-        trie.insert(word)
+        root.insert(word)
 
-    res = []
     ROWS, COLS = len(board), len(board[0])
-    path = set()
+    path, res = set(), set()
 
-    def dfs(r: int, c: int, word: str):
-        if r < 0 or c < 0 or r >= ROWS or c >= COLS or (r,c) in path: 
-            return
-
-        word = word + board[r][c]
-        if trie.startsWith(word) == False:
+    def dfs(r: int, c: int, word: str, node):
+        if r < 0 or c < 0 or r >= ROWS or c >= COLS or (r,c) in path or board[r][c] not in node.children: 
             return
 
         path.add((r,c))
-        if trie.search(word):
-            res.append(word)
 
-        dfs(r + 1, c, word)
-        dfs(r - 1, c, word)
-        dfs(r, c + 1, word)
-        dfs(r, c - 1, word)
+        node = node.children[board[r][c]]
+        word += board[r][c]
+
+        if node.is_word:
+            res.add(word)
+
+        dfs(r + 1, c, word, node)
+        dfs(r - 1, c, word, node)
+        dfs(r, c + 1, word, node)
+        dfs(r, c - 1, word, node)
         path.remove((r,c))
-        return res
+        
 
     for r in range(ROWS):
         for c in range(COLS):
-            dfs(r, c, "")
+            dfs(r, c, "", root)
 
-    return res
+    return list(res)
 
-print(findWords([["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], ["oath","pea","eat","rain"]))
 
-assert findWords([["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], ["oath","pea","eat","rain"]) == ["oath","eat"]
+
+def compare(first: List[str], second: List[str]) -> bool:
+    return set(first) == set(second)
+
+assert compare(findWords([["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], ["oath","pea","eat","rain"]),['oath','eat'] )
+assert compare(findWords([["o","a","b","n"],["o","t","a","e"],["a","h","k","r"],["a","f","l","v"]], ["oa","oaa"]),['oaa','oa'])
+
+first = [["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"],["a","a","a","a","a","a","a","a","a","a","a","a"]]
+second = ["lllllll","fffffff","ssss","s","rr","xxxx","ttt","eee","ppppppp","iiiiiiiii","xxxxxxxxxx","pppppp","xxxxxx","yy","jj","ccc","zzz","ffffffff","r","mmmmmmmmm","tttttttt","mm","ttttt","qqqqqqqqqq","z","aaaaaaaa","nnnnnnnnn","v","g","ddddddd","eeeeeeeee","aaaaaaa","ee","n","kkkkkkkkk","ff","qq","vvvvv","kkkk","e","nnn","ooo","kkkkk","o","ooooooo","jjj","lll","ssssssss","mmmm","qqqqq","gggggg","rrrrrrrrrr","iiii","bbbbbbbbb","aaaaaa","hhhh","qqq","zzzzzzzzz","xxxxxxxxx","ww","iiiiiii","pp","vvvvvvvvvv","eeeee","nnnnnnn","nnnnnn","nn","nnnnnnnn","wwwwwwww","vvvvvvvv","fffffffff","aaa","p","ddd","ppppppppp","fffff","aaaaaaaaa","oooooooo","jjjj","xxx","zz","hhhhh","uuuuu","f","ddddddddd","zzzzzz","cccccc","kkkkkk","bbbbbbbb","hhhhhhhhhh","uuuuuuu","cccccccccc","jjjjj","gg","ppp","ccccccccc","rrrrrr","c","cccccccc","yyyyy","uuuu","jjjjjjjj","bb","hhh","l","u","yyyyyy","vvv","mmm","ffffff","eeeeeee","qqqqqqq","zzzzzzzzzz","ggg","zzzzzzz","dddddddddd","jjjjjjj","bbbbb","ttttttt","dddddddd","wwwwwww","vvvvvv","iii","ttttttttt","ggggggg","xx","oooooo","cc","rrrr","qqqq","sssssss","oooo","lllllllll","ii","tttttttttt","uuuuuu","kkkkkkkk","wwwwwwwwww","pppppppppp","uuuuuuuu","yyyyyyy","cccc","ggggg","ddddd","llllllllll","tttt","pppppppp","rrrrrrr","nnnn","x","yyy","iiiiiiiiii","iiiiii","llll","nnnnnnnnnn","aaaaaaaaaa","eeeeeeeeee","m","uuu","rrrrrrrr","h","b","vvvvvvv","ll","vv","mmmmmmm","zzzzz","uu","ccccccc","xxxxxxx","ss","eeeeeeee","llllllll","eeee","y","ppppp","qqqqqq","mmmmmm","gggg","yyyyyyyyy","jjjjjj","rrrrr","a","bbbb","ssssss","sss","ooooo","ffffffffff","kkk","xxxxxxxx","wwwwwwwww","w","iiiiiiii","ffff","dddddd","bbbbbb","uuuuuuuuu","kkkkkkk","gggggggggg","qqqqqqqq","vvvvvvvvv","bbbbbbbbbb","nnnnn","tt","wwww","iiiii","hhhhhhh","zzzzzzzz","ssssssssss","j","fff","bbbbbbb","aaaa","mmmmmmmmmm","jjjjjjjjjj","sssss","yyyyyyyy","hh","q","rrrrrrrrr","mmmmmmmm","wwwww","www","rrr","lllll","uuuuuuuuuu","oo","jjjjjjjjj","dddd","pppp","hhhhhhhhh","kk","gggggggg","xxxxx","vvvv","d","qqqqqqqqq","dd","ggggggggg","t","yyyy","bbb","yyyyyyyyyy","tttttt","ccccc","aa","eeeeee","llllll","kkkkkkkkkk","sssssssss","i","hhhhhh","oooooooooo","wwwwww","ooooooooo","zzzz","k","hhhhhhhh","aaaaa","mmmmm"]
+
+print(findWords(first, second))
