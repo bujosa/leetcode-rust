@@ -55,10 +55,10 @@
 
 - [x] [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | Medium | [Solution](../../../src/medium/implement_trie_prefix_tree.rs) | [Problem Description](../../../src/medium/readme.md#208-implement-trie-prefix-tree)
 - [x] [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Medium | [Solution](../../../src/medium/design_add_and_search_words_data_structure.rs) | [Problem Description](../../../src/medium/readme.md#211-design-add-and-search-words-data-structure)
-- [ ] [Word Search II](https://leetcode.com/problems/word-search-ii/) | Hard | [Solution](../../../src/hard/word_search_ii.rs) | [Problem Description](../../../src/hard/readme.md#212-word-search-ii)
+- [x] [Word Search II](https://leetcode.com/problems/word-search-ii/) | Hard | [Solution](../../../src/hard/word_search_ii.rs) | [Problem Description](../../../src/hard/readme.md#212-word-search-ii)
 
 Category: `Tries`
 Created on: 2023-10-31 03:00
-Last modified on: 2023-11-02 19:14
-Status: In Progress
+Last modified on: 2023-11-02 20:51
+Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

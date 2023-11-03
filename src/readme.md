@@ -95,4 +95,5 @@
   - [x] [51. N-queens](../src/hard/n_queens.rs) -> [Problem Description](../src/hard/readme.md#51-n-queens)
   - [x] [76. Minimum window substring](../src/hard/minimum_window_substring.rs) -> [Problem Description](../src/hard/readme.md#76-minimum-window-substring)
   - [x] [84. Largest rectangle in histogram](../src/hard/largest_rectangle_in_histogram.rs) -> [Problem Description](../src/hard/readme.md#84-largest-rectangle-in-histogram)
+  - [x] [212. Word search II](../src/hard/word_search_ii.rs) -> [Problem Description](../src/hard/readme.md#212-word-search-ii)
   - [x] [239. Sliding window maximum](../src/hard/sliding_window_maximum.rs) -> [Problem Description](../src/hard/readme.md#239-sliding-window-maximum)
