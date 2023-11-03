@@ -14,10 +14,10 @@ A heap can be implemented using an array or a linked list.
 
 #### Heap Time Complexity
 
-- Access: O(n)
-- Search: O(n)
-- Insertion: O(1)
-- Deletion: O(1)
+- Insertion: O(log n)
+- Deletion: O(log n)
+- Peek: O(1)
+- Min/Max: O(1)
 
 #### Heap Space Complexity
 
@@ -44,10 +44,9 @@ A priority queue can be implemented using a heap.
 
 #### Priority Queue Time Complexity
 
-- Access: O(n)
-- Search: O(n)
-- Insertion: O(1)
-- Deletion: O(1)
+- Insertion: O(log n)
+- Deletion: O(log n)
+- Peek: O(1)
 
 #### Priority Queue Space Complexity
 
