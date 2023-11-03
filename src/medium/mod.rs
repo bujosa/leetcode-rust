@@ -17,6 +17,7 @@ pub mod find_the_duplicate_number;
 pub mod generate_parentheses;
 pub mod group_anagrams;
 pub mod implement_trie_prefix_tree;
+pub mod k_closest_points_to_origin;
 pub mod koko_eating_bananas;
 pub mod kth_smallest_element_in_a_bst;
 pub mod letter_combinations_of_a_phone_number;
@@ -37,7 +38,6 @@ pub mod subsets;
 pub mod subsets_ii;
 pub mod three_sum;
 pub mod three_sum_closest;
-
 pub mod time_based_key_value_store;
 pub mod top_k_frequent_elements;
 pub mod two_sum_ii_input_array_is_sorted;

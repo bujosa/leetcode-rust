@@ -2,15 +2,15 @@ from typing import List
 import heapq
 
 def lastStoneWeight(stones: List[int]) -> int:
-    maxHeap = []
-    for stone in stones:
-        heapq.heappush(maxHeap, -stone)
-    while len(maxHeap) > 1:
-        stone1 = -heapq.heappop(maxHeap)
-        stone2 = -heapq.heappop(maxHeap)
+    stones = [-stone for stone in stones]
+    heapq.heapify(stones)
+    while len(stones) > 1:
+        stone1 = heapq.heappop(stones)
+        stone2 = heapq.heappop(stones)
         if stone1 != stone2:
-            heapq.heappush(maxHeap, -(stone1 - stone2))
-    return -maxHeap[0] if maxHeap else 0
+            heapq.heappush(stones, stone1 - stone2)
+
+    return -stones[0] if stones else 0
 
 assert lastStoneWeight([2,7,4,1,8,1]) == 1
 
