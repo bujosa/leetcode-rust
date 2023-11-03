@@ -26,6 +26,7 @@ A heap can be implemented using an array or a linked list.
 #### Heap Applications
 
 - Heap Sort
+- Min / Max Heap
 - Priority Queue
 - Graph Algorithms
 - Selection Algorithms
