@@ -11,6 +11,7 @@ pub mod diameter_of_binary_tree;
 pub mod implement_strstr;
 pub mod invert_binary_tree;
 pub mod kth_largest_element_in_a_stream;
+pub mod last_stone_weight;
 pub mod length_of_last_word;
 pub mod linked_list_cycle;
 pub mod longest_common_prefix;
