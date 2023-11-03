@@ -1085,6 +1085,37 @@ Put the code below in main.rs and run `cargo run`
     println!("{}", word_dictionary.search("b..".to_string())); // returns true
 ```
 
+# 215. Kth Largest Element in an Array
+
+## Description
+
+Given an integer array nums and an integer k, return the kth largest element in the array.
+
+Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+Can you solve it without sorting?
+
+## Examples
+
+```text
+Input: nums = [3,2,1,5,6,4], k = 2
+Output: 5
+
+Input: nums = [3,2,3,1,2,4,5,5,6], k = 4
+Output: 4
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![3, 2, 1, 5, 6, 4];
+  let k = 2;
+  let result = leetcode::medium::kth_largest_element_in_an_array::find_kth_largest(nums, k);
+  println!("result: {}", result);
+```
+
 # 230. Kth Smallest Element in a BST
 
 ## Description
