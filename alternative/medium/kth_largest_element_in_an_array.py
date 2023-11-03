@@ -2,16 +2,20 @@ from typing import List
 import heapq
 
 def findKthLargest(nums: List[int], k: int) -> int:
-    priority_queue = []
+    max_heap = []
 
     for n in nums:
-        heapq.heappush(priority_queue, -n)
+        heapq.heappush(max_heap, -n)
     
-    res = 0
-    while k > 0:
-        res = -heapq.heappop(priority_queue)
+    while k > 1:
+        heapq.heappop(max_heap)
         k -= 1
-    return res
+        
+    return -heapq.heappop(max_heap)
+
+# Algorithm - Max Heap
+# Time Complexity - O(nlogn)
+# Space Complexity - O(n)
 
 assert findKthLargest([3,2,1,5,6,4], 2) == 5
 assert findKthLargest([3,2,3,1,2,4,5,5,6], 4) == 4
