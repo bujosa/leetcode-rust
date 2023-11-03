@@ -37,6 +37,7 @@ pub mod search_a_2d_matrix;
 pub mod search_in_rotated_sorted_array;
 pub mod subsets;
 pub mod subsets_ii;
+pub mod task_scheduler;
 pub mod three_sum;
 pub mod three_sum_closest;
 pub mod time_based_key_value_store;
