@@ -44,6 +44,7 @@
   - [x] [572. Subtree of another tree](../src/easy/subtree_of_another_tree.rs) -> [Problem Description](../src/easy/readme.md#572-subtree-of-another-tree)
   - [x] [703. Kth largest element in a stream](../src/easy/kth_largest_element_in_a_stream.rs) -> [Problem Description](../src/easy/readme.md#703-kth-largest-element-in-a-stream)
   - [x] [704. Binary search](../src/easy/binary_search.rs) -> [Problem Description](../src/easy/readme.md#704-binary-search)
+  - [ ] [1046. Last stone weight](../src/easy/last_stone_weight.rs) -> [Problem Description](../src/easy/readme.md#1046-last-stone-weight)
 - [Medium](../src/medium)
   - [x] [2. Add two numbers](../src/medium/add_two_numbers.rs) -> [Problem Description](../src/medium/readme.md#2-add-two-numbers)
   - [x] [3. Longest substring without repeating characters](../src/medium/longest_substring_without_repeating_characters.rs) -> [Problem Description](../src/medium/readme.md#3-longest-substring-without-repeating-characters)
