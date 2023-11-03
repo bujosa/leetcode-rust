@@ -13,6 +13,22 @@ fn last_stone_weight(stones: Vec<i32>) -> i32 {
     *max_heap.peek().unwrap_or(&0)
 }
 
+/*
+    Algorithm - Heap
+
+    Time    O(NlogN)
+    Space   O(N)
+
+    Description:
+    1. Create a max heap
+    2. Pop 2 items from the heap
+    3. If they are not equal, push the difference to the heap
+    4. Repeat 2-3 until the heap has 1 or 0 items
+    5. Return the top item of the heap
+
+
+*/
+
 #[cfg(test)]
 mod tests {
     use super::*;
