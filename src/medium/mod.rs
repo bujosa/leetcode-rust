@@ -19,6 +19,7 @@ pub mod group_anagrams;
 pub mod implement_trie_prefix_tree;
 pub mod k_closest_points_to_origin;
 pub mod koko_eating_bananas;
+pub mod kth_largest_element_in_an_array;
 pub mod kth_smallest_element_in_a_bst;
 pub mod letter_combinations_of_a_phone_number;
 pub mod longest_consecutive_sequence;
