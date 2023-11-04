@@ -913,6 +913,32 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {}", result);
 ```
 
+# 152. Maximum Product Subarray
+
+## Description
+
+Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product.
+
+## Examples
+
+```text
+Input: [2,3,-2,4]
+Output: 6
+
+Explanation: [2,3] has the largest product 6.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![2, 3, -2, 4];
+  let result = leetcode::medium::maximum_product_subarray::max_product(nums);
+  println!("result: {}", result);
+```
+
+
 # 153. Find Minimum in Rotated Sorted Array
 
 ## Description
