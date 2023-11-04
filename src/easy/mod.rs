@@ -18,6 +18,7 @@ pub mod longest_common_prefix;
 pub mod maximum_depth_of_binary_tree;
 pub mod merge_sorted_array;
 pub mod merge_two_sorted_lists;
+pub mod min_cost_climbing_stairs;
 pub mod min_stack;
 pub mod minimum_depth_of_binary_tree;
 pub mod palindrome_linked_list;
