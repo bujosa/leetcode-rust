@@ -1558,6 +1558,39 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 647. Palindromic Substrings
+
+## Description
+
+Given a string s, return the number of palindromic substrings in it.
+
+A string is a palindrome when it reads the same backward as forward.
+
+A substring is a contiguous sequence of characters within the string.
+
+## Examples
+
+```text
+Input: s = "abc"
+Output: 3
+Explanation: Three palindromic strings: "a", "b", "c".
+
+Input: s = "aaa"
+Output: 6
+Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("abc");
+  let result = leetcode::medium::palindromic_substrings::count_substrings(s);
+  println!("result: {}", result);
+```
+
+
 # 739. Daily Temperatures
 
 ## Description
