@@ -49,7 +49,7 @@
 - [Medium](../src/medium)
   - [x] [2. Add two numbers](../src/medium/add_two_numbers.rs) -> [Problem Description](../src/medium/readme.md#2-add-two-numbers)
   - [x] [3. Longest substring without repeating characters](../src/medium/longest_substring_without_repeating_characters.rs) -> [Problem Description](../src/medium/readme.md#3-longest-substring-without-repeating-characters)
-  - [ ] [5. Longest palindromic substring](../src/medium/longest_palindromic_substring.rs) -> [Problem Description](../src/medium/readme.md#5-longest-palindromic-substring)
+  - [x] [5. Longest palindromic substring](../src/medium/longest_palindromic_substring.rs) -> [Problem Description](../src/medium/readme.md#5-longest-palindromic-substring)
   - [x] [11. Container with most water](../src/medium/container_with_most_water.rs) -> [Problem Description](../src/medium/readme.md#11-container-with-most-water)
   - [x] [15. Three sum](../src/medium/three_sum.rs) -> [Problem Description](../src/medium/readme.md#15-three-sum)
   - [x] [16. Three sum closest](../src/medium/three_sum_closest.rs)

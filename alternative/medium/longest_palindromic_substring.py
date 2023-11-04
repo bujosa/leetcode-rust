@@ -11,6 +11,10 @@ def longestPalindrome(s: str) -> str:
 
     return res
 
+# Algorithm idea: Expand around center
+# Time: O(n^2)
+# Space: O(1)
+
 assert longestPalindrome("babad") == "bab"
 assert longestPalindrome("cbbd") == "bb"
 assert longestPalindrome("a") == "a"
