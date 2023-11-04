@@ -67,12 +67,12 @@ A priority queue can be implemented using a heap.
 - [x] [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | Easy | [Solution](../../../src/easy/last_stone_weight.rs) | [Problem Description](../../../src/easy/readme.md#1046-last-stone-weight)
 - [x] [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | Medium | [Solution](../../../src/medium/k_closest_points_to_origin.rs) | [Problem Description](../../../src/medium/readme.md#973-k-closest-points-to-origin)
 - [x] [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [Solution](../../../src/medium/kth_largest_element_in_an_array.rs) | [Problem Description](../../../src/medium/readme.md#215-kth-largest-element-in-an-array)
-- [ ] [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | Medium | [Solution](../../../src/medium/task_scheduler.rs) | [Problem Description](../../../src/medium/readme.md#621-task-scheduler)
+- [x] [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | Medium | [Solution](../../../src/medium/task_scheduler.rs) | [Problem Description](../../../src/medium/readme.md#621-task-scheduler)
 - [ ] [Design Twitter](https://leetcode.com/problems/design-twitter/) | Medium | [Solution](../../../src/medium/design_twitter.rs) | [Problem Description](../../../src/medium/readme.md#355-design-twitter)
 - [ ] [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [Solution](../../../src/hard/find_median_from_data_stream.rs) | [Problem Description](../../../src/hard/readme.md#295-find-median-from-data-stream)
 
 Category: `Heap / Priority Queue`
 Created on: 2023-11-02 21:12
-Last modified on: 2023-11-03 19:02
+Last modified on: 2023-11-03 22:13
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)

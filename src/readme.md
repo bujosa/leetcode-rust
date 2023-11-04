@@ -85,6 +85,7 @@
   - [x] [347. Top k frequent elements](../src/medium/top_k_frequent_elements.rs) -> [Problem Description](../src/medium/readme.md#347-top-k-frequent-elements)
   - [x] [424. Longest repeating character replacement](../src/medium/longest_repeating_character_replacement.rs) -> [Problem Description](../src/medium/readme.md#424-longest-repeating-character-replacement)
   - [x] [567. Permutation in string](../src/medium/permutation_in_string.rs) -> [Problem Description](../src/medium/readme.md#567-permutation-in-string)
+  - [x] [621. Task scheduler](../src/medium/task_scheduler.rs) -> [Problem Description](../src/medium/readme.md#621-task-scheduler)
   - [x] [739. Daily temperatures](../src/medium/daily_temperatures.rs) -> [Problem Description](../src/medium/readme.md#739-daily-temperatures)
   - [x] [853. Car fleet](../src/medium/car_fleet.rs) -> [Problem Description](../src/medium/readme.md#853-car-fleet)
   - [x] [875. Koko eating bananas](../src/medium/koko_eating_bananas.rs) -> [Problem Description](../src/medium/readme.md#875-koko-eating-bananas)
