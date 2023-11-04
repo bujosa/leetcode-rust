@@ -20,3 +20,4 @@ assert countSubstrings("aaa") == 6
 assert countSubstrings("abba") == 6
 assert countSubstrings("a") == 1
 assert countSubstrings("ac") == 2
+assert countSubstrings("aaab") == 7
