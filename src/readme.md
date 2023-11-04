@@ -83,6 +83,7 @@
   - [x] [271. Encode and decode strings](../src/medium/encode_and_decode_strings.rs) -> [Problem Description](../src/medium/readme.md#271-encode-and-decode-strings)
   - [x] [287. Find the duplicate number](../src/medium/find_the_duplicate_number.rs) -> [Problem Description](../src/medium/readme.md#287-find-the-duplicate-number)
   - [x] [347. Top k frequent elements](../src/medium/top_k_frequent_elements.rs) -> [Problem Description](../src/medium/readme.md#347-top-k-frequent-elements)
+  - [ ] [355. Design twitter](../src/medium/design_twitter.rs) -> [Problem Description](../src/medium/readme.md#355-design-twitter)
   - [x] [424. Longest repeating character replacement](../src/medium/longest_repeating_character_replacement.rs) -> [Problem Description](../src/medium/readme.md#424-longest-repeating-character-replacement)
   - [x] [567. Permutation in string](../src/medium/permutation_in_string.rs) -> [Problem Description](../src/medium/readme.md#567-permutation-in-string)
   - [x] [621. Task scheduler](../src/medium/task_scheduler.rs) -> [Problem Description](../src/medium/readme.md#621-task-scheduler)
