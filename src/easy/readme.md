@@ -1438,6 +1438,33 @@ Put this code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 746. Min cost climbing stairs
+
+## Description
+
+On a staircase, the `i`-th step has some non-negative cost `cost[i]` assigned (0 indexed).
+
+Once you pay the cost, you can either climb one or two steps. You need to find minimum cost to reach the top of the floor, and you can either start from the step with index 0, or the step with index 1.
+
+## Examples
+
+```text
+Input: cost = [10, 15, 20]
+Output: 15
+
+Explanation: Cheapest is start on cost[1], pay that cost and go to the top.
+```
+
+## How to Run in main.rs
+
+Put this code below in main.rs and run `cargo run`
+
+```rust
+  let result = leetcode::easy::min_cost_climbing_stairs::min_cost_climbing_stairs(vec![10, 15, 20]);
+  println!("result: {:?}", result);
+```
+
+
 # 1046. Last stone weight
 
 ## Description
