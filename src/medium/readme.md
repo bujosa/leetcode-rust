@@ -54,6 +54,31 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 5. Longest Palindromic Substring
+
+## Description
+
+Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+
+## Examples
+
+```text
+Input: "babad"
+Output: "bab"
+
+Note: "aba" is also a valid answer.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("babad");
+  let result = leetcode::medium::longest_palindromic_substring::longest_palindrome(s);
+  println!("result: {}", result);
+```
+
 # 11. Container With Most Water
 
 ## Description
