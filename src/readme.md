@@ -88,6 +88,7 @@
   - [x] [238. Product of array except self](../src/medium/product_of_array_except_self.rs) -> [Problem Description](../src/medium/readme.md#238-product-of-array-except-self)
   - [x] [271. Encode and decode strings](../src/medium/encode_and_decode_strings.rs) -> [Problem Description](../src/medium/readme.md#271-encode-and-decode-strings)
   - [x] [287. Find the duplicate number](../src/medium/find_the_duplicate_number.rs) -> [Problem Description](../src/medium/readme.md#287-find-the-duplicate-number)
+  - [ ] [322. Coin change](../src/medium/coin_change.rs) -> [Problem Description](../src/medium/readme.md#322-coin-change)
   - [x] [347. Top k frequent elements](../src/medium/top_k_frequent_elements.rs) -> [Problem Description](../src/medium/readme.md#347-top-k-frequent-elements)
   - [x] [355. Design twitter](../src/medium/design_twitter.rs) -> [Problem Description](../src/medium/readme.md#355-design-twitter)
   - [x] [424. Longest repeating character replacement](../src/medium/longest_repeating_character_replacement.rs) -> [Problem Description](../src/medium/readme.md#424-longest-repeating-character-replacement)
