@@ -65,6 +65,7 @@
   - [x] [78. Subsets](../src/medium/subsets.rs) -> [Problem Description](../src/medium/readme.md#78-subsets)
   - [x] [79. Word search](../src/medium/word_search.rs) -> [Problem Description](../src/medium/readme.md#79-word-search)
   - [x] [90. Subsets II](../src/medium/subsets_ii.rs) -> [Problem Description](../src/medium/readme.md#90-subsets-ii)
+  - [ ] [91. Decode ways](../src/medium/decode_ways.rs) -> [Problem Description](../src/medium/readme.md#91-decode-ways)
   - [x] [98. Validate binary search tree](../src/medium/validate_binary_search_tree.rs) -> [Problem Description](../src/medium/readme.md#98-validate-binary-search-tree)
   - [x] [102. Binary tree level order traversal](../src/medium/binary_tree_level_order_traversal.rs) -> [Problem Description](../src/medium/readme.md#102-binary-tree-level-order-traversal)
   - [x] [105. Construct binary tree from preorder and inorder traversal](../src/medium/construct_binary_tree_from_preorder_and_inorder_traversal.rs) -> [Problem Description](../src/medium/readme.md#105-construct-binary-tree-from-preorder-and-inorder-traversal)
