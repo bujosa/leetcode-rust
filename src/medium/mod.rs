@@ -2,6 +2,7 @@ pub mod add_two_numbers;
 pub mod binary_tree_level_order_traversal;
 pub mod binary_tree_right_side_view;
 pub mod car_fleet;
+pub mod coin_change;
 pub mod combination_sum;
 pub mod combination_sum_ii;
 pub mod construct_binary_tree_from_preorder_and_inorder_traversal;
