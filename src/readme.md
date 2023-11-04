@@ -72,6 +72,7 @@
   - [-] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
   - [x] [146. LRU cache](../src/medium/lru_cache.rs) -> [Problem Description](../src/medium/readme.md#146-lru-cache)
+  - [x] [152. Maximum product subarray](../src/medium/maximum_product_subarray.rs) -> [Problem Description](../src/medium/readme.md#152-maximum-product-subarray)
   - [x] [153. Find minimum in rotated sorted array](../src/medium/find_minimum_in_rotated_sorted_array.rs) -> [Problem Description](../src/medium/readme.md#153-find-minimum-in-rotated-sorted-array)
   - [x] [167. Two sum II - input array is sorted](../src/medium/two_sum_ii_input_array_is_sorted.rs) -> [Problem Description](../src/medium/readme.md#167-two-sum-ii---input-array-is-sorted)
   - [x] [198. House robber](../src/medium/house_robber.rs) -> [Problem Description](../src/medium/readme.md#198-house-robber)
