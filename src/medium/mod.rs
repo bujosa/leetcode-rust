@@ -30,6 +30,7 @@ pub mod longest_repeating_character_replacement;
 pub mod longest_substring_without_repeating_characters;
 pub mod lowest_common_ancestor_of_a_binary_search_tree;
 pub mod lru_cache;
+pub mod maximum_product_subarray;
 pub mod palindrome_partitioning;
 pub mod permutation_in_string;
 pub mod permutations;
