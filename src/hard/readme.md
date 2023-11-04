@@ -418,3 +418,15 @@ medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
 medianFinder.addNum(3);    // arr[1, 2, 3]
 medianFinder.findMedian(); // return 2.0
 ```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    let mut median_finder = leetcode::hard::find_median_from_data_stream::MedianFinder::new();
+    median_finder.add_num(1);
+    median_finder.add_num(2);
+    let result = median_finder.find_median();
+    println!("result: {:?}", result);
+```

@@ -69,10 +69,10 @@ A priority queue can be implemented using a heap.
 - [x] [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [Solution](../../../src/medium/kth_largest_element_in_an_array.rs) | [Problem Description](../../../src/medium/readme.md#215-kth-largest-element-in-an-array)
 - [x] [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | Medium | [Solution](../../../src/medium/task_scheduler.rs) | [Problem Description](../../../src/medium/readme.md#621-task-scheduler)
 - [x] [Design Twitter](https://leetcode.com/problems/design-twitter/) | Medium | [Solution](../../../src/medium/design_twitter.rs) | [Problem Description](../../../src/medium/readme.md#355-design-twitter)
-- [ ] [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [Solution](../../../src/hard/find_median_from_data_stream.rs) | [Problem Description](../../../src/hard/readme.md#295-find-median-from-data-stream)
+- [x] [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [Solution](../../../src/hard/find_median_from_data_stream.rs) | [Problem Description](../../../src/hard/readme.md#295-find-median-from-data-stream)
 
 Category: `Heap / Priority Queue`
 Created on: 2023-11-02 21:12
-Last modified on: 2023-11-04 00:06
-Status: In Progress
+Last modified on: 2023-11-04 00:45
+Status: Done
 Author: [David Bujosa](https://github.com/bujosa)
