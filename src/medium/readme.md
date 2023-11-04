@@ -1113,6 +1113,33 @@ Put the code below in main.rs and run `cargo run`
     println!("{}", word_dictionary.search("b..".to_string())); // returns true
 ```
 
+# 213. House Robber II
+
+## Description
+
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+Given a list of non-negative integers nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
+
+## Examples
+
+```text
+Input: nums = [2,3,2]
+Output: 3
+
+Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![2, 3, 2];
+  let result = leetcode::medium::house_robber_ii::rob(nums);
+  println!("result: {}", result);
+```
+
 # 215. Kth Largest Element in an Array
 
 ## Description
