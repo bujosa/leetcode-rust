@@ -33,6 +33,7 @@ pub mod lowest_common_ancestor_of_a_binary_search_tree;
 pub mod lru_cache;
 pub mod maximum_product_subarray;
 pub mod palindrome_partitioning;
+pub mod palindromic_substrings;
 pub mod permutation_in_string;
 pub mod permutations;
 pub mod product_of_array_except_self;
