@@ -1,3 +1,4 @@
+pub mod find_median_from_data_stream;
 pub mod largest_rectangle_in_histogram;
 pub mod median_of_two_sorted_arrays;
 pub mod merge_k_sorted_lists;
