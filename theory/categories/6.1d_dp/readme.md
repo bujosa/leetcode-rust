@@ -24,7 +24,7 @@ Dynamic programming and greedy algorithms are similar. Both are optimization met
 - [x] [House Robber](https://leetcode.com/problems/house-robber/) | Medium | [Solution](../../../src/medium/house_robber.rs) | [Problem Description](../../../src/medium/readme.md#198-house-robber)
 - [x] [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Medium | [Solution](../../../src/medium/house_robber_ii.rs) | [Problem Description](../../../src/medium/readme.md#213-house-robber-ii)
 - [x] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Medium | [Solution](../../../src/medium/longest_palindromic_substring.rs) | [Problem Description](../../../src/medium/readme.md#5-longest-palindromic-substring)
-- [ ] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | Medium | [Solution](../../../src/medium/palindromic_substrings.rs) | [Problem Description](../../../src/medium/readme.md#647-palindromic-substrings)
+- [x] [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | Medium | [Solution](../../../src/medium/palindromic_substrings.rs) | [Problem Description](../../../src/medium/readme.md#647-palindromic-substrings)
 - [ ] [Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | [Solution](../../../src/medium/decode_ways.rs) | [Problem Description](../../../src/medium/readme.md#91-decode-ways)
 - [ ] [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | [Solution](../../../src/medium/coin_change.rs) | [Problem Description](../../../src/medium/readme.md#322-coin-change)
 - [x] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium | [Solution](../../../src/medium/maximum_product_subarray.rs) | [Problem Description](../../../src/medium/readme.md#152-maximum-product-subarray)
@@ -35,6 +35,6 @@ Dynamic programming and greedy algorithms are similar. Both are optimization met
 
 Category: `Dynamic Programming`
 Created on: 2023-11-02 21:12
-Last modified on: 2023-11-04 18:26
+Last modified on: 2023-11-04 18:41
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)
