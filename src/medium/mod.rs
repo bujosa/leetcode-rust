@@ -17,6 +17,7 @@ pub mod find_minimum_in_rotated_sorted_array;
 pub mod find_the_duplicate_number;
 pub mod generate_parentheses;
 pub mod group_anagrams;
+pub mod house_robber;
 pub mod implement_trie_prefix_tree;
 pub mod k_closest_points_to_origin;
 pub mod koko_eating_bananas;
