@@ -37,6 +37,7 @@ pub mod lru_cache;
 pub mod maximum_product_subarray;
 pub mod palindrome_partitioning;
 pub mod palindromic_substrings;
+pub mod partition_equal_subset_sum;
 pub mod permutation_in_string;
 pub mod permutations;
 pub mod product_of_array_except_self;
