@@ -13,7 +13,7 @@ depends exclusive on Backtracking.
 - [Tries](5.tries/readme.md), [Backtracking](5.backtracking/readme.md) are in the same level
 - [Heap Priority Queue](6.heap_priority_queue/readme.md) depends on Trees
 - [Graphs](6.graphs/readme.md) and [1-D Dynamic Programming](6.1d_dp/readme.md) depends on Backtracking
-- Intervals, Greedy Depends ON Heap Priority Queue
+- Intervals, [Greedy](7.greedy/readme.md) Depends ON Heap Priority Queue
 - Advanced Graphs depends on Graphs and And Heap Priority Queue
 - 2-D Dynamic Programming and Bit Manipulation depends on 1-D Dynamic Programming
 - Math and Geometry depends on 2-D Dynamic Programming, Bit Manipulation and Graphs
