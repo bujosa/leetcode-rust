@@ -35,6 +35,7 @@ pub mod longest_substring_without_repeating_characters;
 pub mod lowest_common_ancestor_of_a_binary_search_tree;
 pub mod lru_cache;
 pub mod maximum_product_subarray;
+pub mod number_of_islands;
 pub mod palindrome_partitioning;
 pub mod palindromic_substrings;
 pub mod partition_equal_subset_sum;
