@@ -2186,6 +2186,46 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 678. Valid Parenthesis String
+
+## Description
+
+Given a string s containing only three types of characters: '(', ')' and '*', return true if s is valid.
+
+The following rules define a valid string:
+
+- Any left parenthesis '(' must have a corresponding right parenthesis ')'.
+- Any right parenthesis ')' must have a corresponding left parenthesis '('.
+- Left parenthesis '(' must go before the corresponding right parenthesis ')'.
+- '*' could be treated as a single right parenthesis ')' or a single left parenthesis '(' or an empty string "".
+
+## Examples
+
+```text
+Example 1:
+
+Input: s = "()"
+Output: true
+Example 2:
+
+Input: s = "(*)"
+Output: true
+Example 3:
+
+Input: s = "(*))"
+Output: true
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("(*))");
+  let result = leetcode::medium::valid_parenthesis_string::check_valid_string(s);
+  println!("result: {}", result);
+```
+
 # 695. Max Area of Island
 
 ## Description
