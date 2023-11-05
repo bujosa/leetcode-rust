@@ -1557,6 +1557,47 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {:?}", result);
 ```
 
+# 286. Walls and Gates
+
+## Description
+
+You are given an m x n grid rooms initialized with these three possible values.
+
+- `-1` A wall or an obstacle.
+- `0` A gate.
+- `INF` Infinity means an empty room. We use the value `231 - 1 = 2147483647` to represent `INF` as you may assume that the distance to a gate is less than `2147483647`.
+
+Fill each empty room with the distance to its nearest gate. If it is impossible to reach a gate, it should be filled with `INF`.
+
+## Examples
+
+Example 1:
+![Example 1](../../theory/images/walls_and_gates.jpg)
+
+```text
+Input: rooms = [[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]
+Output: [[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]
+
+Input: rooms = [[-1]]
+Output: [[-1]]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut rooms = vec![
+    vec![std::i32::MAX, -1, 0, std::i32::MAX],
+    vec![std::i32::MAX, std::i32::MAX, std::i32::MAX, -1],
+    vec![std::i32::MAX, -1, std::i32::MAX, -1],
+    vec![0, -1, std::i32::MAX, std::i32::MAX],
+  ];
+  leetcode::medium::walls_and_gates::walls_and_gates(&mut rooms);
+  println!("result: {:?}", rooms);
+```
+
+
 # 287. Find the Duplicate Number
 
 ## Description

@@ -90,6 +90,7 @@
   - [x] [235. Lowest common ancestor of a binary search tree](../src/medium/lowest_common_ancestor_of_a_binary_search_tree.rs) -> [Problem Description](../src/medium/readme.md#235-lowest-common-ancestor-of-a-binary-search-tree)
   - [x] [238. Product of array except self](../src/medium/product_of_array_except_self.rs) -> [Problem Description](../src/medium/readme.md#238-product-of-array-except-self)
   - [x] [271. Encode and decode strings](../src/medium/encode_and_decode_strings.rs) -> [Problem Description](../src/medium/readme.md#271-encode-and-decode-strings)
+  - [ ] [286. Walls and gates](../src/medium/walls_and_gates.rs) -> [Problem Description](../src/medium/readme.md#286-walls-and-gates)
   - [x] [287. Find the duplicate number](../src/medium/find_the_duplicate_number.rs) -> [Problem Description](../src/medium/readme.md#287-find-the-duplicate-number)
   - [x] [300. Longest increasing subsequence](../src/medium/longest_increasing_subsequence.rs) -> [Problem Description](../src/medium/readme.md#300-longest-increasing-subsequence)
   - [x] [322. Coin change](../src/medium/coin_change.rs) -> [Problem Description](../src/medium/readme.md#322-coin-change)
