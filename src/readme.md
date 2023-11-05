@@ -62,7 +62,7 @@
   - [ ] [45. Jump game II](../src/medium/jump_game_ii.rs) -> [Problem Description](../src/medium/readme.md#45-jump-game-ii)
   - [x] [46. Permutations](../src/medium/permutations.rs) -> [Problem Description](../src/medium/readme.md#46-permutations)
   - [x] [49. Group anagrams](../src/medium/group_anagrams.rs) -> [Problem Description](../src/medium/readme.md#49-group-anagrams)
-  - [ ] [53. Maximum subarray](../src/medium/maximum_subarray.rs) -> [Problem Description](../src/medium/readme.md#53-maximum-subarray)
+  - [x] [53. Maximum subarray](../src/medium/maximum_subarray.rs) -> [Problem Description](../src/medium/readme.md#53-maximum-subarray)
   - [ ] [55. Jump game](../src/medium/jump_game.rs) -> [Problem Description](../src/medium/readme.md#55-jump-game)
   - [x] [74. Search a 2D matrix](../src/medium/search_a_2d_matrix.rs) -> [Problem Description](../src/medium/readme.md#74-search-a-2d-matrix)
   - [x] [78. Subsets](../src/medium/subsets.rs) -> [Problem Description](../src/medium/readme.md#78-subsets)
