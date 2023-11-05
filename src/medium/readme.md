@@ -823,6 +823,66 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 133. Clone Graph
+
+## Description
+
+Given a reference of a node in a connected undirected graph, return a deep copy (clone) of the graph. Each node in the graph contains a val (int) and a list (List[Node]) of its neighbors.
+
+## Examples
+
+Example 1:
+
+![Example 1](../../theory/images/133_clone_graph_question.png)
+```text
+Input: adjList = [[2,4],[1,3],[2,4],[1,3]]
+Output: [[2,4],[1,3],[2,4],[1,3]]
+Explanation: There are 4 nodes in the graph.
+1st node (val = 1)'s neighbors are 2nd node (val = 2) and 4th node (val = 4).
+2nd node (val = 2)'s neighbors are 1st node (val = 1) and 3rd node (val = 3).
+3rd node (val = 3)'s neighbors are 2nd node (val = 2) and 4th node (val = 4).
+4th node (val = 4)'s neighbors are 1st node (val = 1) and 3rd node (val = 3).
+```
+
+Example 2:
+
+![Example 2](../../theory/images/graph_no_clone.png)
+```text
+Input: adjList = [[]]
+Output: [[]]
+Explanation: Note that the input contains one empty list. The graph consists of only one node with val = 1 and it does not have any neighbors.
+```
+
+Example 3:
+```
+Input: adjList = []
+Output: []
+Explanation: This an empty graph, it does not have any nodes.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+    use std::{cell::RefCell, rc::Rc};
+
+    use leetcode::medium::clone_graph::{clone_graph, Node};
+
+    let mut node1 = Node::new(1);
+    let mut node2 = Node::new(2);
+    let mut node3 = Node::new(3);
+    let mut node4 = Node::new(4);
+
+    node1.neighbors = vec![Rc::new(RefCell::new(node2.clone())), Rc::new(RefCell::new(node4.clone()))];
+    node2.neighbors = vec![Rc::new(RefCell::new(node1.clone())), Rc::new(RefCell::new(node3.clone()))];
+    node3.neighbors = vec![Rc::new(RefCell::new(node2.clone())), Rc::new(RefCell::new(node4.clone()))];
+    node4.neighbors = vec![Rc::new(RefCell::new(node1.clone())), Rc::new(RefCell::new(node3.clone()))];
+
+    let result = clone_graph(Some(Rc::new(RefCell::new(node1))));
+    println!("result: {:?}", result);
+```
+
 # 138. Copy List with Random Pointer
 
 ## Description
