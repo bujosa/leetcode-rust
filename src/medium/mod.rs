@@ -47,6 +47,7 @@ pub mod permutations;
 pub mod product_of_array_except_self;
 pub mod remove_nth_node_from_end_of_list;
 pub mod reorder_list;
+pub mod rotting_oranges;
 pub mod search_a_2d_matrix;
 pub mod search_in_rotated_sorted_array;
 pub mod subsets;
