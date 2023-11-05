@@ -21,6 +21,7 @@ pub mod find_the_duplicate_number;
 pub mod gas_station;
 pub mod generate_parentheses;
 pub mod group_anagrams;
+pub mod hand_of_straights;
 pub mod house_robber;
 pub mod house_robber_ii;
 pub mod implement_trie_prefix_tree;
