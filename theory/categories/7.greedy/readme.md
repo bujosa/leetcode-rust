@@ -17,7 +17,7 @@ Greedy algorithms are implemented using a greedy function that makes the best ch
 
 - [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium | [Solution](../../../src/medium/maximum_subarray.rs) | [Problem Description](../../../src/medium/readme.md#53-maximum-subarray)
 - [x] [Jump Game](https://leetcode.com/problems/jump-game/) | Medium | [Solution](../../../src/medium/jump_game.rs) | [Problem Description](../../../src/medium/readme.md#55-jump-game)
-- [ ] [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium | [Solution](../../../src/medium/jump_game_ii.rs) | [Problem Description](../../../src/medium/readme.md#45-jump-game-ii)
+- [x] [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium | [Solution](../../../src/medium/jump_game_ii.rs) | [Problem Description](../../../src/medium/readme.md#45-jump-game-ii)
 - [ ] [Gas Station](https://leetcode.com/problems/gas-station/) | Medium | [Solution](../../../src/medium/gas_station.rs) | [Problem Description](../../../src/medium/readme.md#134-gas-station)
 - [ ] [Hand of Straights](https://leetcode.com/problems/hand-of-straights/) | Medium | [Solution](../../../src/medium/hand_of_straights.rs) | [Problem Description](../../../src/medium/readme.md#846-hand-of-straights)
 - [ ] [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | [Solution](../../../src/medium/merge_triplets_to_form_target_triplet.rs) | [Problem Description](../../../src/medium/readme.md#1899-merge-triplets-to-form-target-triplet)

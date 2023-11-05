@@ -59,7 +59,7 @@
   - [x] [36. Valid sudoku](../src/medium/valid_sudoku.rs) -> [Problem Description](../src/medium/readme.md#36-valid-sudoku)
   - [x] [39. Combination sum](../src/medium/combination_sum.rs) -> [Problem Description](../src/medium/readme.md#39-combination-sum)
   - [x] [40. Combination sum II](../src/medium/combination_sum_ii.rs) -> [Problem Description](../src/medium/readme.md#40-combination-sum-ii)
-  - [ ] [45. Jump game II](../src/medium/jump_game_ii.rs) -> [Problem Description](../src/medium/readme.md#45-jump-game-ii)
+  - [x] [45. Jump game II](../src/medium/jump_game_ii.rs) -> [Problem Description](../src/medium/readme.md#45-jump-game-ii)
   - [x] [46. Permutations](../src/medium/permutations.rs) -> [Problem Description](../src/medium/readme.md#46-permutations)
   - [x] [49. Group anagrams](../src/medium/group_anagrams.rs) -> [Problem Description](../src/medium/readme.md#49-group-anagrams)
   - [x] [53. Maximum subarray](../src/medium/maximum_subarray.rs) -> [Problem Description](../src/medium/readme.md#53-maximum-subarray)
