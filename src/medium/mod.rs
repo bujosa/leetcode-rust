@@ -23,6 +23,7 @@ pub mod group_anagrams;
 pub mod house_robber;
 pub mod house_robber_ii;
 pub mod implement_trie_prefix_tree;
+pub mod jump_game_ii;
 pub mod jump_game;
 pub mod k_closest_points_to_origin;
 pub mod koko_eating_bananas;
