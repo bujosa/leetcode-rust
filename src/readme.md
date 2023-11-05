@@ -76,7 +76,7 @@
   - [x] [130. Surrounded regions](../src/medium/surrounded_regions.rs) -> [Problem Description](../src/medium/readme.md#130-surrounded-regions)
   - [x] [131. Palindrome partitioning](../src/medium/palindrome_partitioning.rs) -> [Problem Description](../src/medium/readme.md#131-palindrome-partitioning)
   - [x] [133. Clone graph](../src/medium/clone_graph.rs) -> [Problem Description](../src/medium/readme.md#133-clone-graph)
-  - [ ] [134. Gas station](../src/medium/gas_station.rs) -> [Problem Description](../src/medium/readme.md#134-gas-station)
+  - [x] [134. Gas station](../src/medium/gas_station.rs) -> [Problem Description](../src/medium/readme.md#134-gas-station)
   - [x] [138. Copy list with random pointer PYTHON Solution](../alternative/medium/copy_list_with_random_pointer.py) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
   - [x] [139. Word break](../src/medium/word_break.rs) -> [Problem Description](../src/medium/readme.md#139-word-break)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
