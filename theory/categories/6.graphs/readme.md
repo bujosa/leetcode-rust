@@ -28,3 +28,10 @@ A graph can be implemented using an adjacency list or an adjacency matrix.
 - [ ] [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | Medium | [Solution](../../../src/medium/number_of_connected_components_in_an_undirected_graph.rs) | [Problem Description](../../../src/medium/readme.md#323-number-of-connected-components-in-an-undirected-graph)
 - [ ] [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | Medium | [Solution](../../../src/medium/graph_valid_tree.rs) | [Problem Description](../../../src/medium/readme.md#261-graph-valid-tree)
 - [ ] [Word Ladder](https://leetcode.com/problems/word-ladder/) | Hard | [Solution](../../../src/hard/word_ladder.rs) | [Problem Description](../../../src/hard/readme.md#127-word-ladder)
+
+
+Category: `Graphs`
+Created on: 2023-11-02 21:12
+Last modified on: 2023-11-04 22:20
+Status: In Progress
+Author: [David Bujosa](https://github.com/bujosa)
