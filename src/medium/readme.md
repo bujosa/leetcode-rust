@@ -793,6 +793,62 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+# 130. Surrounded Regions
+
+## Description
+
+Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.
+
+A region is captured by flipping all 'O's into 'X's in that surrounded region.
+
+## Examples
+
+Example 1:
+![Example 1](../../theory/images/xogrid.jpg)
+
+```text
+Input:
+[
+  ['X', 'X', 'X', 'X'],
+  ['X', 'O', 'O', 'X'],
+  ['X', 'X', 'O', 'X'],
+  ['X', 'O', 'X', 'X']
+]
+
+Output:
+[
+  ['X', 'X', 'X', 'X'],
+  ['X', 'X', 'X', 'X'],
+  ['X', 'X', 'X', 'X'],
+  ['X', 'O', 'X', 'X']
+]
+
+Explanation:
+Surrounded regions shouldn’t be on the border, which means that any 'O' on the border of the board are not flipped to 'X'. Any 'O' that is not on the border and it is not connected to an 'O' on the border will be flipped to 'X'. Two cells are connected if they are adjacent cells connected horizontally or vertically.
+```
+
+Example 2:
+  
+```text
+Input: board = [["X"]]
+Output: [["X"]]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let mut board = vec![
+    vec!['X', 'X', 'X', 'X'],
+    vec!['X', 'O', 'O', 'X'],
+    vec!['X', 'X', 'O', 'X'],
+    vec!['X', 'O', 'X', 'X'],
+  ];
+  leetcode::medium::surrounded_regions::solve(&mut board);
+  println!("result: {:?}", board);
+```
+
 
 # 131. Palindrome Partitioning
 
