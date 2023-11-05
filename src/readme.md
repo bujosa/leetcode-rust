@@ -103,7 +103,7 @@
   - [x] [567. Permutation in string](../src/medium/permutation_in_string.rs) -> [Problem Description](../src/medium/readme.md#567-permutation-in-string)
   - [x] [621. Task scheduler](../src/medium/task_scheduler.rs) -> [Problem Description](../src/medium/readme.md#621-task-scheduler)
   - [x] [647. Palindromic substrings](../src/medium/palindromic_substrings.rs) -> [Problem Description](../src/medium/readme.md#647-palindromic-substrings)
-  - [ ] [695. Max area of island](../src/medium/max_area_of_island.rs) -> [Problem Description](../src/medium/readme.md#695-max-area-of-island)
+  - [x] [695. Max area of island](../src/medium/max_area_of_island.rs) -> [Problem Description](../src/medium/readme.md#695-max-area-of-island)
   - [x] [739. Daily temperatures](../src/medium/daily_temperatures.rs) -> [Problem Description](../src/medium/readme.md#739-daily-temperatures)
   - [x] [853. Car fleet](../src/medium/car_fleet.rs) -> [Problem Description](../src/medium/readme.md#853-car-fleet)
   - [x] [875. Koko eating bananas](../src/medium/koko_eating_bananas.rs) -> [Problem Description](../src/medium/readme.md#875-koko-eating-bananas)
