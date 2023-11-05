@@ -37,6 +37,7 @@ pub mod lowest_common_ancestor_of_a_binary_search_tree;
 pub mod lru_cache;
 pub mod max_area_of_island;
 pub mod maximum_product_subarray;
+pub mod maximum_subarray;
 pub mod number_of_islands;
 pub mod pacific_atlantic_water_flow;
 pub mod palindrome_partitioning;
