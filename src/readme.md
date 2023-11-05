@@ -70,7 +70,7 @@
   - [x] [102. Binary tree level order traversal](../src/medium/binary_tree_level_order_traversal.rs) -> [Problem Description](../src/medium/readme.md#102-binary-tree-level-order-traversal)
   - [x] [105. Construct binary tree from preorder and inorder traversal](../src/medium/construct_binary_tree_from_preorder_and_inorder_traversal.rs) -> [Problem Description](../src/medium/readme.md#105-construct-binary-tree-from-preorder-and-inorder-traversal)
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
-  - [ ] [130. Surrounded regions](../src/medium/surrounded_regions.rs) -> [Problem Description](../src/medium/readme.md#130-surrounded-regions)
+  - [x] [130. Surrounded regions](../src/medium/surrounded_regions.rs) -> [Problem Description](../src/medium/readme.md#130-surrounded-regions)
   - [x] [131. Palindrome partitioning](../src/medium/palindrome_partitioning.rs) -> [Problem Description](../src/medium/readme.md#131-palindrome-partitioning)
   - [x] [133. Clone graph](../src/medium/clone_graph.rs) -> [Problem Description](../src/medium/readme.md#133-clone-graph)
   - [x] [138. Copy list with random pointer PYTHON Solution](../alternative/medium/copy_list_with_random_pointer.py) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
