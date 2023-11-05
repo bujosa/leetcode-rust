@@ -2256,6 +2256,39 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 763. Partition Labels
+
+## Description
+
+A string `s` of lowercase English letters is given. We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts.
+
+## Examples
+
+```text
+Example 1:
+
+Input: s = "ababcbacadefegdehijhklij"
+Output: [9,7,8]
+Explanation:
+The partition is "ababcbaca", "defegde", "hijhklij".
+This is a partition so that each letter appears in at most one part.
+A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits s into less parts.
+Example 2:
+
+Input: s = "eccbbbbdec"
+Output: [10]
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("ababcbacadefegdehijhklij");
+  let result = leetcode::medium::partition_labels::partition_labels(s);
+  println!("result: {:?}", result);
+```
+
 # 846. Hand of Straights
 
 ## Description
