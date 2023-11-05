@@ -16,7 +16,7 @@ Greedy algorithms are implemented using a greedy function that makes the best ch
 ## Problems
 
 - [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium | [Solution](../../../src/medium/maximum_subarray.rs) | [Problem Description](../../../src/medium/readme.md#53-maximum-subarray)
-- [ ] [Jump Game](https://leetcode.com/problems/jump-game/) | Medium | [Solution](../../../src/medium/jump_game.rs) | [Problem Description](../../../src/medium/readme.md#55-jump-game)
+- [x] [Jump Game](https://leetcode.com/problems/jump-game/) | Medium | [Solution](../../../src/medium/jump_game.rs) | [Problem Description](../../../src/medium/readme.md#55-jump-game)
 - [ ] [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium | [Solution](../../../src/medium/jump_game_ii.rs) | [Problem Description](../../../src/medium/readme.md#45-jump-game-ii)
 - [ ] [Gas Station](https://leetcode.com/problems/gas-station/) | Medium | [Solution](../../../src/medium/gas_station.rs) | [Problem Description](../../../src/medium/readme.md#134-gas-station)
 - [ ] [Hand of Straights](https://leetcode.com/problems/hand-of-straights/) | Medium | [Solution](../../../src/medium/hand_of_straights.rs) | [Problem Description](../../../src/medium/readme.md#846-hand-of-straights)
