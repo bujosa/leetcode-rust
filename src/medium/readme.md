@@ -2256,6 +2256,38 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {:?}", result);
 ```
 
+# 846. Hand of Straights
+
+## Description
+
+Alice has a `hand` of cards, given as an array of integers.
+
+Now she wants to rearrange the cards into groups so that each group is size `W`, and consists of `W` consecutive cards.
+
+Return `true` if and only if she can.
+
+Note: This question is the same as 1296: https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/
+
+## Examples
+
+```text
+Input: hand = [1,2,3,6,2,3,4,7,8], W = 3
+Output: true
+
+Explanation: Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8].
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let hand = vec![1, 2, 3, 6, 2, 3, 4, 7, 8];
+  let w = 3;
+  let result = leetcode::medium::hand_of_straights::is_n_straight_hand(hand, w);
+  println!("result: {}", result);
+```
+
 # 853. Car Fleet
 
 ## Description
@@ -2503,3 +2535,51 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {}", result);
 ```
 
+
+# 1899. Merge Triplets to Form Target Triplet
+
+## Description
+
+A triplet is an array of three integers. You are given a 2D integer array `triplets`, where `triplets[i] = [ai, bi, ci]` describes the ith triplet. You are also given an integer array` target = [x, y, z]` that describes the triplet you want to obtain.
+
+To obtain target, you may apply the following operation on triplets any number of times (possibly zero):
+
+- Choose two indices (0-indexed) `i `and `j (i != j) `and update `triplets[j]` to become `[max(ai, aj), max(bi, bj), max(ci, cj)]`.
+- For example, if `triplets[i] = [2, 5, 3]` and `triplets[j] = [1, 7, 5]`, `triplets[j] `will be updated to `[max(2, 1), max(5, 7), max(3, 5)] = [2, 7, 5]`.
+Return true if it is possible to obtain the target triplet [x, y, z] as an element of triplets, or false otherwise.
+
+## Examples
+
+```text
+Example 1:
+
+Input: triplets = [[2,5,3],[1,8,4],[1,7,5]], target = [2,7,5]
+Output: true
+Explanation: Perform the following operations:
+- Choose the first and last triplets [[2,5,3],[1,8,4],[1,7,5]]. Update the last triplet to be [max(2,1), max(5,7), max(3,5)] = [2,7,5]. triplets = [[2,5,3],[1,8,4],[2,7,5]]
+The target triplet [2,7,5] is now an element of triplets.
+Example 2:
+
+Input: triplets = [[3,4,5],[4,5,6]], target = [3,2,5]
+Output: false
+Explanation: It is impossible to have [3,2,5] as an element because there is no 2 in any of the triplets.
+Example 3:
+
+Input: triplets = [[2,5,3],[2,3,4],[1,2,5],[5,2,3]], target = [5,5,5]
+Output: true
+Explanation: Perform the following operations:
+- Choose the first and third triplets [[2,5,3],[2,3,4],[1,2,5],[5,2,3]]. Update the third triplet to be [max(2,1), max(5,2), max(3,5)] = [2,5,5]. triplets = [[2,5,3],[2,3,4],[2,5,5],[5,2,3]].
+- Choose the third and fourth triplets [[2,5,3],[2,3,4],[2,5,5],[5,2,3]]. Update the fourth triplet to be [max(2,5), max(5,2), max(5,3)] = [5,5,5]. triplets = [[2,5,3],[2,3,4],[2,5,5],[5,5,5]].
+The target triplet [5,5,5] is now an element of triplets.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let triplets = vec![vec![2, 5, 3], vec![1, 8, 4], vec![1, 7, 5]];
+  let target = vec![2, 7, 5];
+  let result = leetcode::medium::merge_triplets_to_form_target_triplet::merge_triplets(triplets, target);
+  println!("result: {}", result);
+```
