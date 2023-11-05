@@ -21,6 +21,3 @@ def cloneGraph(node: Optional['Node']) -> Optional['Node']:
         return clone
 
     return dfs(node)
-
-
-print(cloneGraph([[2,4],[1,3],[2,4],[1,3]]))
