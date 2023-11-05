@@ -442,6 +442,68 @@ Put the code below in main.rs and run `cargo run`
     println!("result: {:?}", result);
 ```
 
+# 53. Maximum Subarray
+
+## Description
+
+Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+
+## Examples
+
+```text
+Input: [-2,1,-3,4,-1,2,1,-5,4],
+Output: 6
+
+Explanation: [4,-1,2,1] has the largest sum = 6.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![-2, 1, -3, 4, -1, 2, 1, -5, 4];
+  let result = leetcode::medium::maximum_subarray::max_sub_array(nums);
+  println!("result: {}", result);
+```
+
+# 55. Jump Game
+
+## Description
+
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Determine if you are able to reach the last index.
+
+## Examples
+
+```text
+Input: [2,3,1,1,4]
+Output: true
+
+Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
+```
+
+```text
+Input: [3,2,1,0,4]
+Output: false
+
+Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![2, 3, 1, 1, 4];
+  let result = leetcode::medium::jump_game::can_jump(nums);
+  println!("result: {}", result);
+```
+
+
 # 74. Search a 2D Matrix
 
 ## Description
