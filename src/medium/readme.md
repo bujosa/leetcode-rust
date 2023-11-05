@@ -874,6 +874,47 @@ Put the code below in main.rs and run `cargo run`
     copy_random_list(node1);
 ```
 
+# 139. Word Break
+
+## Description
+
+Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words.
+
+Note:
+- The same word in the dictionary may be reused multiple times in the segmentation.
+- You may assume the dictionary does not contain duplicate words.
+
+## Examples
+
+```text
+Example 1:
+
+Input: s = "leetcode", wordDict = ["leet","code"]
+Output: true
+Explanation: Return true because "leetcode" can be segmented as "leet code".
+Example 2:
+
+Input: s = "applepenapple", wordDict = ["apple","pen"]
+Output: true
+Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
+Note that you are allowed to reuse a dictionary word.
+Example 3:
+
+Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
+Output: false
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let s = String::from("leetcode");
+  let word_dict = vec![String::from("leet"), String::from("code")];
+  let result = leetcode::medium::word_break::word_break(s, word_dict);
+  println!("result: {}", result);
+```
+
 # 143. Reorder List
 
 ## Description
