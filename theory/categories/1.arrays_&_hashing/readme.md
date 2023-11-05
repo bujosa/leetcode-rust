@@ -91,7 +91,5 @@
 - [Hashing Techniques](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
 
 Category: `Arrays & Hashing`
-Created on: 2023-06-10 22:00:00
-Last modified on: 2023-06-10 22:00:00
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

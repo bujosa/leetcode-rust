@@ -66,7 +66,5 @@
 - [NeetCode](https://neetcode.io)
 
 Category: `Stack`
-Created on: 2023-06-14 20:00:00
-Last modified on: 2023-06-22 19:00:00
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

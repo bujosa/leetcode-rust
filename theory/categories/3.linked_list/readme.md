@@ -40,7 +40,5 @@
 - [x] [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | [Solution](../../../src/hard/reverse_nodes_in_k_group.rs) | [Problem Description](../../../src/hard/readme.md#25-reverse-nodes-in-k-group)
 
 Category: `Linked List`
-Created on: 2023-08-22 01:00:00
-Last modified on: 2023-10-11 17:30:00
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

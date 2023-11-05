@@ -38,7 +38,5 @@
 - [x] [N Queens](https://leetcode.com/problems/n-queens/) | Hard | [Solution](../../../src/hard/n_queens.rs) | [Problem Description](../../../src/hard/readme.md#51-n-queens)
 
 Category: `Backtracking`
-Created on: 2023-10-31 03:01
-Last modified on: 2023-11-02 03:00
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

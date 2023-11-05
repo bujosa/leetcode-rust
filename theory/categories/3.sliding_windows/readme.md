@@ -32,7 +32,5 @@
 - [x] [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | [Solution](../../../src/hard/sliding_window_maximum.rs)
 
 Category: `Sliding Windows`
-Created on: 2023-07-28 15:14:00
-Last modified on: 2023-08-20 19:30:00
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

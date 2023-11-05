@@ -82,7 +82,7 @@
   - [x] [167. Two sum II - input array is sorted](../src/medium/two_sum_ii_input_array_is_sorted.rs) -> [Problem Description](../src/medium/readme.md#167-two-sum-ii---input-array-is-sorted)
   - [x] [198. House robber](../src/medium/house_robber.rs) -> [Problem Description](../src/medium/readme.md#198-house-robber)
   - [x] [199. Binary tree right side view](../src/medium/binary_tree_right_side_view.rs) -> [Problem Description](../src/medium/readme.md#199-binary-tree-right-side-view)
-  - [ ] [200. Number of islands](../src/medium/number_of_islands.rs) -> [Problem Description](../src/medium/readme.md#200-number-of-islands)
+  - [x] [200. Number of islands](../src/medium/number_of_islands.rs) -> [Problem Description](../src/medium/readme.md#200-number-of-islands)
   - [x] [208. Implement trie (prefix tree)](../src/medium/implement_trie_prefix_tree.rs) -> [Problem Description](../src/medium/readme.md#208-implement-trie-prefix-tree)
   - [x] [211. Design add and search words data structure](../src/medium/design_add_and_search_words_data_structure.rs) -> [Problem Description](../src/medium/readme.md#211-design-add-and-search-words-data-structure)
   - [x] [213. House robber II](../src/medium/house_robber_ii.rs) -> [Problem Description](../src/medium/readme.md#213-house-robber-ii)

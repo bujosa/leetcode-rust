@@ -58,7 +58,5 @@
 - [x] [Word Search II](https://leetcode.com/problems/word-search-ii/) | Hard | [Solution](../../../src/hard/word_search_ii.rs) | [Problem Description](../../../src/hard/readme.md#212-word-search-ii)
 
 Category: `Tries`
-Created on: 2023-10-31 03:00
-Last modified on: 2023-11-02 20:51
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

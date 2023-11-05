@@ -77,7 +77,5 @@
 - [ ] [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | [Solution](../../../src/hard/serialize_and_deserialize_binary_tree.rs) | [Problem Description](../../../src/hard/readme.md#297-serialize-and-deserialize-binary-tree)
 
 Category: `Trees`
-Created on: 2023-10-07 19:00
-Last modified on: 2023-10-31 02:50
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)

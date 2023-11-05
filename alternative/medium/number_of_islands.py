@@ -24,11 +24,16 @@ def numIslands(grid: List[List[str]]) -> int:
     return islands
 
 """
-    Algorithm - Breadth First Search
-    1. Iterate through the grid
-    2. If the current element is 1, increment the count and call bfs
-    3. In bfs, mark the current element as 0 and call bfs on all the adjacent elements
-    4. Return the count
+    Algorithm - DFS
+    Time Complexity - O(M*N)
+    Space Complexity - O(M*N)
+    where M is the number of rows and N is the number of columns
+
+    Description:
+    1. Iterate through each cell in the grid.
+    2. If the cell is a '1', then it is the top-left corner of an island.
+    3. Perform a DFS on the cell to mark all the cells in the island as '0'.
+    4. Increment the number of islands and continue the search.
 """
 
 assert numIslands([["1","1","1","1","0"], 

@@ -31,7 +31,5 @@
 - [x] [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | [Solution](../../../src/hard/trapping_rain_water.rs) | [Problem Description](../../../src/hard/readme.md#42-trapping-rain-water)
 
 Category: `Two Pointers`
-Created on: 2023-06-22 19:10:00
-Last modified on: 2023-07-27 03:24:000
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)

@@ -34,7 +34,5 @@ Dynamic programming and greedy algorithms are similar. Both are optimization met
 
 
 Category: `Dynamic Programming`
-Created on: 2023-11-02 21:12
-Last modified on: 2023-11-04 22:17
 Status: Done
 Author: [David Bujosa](https://github.com/bujosa)
