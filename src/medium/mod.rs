@@ -53,4 +53,5 @@ pub mod top_k_frequent_elements;
 pub mod two_sum_ii_input_array_is_sorted;
 pub mod valid_sudoku;
 pub mod validate_binary_search_tree;
+pub mod word_break;
 pub mod word_search;
