@@ -28,13 +28,13 @@ Dynamic programming and greedy algorithms are similar. Both are optimization met
 - [x] [Decode Ways](https://leetcode.com/problems/decode-ways/) | Medium | [Solution](../../../src/medium/decode_ways.rs) | [Problem Description](../../../src/medium/readme.md#91-decode-ways)
 - [x] [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | [Solution](../../../src/medium/coin_change.rs) | [Problem Description](../../../src/medium/readme.md#322-coin-change)
 - [x] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium | [Solution](../../../src/medium/maximum_product_subarray.rs) | [Problem Description](../../../src/medium/readme.md#152-maximum-product-subarray)
-- [ ] [Word Break](https://leetcode.com/problems/word-break/) | Medium | [Solution](../../../src/medium/word_break.rs) | [Problem Description](../../../src/medium/readme.md#139-word-break)
+- [x] [Word Break](https://leetcode.com/problems/word-break/) | Medium | [Solution](../../../src/medium/word_break.rs) | [Problem Description](../../../src/medium/readme.md#139-word-break)
 - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | [Solution](../../../src/medium/longest_increasing_subsequence.rs) | [Problem Description](../../../src/medium/readme.md#300-longest-increasing-subsequence)
 - [ ] [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | [Solution](../../../src/medium/partition_equal_subset_sum.rs) | [Problem Description](../../../src/medium/readme.md#416-partition-equal-subset-sum)
 
 
 Category: `Dynamic Programming`
 Created on: 2023-11-02 21:12
-Last modified on: 2023-11-04 19:12
+Last modified on: 2023-11-04 20:36
 Status: In Progress
 Author: [David Bujosa](https://github.com/bujosa)

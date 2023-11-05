@@ -72,6 +72,7 @@
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
   - [x] [131. Palindrome partitioning](../src/medium/palindrome_partitioning.rs) -> [Problem Description](../src/medium/readme.md#131-palindrome-partitioning)
   - [-] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
+  - [x] [139. Word break](../src/medium/word_break.rs) -> [Problem Description](../src/medium/readme.md#139-word-break)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
   - [x] [146. LRU cache](../src/medium/lru_cache.rs) -> [Problem Description](../src/medium/readme.md#146-lru-cache)
   - [x] [152. Maximum product subarray](../src/medium/maximum_product_subarray.rs) -> [Problem Description](../src/medium/readme.md#152-maximum-product-subarray)
