@@ -26,6 +26,20 @@ def wallsAndGates(rooms: List[List[int]]) -> None:
 
         time+=1
 
+"""
+    Algorithm - Breadth First Search
+    Time Complexity - O(n)
+    Space Complexity - O(n)
+
+    Explanation:
+    1. We first add all the gates to a queue.
+    2. We then iterate through the queue and check the adjacent cells for empty rooms.
+    3. If there are empty rooms, we add them to the queue and update the distance.
+    4. We repeat this process until the queue is empty.
+
+    Note: We can also use a visited array to keep track of visited cells.
+"""
+
 rooms = [[inf,-1,0,inf],[inf,inf,inf,-1],[inf,-1,inf,-1],[0,-1,inf,inf]]
 wallsAndGates(rooms)
 print(rooms)
