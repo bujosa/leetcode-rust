@@ -109,7 +109,7 @@
   - [x] [875. Koko eating bananas](../src/medium/koko_eating_bananas.rs) -> [Problem Description](../src/medium/readme.md#875-koko-eating-bananas)
   - [x] [973. K closest points to origin](../src/medium/k_closest_points_to_origin.rs) -> [Problem Description](../src/medium/readme.md#973-k-closest-points-to-origin)
   - [x] [981. Time based key-value store](../src/medium/time_based_key_value_store.rs) -> [Problem Description](../src/medium/readme.md#981-time-based-key-value-store)
-  - [ ] [994. Rotting oranges](../src/medium/rotting_oranges.rs) -> [Problem Description](../src/medium/readme.md#994-rotting-oranges)
+  - [x] [994. Rotting oranges](../src/medium/rotting_oranges.rs) -> [Problem Description](../src/medium/readme.md#994-rotting-oranges)
   - [x] [1448. Count good nodes in binary tree](../src/medium/count_good_nodes_in_binary_tree.rs) -> [Problem Description](../src/medium/readme.md#1448-count-good-nodes-in-binary-tree)
 - [Hard](../src/hard)
   - [x] [4. Median of two sorted arrays](../src/hard/median_of_two_sorted_arrays.rs) -> [Problem Description](../src/hard/readme.md#4-median-of-two-sorted-arrays)
