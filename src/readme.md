@@ -71,7 +71,7 @@
   - [x] [105. Construct binary tree from preorder and inorder traversal](../src/medium/construct_binary_tree_from_preorder_and_inorder_traversal.rs) -> [Problem Description](../src/medium/readme.md#105-construct-binary-tree-from-preorder-and-inorder-traversal)
   - [x] [128. Longest consecutive sequence](../src/medium/longest_consecutive_sequence.rs) -> [Problem Description](../src/medium/readme.md#128-longest-consecutive-sequence)
   - [x] [131. Palindrome partitioning](../src/medium/palindrome_partitioning.rs) -> [Problem Description](../src/medium/readme.md#131-palindrome-partitioning)
-  - [-] [138. Copy list with random pointer](../src/medium/copy_list_with_random_pointer.rs) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
+  - [x] [138. Copy list with random pointer PYTHON Solution](../alternative/medium/copy_list_with_random_pointer.py) -> [Problem Description](../src/medium/readme.md#138-copy-list-with-random-pointer)
   - [x] [139. Word break](../src/medium/word_break.rs) -> [Problem Description](../src/medium/readme.md#139-word-break)
   - [x] [143. Reorder list](../src/medium/reorder_list.rs) -> [Problem Description](../src/medium/readme.md#143-reorder-list)
   - [x] [146. LRU cache](../src/medium/lru_cache.rs) -> [Problem Description](../src/medium/readme.md#146-lru-cache)
