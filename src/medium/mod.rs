@@ -38,6 +38,7 @@ pub mod lru_cache;
 pub mod max_area_of_island;
 pub mod maximum_product_subarray;
 pub mod number_of_islands;
+pub mod pacific_atlantic_water_flow;
 pub mod palindrome_partitioning;
 pub mod palindromic_substrings;
 pub mod partition_equal_subset_sum;
