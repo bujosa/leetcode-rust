@@ -93,7 +93,7 @@
   - [x] [322. Coin change](../src/medium/coin_change.rs) -> [Problem Description](../src/medium/readme.md#322-coin-change)
   - [x] [347. Top k frequent elements](../src/medium/top_k_frequent_elements.rs) -> [Problem Description](../src/medium/readme.md#347-top-k-frequent-elements)
   - [x] [355. Design twitter](../src/medium/design_twitter.rs) -> [Problem Description](../src/medium/readme.md#355-design-twitter)
-  - [ ] [416. Partition equal subset sum](../src/medium/partition_equal_subset_sum.rs) -> [Problem Description](../src/medium/readme.md#416-partition-equal-subset-sum)
+  - [x] [416. Partition equal subset sum](../src/medium/partition_equal_subset_sum.rs) -> [Problem Description](../src/medium/readme.md#416-partition-equal-subset-sum)
   - [x] [424. Longest repeating character replacement](../src/medium/longest_repeating_character_replacement.rs) -> [Problem Description](../src/medium/readme.md#424-longest-repeating-character-replacement)
   - [x] [567. Permutation in string](../src/medium/permutation_in_string.rs) -> [Problem Description](../src/medium/readme.md#567-permutation-in-string)
   - [x] [621. Task scheduler](../src/medium/task_scheduler.rs) -> [Problem Description](../src/medium/readme.md#621-task-scheduler)
