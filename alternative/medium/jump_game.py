@@ -7,7 +7,7 @@ def canJump(nums: List[int]) -> bool:
         if i + nums[i] >= goal:
             goal = i
     
-    return True if goal == 0 else False
+    return goal == 0
 
 """
     Algorithm 1: Greedy
