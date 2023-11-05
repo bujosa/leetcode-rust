@@ -1478,6 +1478,35 @@ Put the code below in main.rs and run `cargo run`
   println!("result: {}", result);
 ```
 
+
+# 300. Longest Increasing Subsequence
+
+## Description
+
+Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
+A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order of the remaining elements. For example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].
+
+## Examples
+
+```text
+
+Input: nums = [10,9,2,5,3,7,101,18]
+Output: 4
+
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+```
+
+## How to Run in main.rs
+
+Put the code below in main.rs and run `cargo run`
+
+```rust
+  let nums = vec![10, 9, 2, 5, 3, 7, 101, 18];
+  let result = leetcode::medium::longest_increasing_subsequence::length_of_lis(nums);
+  println!("result: {}", result);
+```
+
 # 322. Coin Change
 
 ## Description
