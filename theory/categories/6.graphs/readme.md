@@ -16,7 +16,7 @@ A graph can be implemented using an adjacency list or an adjacency matrix.
 ## Problems
 
 - [x] [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | [Solution](../../../src/medium/number_of_islands.rs) | [Problem Description](../../../src/medium/readme.md#200-number-of-islands)
-- [ ] [Clone Graph](https://leetcode.com/problems/clone-graph/) | Medium | [Solution](../../../src/medium/clone_graph.rs) | [Problem Description](../../../src/medium/readme.md#133-clone-graph)
+- [x] [Clone Graph](https://leetcode.com/problems/clone-graph/) | Medium | [Solution](../../../src/medium/clone_graph.rs) | [Problem Description](../../../src/medium/readme.md#133-clone-graph)
 - [ ] [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | [Solution](../../../src/medium/max_area_of_island.rs) | [Problem Description](../../../src/medium/readme.md#695-max-area-of-island)
 - [ ] [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | [Solution](../../../src/medium/pacific_atlantic_water_flow.rs) | [Problem Description](../../../src/medium/readme.md#417-pacific-atlantic-water-flow)
 - [ ] [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium | [Solution](../../../src/medium/surrounded_regions.rs) | [Problem Description](../../../src/medium/readme.md#130-surrounded-regions)
